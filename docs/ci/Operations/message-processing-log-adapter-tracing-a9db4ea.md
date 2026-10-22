@@ -63,18 +63,121 @@ SAP's internal correlation identifier. When two SAP systems communicate, the mes
 </td>
 <td valign="top">
 
-SAP Cloud Integration adopts the W3C Trace Context standard as the universal trace identifier for cross-system tracing. W3C Trace Context is an open web standard defined by the World Wide Web Consortium \(W3C\). Cloud Integration includes the W3C Trace ID inside the SAP Passport so that the correlation chain is preserved when a message crosses from an OpenTelemetry-instrumented system into the SAP ecosystem.
+adopts the W3C Trace Context standard as the universal trace identifier for cross-system tracing. W3C Trace Context is an open web standard defined by the World Wide Web Consortium \(W3C\). SAPCloud Integration includes the W3C Trace ID inside the SAP Passport so that the correlation chain is preserved when a message crosses from an OpenTelemetry-instrumented system into the SAP ecosystem.
 
-If the incoming request includes a W3C trace context header \(`traceparent`\), Cloud Integration captures the trace parent in the message processing log. This allows you to correlate the MPL entry with the corresponding record in an external monitoring tool.
+If the incoming request includes a W3C trace context header \(`traceparent`\), captures the trace parent in the message processing log. This allows you to correlate the MPL entry with the corresponding record in an external monitoring tool.
 
-> ### Remember:  
-> For SAP-to-SAP communication, the SAP Passport remains the primary carrier of trace information. Cloud Integration includes the W3C Trace ID inside the SAP Passport so that the correlation chain is preserved when a message crosses from an OpenTelemetry-instrumented system into the SAP ecosystem.
+> ### Note:  
+> For SAP-to-SAP communication, the SAP Passport remains the primary carrier of trace information.
 
 
 
 </td>
 </tr>
 </table>
+
+
+
+### W3C Trace Context Propagation Scenarios
+
+evaluates inbound requests for the presence of an SAP Passport and a W3C Trace Context header \(`traceparent`\) and applies the following rules to determine how trace context is propagated. Regardless of the inbound scenario, both the `sap-passport` and `traceparent` headers are included in outbound requests by default.
+
+> ### Remember:  
+> The outbound `traceparent` is derived from the SAP Passport, with the W3C Trace ID corresponding to the SAP Passport Transaction ID.
+
+The following table describes the behavior for each combination of inbound headers:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Inbound Request
+
+</th>
+<th valign="top">
+
+Inbound Behavior
+
+</th>
+<th valign="top">
+
+Outbound Behavior
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`sap-passport` only
+
+</td>
+<td valign="top">
+
+If an SAP Passport is already present in the integration flow prior to the inbound request, the SAP Passport from the request is not used.
+
+</td>
+<td valign="top">
+
+Both `sap-passport` and `traceparent` are included. The `traceparent` is generated from the SAP Passport.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`traceparent` only
+
+</td>
+<td valign="top">
+
+If no SAP Passport is present in the integration flow, an SAP Passport is generated from the inbound `traceparent` header. The W3C Trace ID maps to the SAP Passport Transaction ID.
+
+</td>
+<td valign="top">
+
+Both `sap-passport` and `traceparent` are included. The outbound `traceparent` carries the same Trace ID as the inbound `traceparent`, but with a different parent ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Both `sap-passport` and `traceparent`
+
+</td>
+<td valign="top">
+
+The SAP Passport takes priority. The inbound `traceparent` is ignored. If no SAP Passport is already present in the integration flow, the SAP Passport from the request is used.
+
+</td>
+<td valign="top">
+
+Both `sap-passport` and `traceparent` are included. Because the inbound `traceparent` was ignored, the outbound `traceparent` may differ entirely from the inbound one, as it is generated from the SAP Passport.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Neither `sap-passport` nor `traceparent`
+
+</td>
+<td valign="top">
+
+If no SAP Passport is already present in the integration flow, an SAP Passport is generated. If the `X-SAP-PASSPORT-TRANSACTION-ID` header is present in the request, its value is used as the Transaction ID. Otherwise, a new Transaction ID is generated.
+
+</td>
+<td valign="top">
+
+Both `sap-passport` and `traceparent` are included. The `traceparent` is generated from the SAP Passport.
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> You can prevent the propagation of the `traceparent` header in outbound requests by setting the `SAP_DisableExternalW3CTraceContextTransmission` exchange property to `true` in the *Content Modifier* step of the integration flow. This property controls only the automatic derivation of `traceparent` from the SAP Passport. A `traceparent` header explicitly added in the *Content Modifier* step is not affected by this property and still propagates to the outbound request. See: [Define Content Modifier](../Development/define-content-modifier-8f04a70.md).
 
 
 

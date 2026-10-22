@@ -1,6 +1,6 @@
 <!-- loio309929d9ce6c4e7c9b903ccb6f5b4df9 -->
 
-# **Connecting to SAP S/4HANA Business System for API Discovery**
+# Connecting to SAP S/4HANA Business System for API Discovery
 
 Create a destination in SAP BTP cockpit to enable discovery of APIs from an SAP S/4HANA Cloud system.
 
@@ -24,7 +24,7 @@ Create a destination for the SAP S/4HANA Cloud discoverable system using one of 
     > If destination creation fails, you can create the destination manually.
 
 -   **Creating a Destination Manually**
-    1.  Logon to the SAP BTP Cockpit and navigate to your source subaccount.
+    1.  Log on to SAP BTP Cockpit and navigate to your source subaccount.
     2.  Choose the *Connectivity* \> *Destinations* tab in the left-hand pane.
     3.  Choose *Create* and in the *Create New Destination* popup, select *From Scratch* to create a new destination manually.
     4.  In *Destination Details* section, fill in all the required details:

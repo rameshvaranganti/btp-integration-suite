@@ -21,12 +21,19 @@ Dialog users who access the platform are authenticated against an identity provi
 
 ## User Management and Authorizations
 
-Access to dedicated functions of the platform is controlled and protected by authorization checks. A number of authorization groups are available to manage the authorizations of dialog users. An authorization group is based on a persona and defines a set of dedicated permissions relating to the tasks that come into play during the lifecycle of an integration project.
+Access to dedicated functions of the platform is controlled and protected by authorization checks. Permissions are managed through personas — each representing a typical role in an integration project lifecycle and defining a set of tasks the user is authorized to perform.
+
+There are two ways to assign permissions to users:
+
+-   **Predefined personas** — Each persona is delivered as a ready-to-use role collection \(Cloud Foundry\) or authorization group \(Neo\) covering all the permissions needed for that profile. This is the simpler option and a recommended starting point. For more information, see [Personas](personas-4b4ba1c.md).
+
+-   **Individual roles** — For more fine-grained control, you can define your own role collections \(Cloud Foundry\) or authorization groups \(Neo\) by selecting individual roles or role templates that correspond to specific tasks. This approach requires more configuration but lets you tailor permissions precisely to your needs. For more information, see [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md).
+
 
 > ### Note:  
 > Example:
 > 
-> If the logged-in user has to perform tasks such as designing and deploying integration flows, the user must be assigned the authorization group `AuthGroup.IntegrationDeveloper`.
+> If the logged-in user has to perform tasks such as designing and deploying integration flows, the user must be assigned the authorization group `AuthGroup.IntegrationDeveloper` \(Neo\) or the role collection `PI_Integration_Developer` \(Cloud Foundry\).
 
 
 

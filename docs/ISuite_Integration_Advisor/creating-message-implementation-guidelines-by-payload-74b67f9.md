@@ -16,7 +16,7 @@ Use payload-based creation to automatically generate a message implementation gu
 
 -   Automatic recommendations are possible for the following files:
     -   **EDI files**: all EDI type systems \(ASC X12, UN/EDIFACT and its subsets, Odette, TRADACOMS, VDA\)
-    -   **XML files**: only SAP IDoc and Custom IDocs
+    -   **XML files**: SAP IDoc and Custom IDocs, and cXML
 
         For other XML-based standards, you can still use the wizard, but it doesn't give recommendations based on the payload.
 
@@ -48,7 +48,7 @@ If there's no match, you choose from the full list of available options.
 
 3.  In the first step of the wizard, browse for or upload a payload file, either an EDI payload or a ZIP file containing EDI payloads, or an XML payload or a ZIP file containing XML payloads. If you select a ZIP file, you can then select the exact file before continuing.
 
-    In the next steps, the wizard then suggests available options for type systems, message types, versions, and envelopes by how closely they match this payload file. For XML payloads, suggestions are only available for SAP IDocs and Custom IDocs.
+    In the next steps, the wizard then suggests available options for type systems, message types, versions, and envelopes by how closely they match this payload file. For XML payloads, suggestions are available for SAP IDocs and Custom IDocs, and cXML payloads.
 
 4.  In the next step, choose a type system from the list of matches and other available options.
 
@@ -104,4 +104,9 @@ If there's no match, you choose from the full list of available options.
 
 11. Choose *Create*.
 
+
+**Related Information**  
+
+
+[Integration Advisor - Simplified MIG Creation based on EDI Payload](https://community.sap.com/t5/integration-blog-posts/integration-advisor-simplified-mig-creation-based-on-edi-payload/ba-p/14486224)
 

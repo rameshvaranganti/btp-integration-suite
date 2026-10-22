@@ -21,7 +21,9 @@ The adapter configuration defines how the API artifact connects to the target OD
 
 
 
-**OData Receiver \(URL-based\)**
+## OData Receiver \(URL-based\)
+
+****
 
 
 <table>
@@ -288,7 +290,9 @@ User-defined
 </tr>
 </table>
 
-**OData Receiver \(Destination-based\)**
+
+
+## OData Receiver \(Destination-based\)
 
 
 <table>
@@ -439,25 +443,7 @@ Specifies the authentication method used to connect to the target OData service.
 </td>
 <td valign="top">
 
-You can select one of the following authentication methods:
-
--   Basic: The tenant authenticates itself against the receiver using user credentials \(user name and password\).
-
--   None: When not to use any authentication can include, but not limited to, the following cases:
-
-    -   If the target system that you want to communicate doesn't require any authentication.
-
-    -   If you want to set an authorization header via a Content Modifier step before the adapter.
-
-    -   If you want to set an authorization header via a Script step before the adapter.
-
-
--   OAuth2 Client Credentials: Use this grant type to access web resources by authorizing the client application to perform required actions on behalf of a user.
-
--   Client Certificate: The tenant authenticates itself against the receiver using a client certificate.
-
-
-
+Defines how the tenant \(as the OData client\) authenticates itself against the receiver. For the list of supported authentication methods, see the **Supported Authentication Types** table in [Create an API Artifact Using a Destination](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-api-artifact-by-referring-to-destination?version=CLOUD&ai=true).
 
 </td>
 </tr>

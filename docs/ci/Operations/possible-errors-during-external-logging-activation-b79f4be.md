@@ -4,7 +4,7 @@
 
 When activating external logging, different errors can occur.
 
-Find below the different error situations and the error messages senr back by the OData API.
+Find below the different error situations and the error messages sent back by the OData API.
 
 
 <table>

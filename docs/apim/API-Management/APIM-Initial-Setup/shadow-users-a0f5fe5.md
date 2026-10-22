@@ -10,7 +10,7 @@ With new subaccounts created after 24 September 2020, automatic creation of shad
 
 Since automatic shadow user creation is disabled, if you've not explicitly created shadow users for your developers, then they’re unable to log on to the application, and they’re asked to contact the administrator.
 
-You can create the shadow users for your developers in the SAP BTP cockpit, typically when you assign the first role collection to them. For more information on role collection assignment, see [Assigning Role Collections to Users or User Groups](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/31532c77bd61421e9d40d100fd75ef52.html).
+You can create the shadow users for your developers in the , typically when you assign the first role collection to them. For more information on role collection assignment, see [Assigning Role Collections to Users or User Groups](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/31532c77bd61421e9d40d100fd75ef52.html).
 
 For information on creating shadow accounts, see [Add Users to SAP ID Service in the Cloud Foundry Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/760ab77e5afd4c15ae70ec7ff59e02ef.html).
 

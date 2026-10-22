@@ -221,6 +221,8 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
 **Related Information**  
 
 
+ <?sap-ot O2O class="- topic/link " href="05599423e42f4c1c86500edb5cac449c.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/04a94b18dac143c8af64708252f26c04.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
 [Managing Security Material](managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 
 [Deploying an OAuth2 Client Authorization Code with Generic Provider](deploying-an-oauth2-client-authorization-code-with-generic-provider-72c8fa7.md "Create an OAuth2 Client Authorization Code with the Generic Provider.")

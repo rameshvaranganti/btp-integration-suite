@@ -18,7 +18,7 @@ Procedure to register as an application developer on Developer Hub to view the p
     > ### Note:  
     > If the *AuthGroup.API.ApplicationDeveloper* role collection is already assigned to you by the SAP BTP admin or via the IDP role collection mapping, you will get automatically registered as an application developer in Developer Hub when you log on for the first time.
     > 
-    > If you don't have the *AuthGroup.API.ApplicationDeveloper* role collection assigned to you in SAP BTP cockpit, complete the self-registration process to access all the funtionalities and features of Developer Hub.
+    > If you don't have the *AuthGroup.API.ApplicationDeveloper* role collection assigned to you in the SAP BTP cockpit, complete the self-registration process to access all the functionalities and features of Developer Hub.
     > 
     > Please note that the *AuthGroup.API.ApplicationDeveloper* role collection that has been assigned to you will only take effect if you login to Developer Hub. Only relevant for New Design of Developer Hub.
 

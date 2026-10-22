@@ -18,7 +18,7 @@ To create a destination, perform the steps below:
 
 ## Procedure
 
-1.  In your web browser, log on to SAP BTP Cockpit and navigate to your source subaccount.
+1.  In your web browser, log on to SAP BTP cockpit and navigate to your source subaccount.
 
 2.  From the left navigation pane, choose *Connectivity* \> *Destinations*.
 

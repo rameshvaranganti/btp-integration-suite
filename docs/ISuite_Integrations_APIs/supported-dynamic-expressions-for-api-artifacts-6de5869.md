@@ -42,7 +42,7 @@ Body Expression
 </td>
 <td valign="top">
 
-`${body}` and `${in.body}` are allowed expressions.
+`${body}` is the allowed expressions.
 
 > ### Note:  
 > Some integration steps, such as the Router step, explicitly disallow the use of `${body}`.
@@ -55,9 +55,7 @@ Body Expression
 </td>
 <td valign="top">
 
-`${body}`
-
-`${in.body}`
+`${body}` 
 
 </td>
 <td valign="top">
@@ -93,7 +91,7 @@ Header Expressions
     -   startsWith
     -   endsWith
     -   equalsIgnoreCase
-    -   length\(\)
+    -   length
 
 
 For a detailed list of supported functions, refer to [Supported Functions](supported-dynamic-expressions-for-api-artifacts-6de5869.md#loio6de5869b77b0468db601494e75862e04__section_x2k_5r4_bjc) section below.
@@ -161,7 +159,7 @@ Property Expressions
     -   startsWith
     -   endsWith
     -   equalsIgnoreCase
-    -   length\(\)
+    -   length
 
 
 For a detailed list of supported functions, refer to [Supported Functions](supported-dynamic-expressions-for-api-artifacts-6de5869.md#loio6de5869b77b0468db601494e75862e04__section_x2k_5r4_bjc) section below.
@@ -314,6 +312,59 @@ ${date:now:SSSS}
 ${date:now+abc:yyyy}
 ${date:now+:yyyy}
 ${date:now+1x:yyyy}
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Context Expressions
+
+</td>
+<td valign="top">
+
+Support for $\{context.authn.getClientID\(\)\}
+
+-   context: The root object used to access runtime information available during API execution, including policy-specific data and, in the future, custom variables.
+-   authn: Represents the authentication policy namespace of the request. It provides access to details populated by supported authentication mechanisms.
+-   getClientID\(\): A function that retrieves the client ID from the incoming request token when the authentication policy was executed.
+-   This can be optionally suffixed with one or more of the following functions:
+    -   toUpperCase
+    -   toLowerCase
+    -   trim
+    -   substring
+    -   replace
+    -   contains
+    -   startsWith
+    -   endsWith
+    -   equalsIgnoreCase
+    -   length
+
+
+For a detailed list of supported functions, refer to [Supported Functions](supported-dynamic-expressions-for-api-artifacts-6de5869.md#loio6de5869b77b0468db601494e75862e04__section_x2k_5r4_bjc) section below.
+
+</td>
+<td valign="top">
+
+```
+${context.authn.getClientID()}
+${context.authn.getClientID().toLowerCase()}
+${context.authn.getClientID().substring(1,2)}
+```
+
+
+
+</td>
+<td valign="top">
+
+```
+${context.authn.getClientId()}
+${context.getClientID()}
+${context.authn.toUpperCase()}
+
 ```
 
 
@@ -493,7 +544,7 @@ equalsIgnoreCase
 <tr>
 <td valign="top">
 
-length\(\)
+length
 
 </td>
 <td valign="top">
@@ -856,7 +907,18 @@ Supported Camel expressions include:
 
     -   No nested expressions are allowed.
 
-    -   No function call is allowed on the header key.
+    -   List of supported functions includes:
+
+        -   toUpperCase
+        -   toLowerCase
+        -   trim
+        -   substring
+        -   replace
+        -   contains
+        -   startsWith
+        -   endsWith
+        -   equalsIgnoreCase
+        -   length
 
 
 2.  Support for `${context.authn.getClientID()}`
@@ -866,6 +928,46 @@ Supported Camel expressions include:
     -   **authn:** Represents the authentication context of the request. It provides access to details populated by supported authentication mechanisms.
 
     -   getClientID\(\): A function that retrieves the client ID from the incoming request token when the authentication policy was executed.
+
+    -   This can be optionally suffixed with one or more of the following functions:
+
+        -   toUpperCase
+        -   toLowerCase
+        -   trim
+        -   substring
+        -   replace
+        -   contains
+        -   startsWith
+        -   endsWith
+        -   equalsIgnoreCase
+        -   length
+
+
+3.  Context variable expressions are supported across various integration steps and policies in API artifacts.
+
+    The expression must follow the format `${context.variables.custom.getVar("<var_name>")}`, where `<var_name>`is the name of the context variable to retrieve.
+
+    -   `context`is the root object used to access runtime information available during API execution, including policy-specific data and context variables.
+
+    -   `variables`is the namespace that provides access to context variables.
+
+    -   `custom`specifies the namespace for custom context variables.
+
+    -   `getVar("<var_name>")`retrieves the value of a custom context variable by its name. It is the only supported function for accessing custom context variables.
+
+    -   The expression can optionally be followed by one or more of the following functions:
+
+    -   This can be optionally suffixed with one or more of the following functions:
+        -   toUpperCase
+        -   toLowerCase
+        -   trim
+        -   substring
+        -   replace
+        -   contains
+        -   startsWith
+        -   endsWith
+        -   equalsIgnoreCase
+        -   length
 
 
 
@@ -882,101 +984,45 @@ Supported Camel expressions include:
 
 -   `${header.abc}`
 
+-   `${header.abc.toUpperCase()}`
+
+-   `${header.abc.toUpperCase().substring(1,2)}`
+
 -   `${header.user_key}`
-
 -   `${context.authn.getClientID()}`
+-   `${context.authn.getClientID().toLowerCase()}`
+-   `${context.authn.getClientID().substring(1,2)}`
 
+-   $\{header.abc\}
+-   $\{header.user\_key\}
+-   $\{context.authn.getClientID\(\)\}
 
 
 
 </td>
 <td valign="top">
-
--   `${header.abc.toUpperCase()}`
 
 -   `${property.abc}`
 
 -   `${date:now}`
 
--   `${request.header.abc} (deprecated)`
-
 -   `'abc' (simple string usage is now deprecated)`
 
 -   `${context.authentication-policy.getClientID()}`
 
+-   `${context.authn.getClientId()}`
+
+-   `${context.getClientID()}`
+
+-   `${context.authn.toUpperCase()}`
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Authentication
-
-</td>
-<td valign="top">
-
-ClientID key
-
-</td>
-<td valign="top">
-
-Supported Camel expressions include:
-
--   `${authn.oidc.jwt.<key>}`
-
--   `${authn.oidc.userinfo.<key>}`
-
-
-You can use any of the above expressions. The key can contain only alphanumeric characters, hyphens, or underscores. The key cannot be any other expression.
-
-</td>
-<td valign="top">
-
--   `${authn.oidc.jwt.clientid}`
-
--   `${authn.oidc.userinfo.client_id}`
-
-
-
-
-</td>
-<td valign="top">
-
--   `${header.abc}`
-
--   `${ authn.oidc.jwt.${header.abc} }`
-
--   `${authn.${header.oidc}.jwt.clientid}`
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Authentication
-
-</td>
-<td valign="top">
-
-UserInfo Key
-
-</td>
-<td valign="top">
-
-Same as ClientID Key
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
+-   $\{header.abc.toUpperCase\(\)\}
+-   $\{property.abc\}
+-   $\{date:now\}
+-   $\{request.header.abc\} \(deprecated\)
+-   'abc' \(simple string usage is now deprecated\)
+-   $\{context.authentication-policy.getClientID\(\)\}
 
 
 

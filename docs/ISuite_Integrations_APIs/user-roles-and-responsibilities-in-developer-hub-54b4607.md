@@ -9,7 +9,7 @@ Access to different features on Developer Hub depends on the service plan you've
 
 
 > ### Note:  
-> When assigning these role collections from the SAP BTP Cockpit, you can choose the Identity Provider \(IdP\). However, when role collections are assigned from Developer Hub, they are automatically added across all available IdPs associated with the user.
+> When assigning these role collections from the SAP BTP cockpit , you can choose the Identity Provider \(IdP\). However, when role collections are assigned from Developer Hub, they are automatically added across all available IdPs associated with the user.
 
 -   Key Actions for **Admins** in Developer Hub
 

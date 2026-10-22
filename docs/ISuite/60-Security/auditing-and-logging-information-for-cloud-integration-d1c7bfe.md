@@ -307,7 +307,7 @@ Update integration flow configuration
 </td>
 <td valign="top">
 
-[Configure Externalized Parameters of an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/462a4782db7b485b94ffce5b6fe22c31.html "") :arrow_upper_right: 
+[Configure Externalized Parameters of an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/462a4782db7b485b94ffce5b6fe22c31.html "Cloud Integration supports runtime-aware configuration, enabling you to configure integration flows across one or more runtime profiles in a centralized way.") :arrow_upper_right: 
 
 </td>
 </tr>

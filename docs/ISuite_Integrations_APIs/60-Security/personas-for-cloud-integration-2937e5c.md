@@ -4,7 +4,7 @@
 
 When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.
 
-Personas cover the different tasks associated with an integration project. To assign roles that are application-based, see [Configuring User Access to SAP Integration Suite](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/2c6214a3228e4b4cba207f49fda92ed4.html "Assign the required roles and role collections to users for accessing the individual capabilities.") :arrow_upper_right:.
+Personas are predefined sets of permissions that cover the different tasks associated with an integration project. To assign roles that are application-based, see [Configuring User Access to SAP Integration Suite](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/2c6214a3228e4b4cba207f49fda92ed4.html "Assign the required roles and role collections to users for accessing the individual capabilities.") :arrow_upper_right:. For more fine-grained control over user permissions, see [Tasks and Permissions](tasks-and-permissions-for-cloud-integration-556d557.md).
 
 **Personas**
 

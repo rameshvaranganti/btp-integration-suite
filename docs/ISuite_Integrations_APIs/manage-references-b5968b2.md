@@ -347,7 +347,7 @@ But you can't add multiple archive `(*.zip)` files or an archive file along with
 
     -   *Script 1.x*
 
-    -   *Script 2.x*: Groovy script 2.x is a future ready script which uses advanced groovy features and utilizes Groovy runtime 4.0.29. For more information about upgrading scripts from 1.x to 2.x see [Upgrading Script](upgrading-script-917e014.md)
+    -   *Script 2.x*: Groovy script 2.x is a future ready script which uses advanced groovy features and utilizes Groovy runtime 4.0.29. For more information about upgrading scripts from 1.x to 2.x see [Upgrading Scripts](upgrading-scripts-917e014.md)
 
         > ### Caution:  
         > -   Ensure that you are upgrading correct versions to avoid any runtime failures.

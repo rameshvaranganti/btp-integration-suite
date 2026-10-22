@@ -65,7 +65,7 @@ This topic explains how to enable API access for Developer Hub.
 
 Create a service instance using *devportal-apiaccess* plan.
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://account.hana.ondemand.com/cockpit](https://account.hana.ondemand.com/cockpit).
+1.  In your web browser, open the - [https://account.hana.ondemand.com/cockpit](https://account.hana.ondemand.com/cockpit).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Choose **API Management, Developer Hub**, *Instances* \> *New Instance*.
 4.  In the *Create Instance* dialog that opens, choose *devportal-apiaccess*.

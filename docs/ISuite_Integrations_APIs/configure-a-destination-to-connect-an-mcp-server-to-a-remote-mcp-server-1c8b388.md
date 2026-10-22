@@ -136,11 +136,22 @@ This destination holds the connection details and credentials required to authen
 
     Select one of the supported authentication mechanisms:
 
-    -   NoAuthentication
-    -   BasicAuthentication
+    -   ClientCertificateAuthentication
+
     -   OAuth2ClientCredentials
+
+    -   NoAuthentication
+
+    -   BasicAuthentication
+
     -   OAuth2Password
-    -   ClientCertificate
+
+    -   OAuth2JWTBearer
+
+    -   SAMLAssertion
+
+    -   OAuth2SAMLBearerAssertion
+
 
 
     

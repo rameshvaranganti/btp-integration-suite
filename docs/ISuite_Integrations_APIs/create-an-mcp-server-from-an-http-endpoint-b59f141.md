@@ -18,7 +18,7 @@ Create an MCP Server from any HTTP endpoint by providing its OpenAPI specificati
 
 -   Create a content package. See, [Creating an Integration Package](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-integration-package?version=CLOUD).
 
--   Set up a destination in SAP BTP Cockpit. To set up a HTTP destination from scratch, navigate to *Connectivity* \> *Destinations* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud). Also, ensure that you scroll to the *Labels* section \(below Additional Properties\) and add the label*IntegrationCell.Include* and set its value to *true*.
+-   Set up a destination in SAP BTP cockpit. To set up a HTTP destination from scratch, navigate to *Connectivity* \> *Destinations* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud). Also, ensure that you scroll to the *Labels* section \(below Additional Properties\) and add the label*IntegrationCell.Include* and set its value to *true*.
 
     > ### Note:  
     > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
@@ -59,7 +59,7 @@ This topic explains how to create an MCP server by connecting to an external HTT
         > After you provide the MCP details, the subsequent steps depend on whether the *OpenAPI Specification Generator* is enabled in *Settings* \> *Artificial Intelligence*.
         > 
         > > ### Note:  
-        > > AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through September 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
+        > > AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion until the January 2027 software release. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620) Information published on SAP site.
         > 
         > > ### Note:  
         > > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
@@ -81,7 +81,7 @@ This topic explains how to create an MCP server by connecting to an external HTT
         > -   Select the API resources that you want to expose as MCP tools.
         > 
         >     > ### Note:  
-        >     > Each MCP server supports up to 30 tools.
+        >     > Each MCP server supports up to 50 tools.
         > 
         > -   Choose *Create* to finalize the MCP server. If resources are not available, then you can skip this step and choose *Create*.
 
@@ -252,6 +252,8 @@ This topic explains how to create an MCP server by connecting to an external HTT
     > </td>
     > </tr>
     > </table>
+    > 
+    > To set up a HTTP destination from scratch, navigate to SAP BTP cockpit, select *Destination* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud).
 
 7.  After selecting the required API resources and choosing *Create*, the MCP server is created and opens in the editor view.
 

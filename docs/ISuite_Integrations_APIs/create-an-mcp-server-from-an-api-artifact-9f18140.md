@@ -103,6 +103,8 @@ Create an MCP Server from an existing API artifact deployed on Integration Cell 
 
     > ### Note:  
     > The base path shouldn't be left empty or set to only "/".
+    > 
+    > When creating an API artifact on Integration Cell, the base paths `/graph` and `/graph/*` are reserved and cannot be used.
 
 
     
@@ -162,7 +164,7 @@ Create an MCP Server from an existing API artifact deployed on Integration Cell 
     Check the checkbox next to each API resource you want to include.
 
     > ### Note:  
-    > Each MCP server supports up to 30 tools.
+    > Each MCP server supports up to 50 tools.
 
 8.  Choose *Add* to finalize and create the MCP server.
 

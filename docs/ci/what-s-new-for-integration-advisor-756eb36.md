@@ -95,12 +95,16 @@ Integration Advisor
 </td>
 <td valign="top">
 
- 
+Create MIGs by Payload Supports cXML
 
 </td>
 <td valign="top">
 
- 
+The recently introduced wizard that uses payloads to create message implementation guidelines now also supports cXML files.
+
+See [Creating Message Implementation Guidelines by Payload](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/creating-message-implementation-guidelines-by-payload).
+
+As Cloud Integration \(standalone\) customer, see [Creating Message Implementation Guidelines by Payload](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/creating-message-implementation-guidelines-by-payload).
 
 </td>
 <td valign="top">
@@ -135,17 +139,17 @@ SAP Business Technology Platform
 </td>
 <td valign="top">
 
-
-
-</td>
-<td valign="top">
-
-
+2026-10-18
 
 </td>
 <td valign="top">
 
+2026-10-18
 
+</td>
+<td valign="top">
+
+2609
 
 </td>
 </tr>
@@ -165,7 +169,231 @@ Integration Advisor
 </td>
 <td valign="top">
 
-Create MIGS by Payload Supports IDocs and Custom IDocs
+Set Exchange Header and Properties in Mapping Guidelines
+
+</td>
+<td valign="top">
+
+Mapping guidelines now include the `cpi` namespace, which provides the `setHeader` and `setProperty` extension functions. The Camel **exchange** is also available as a parameter in the XSLT, allowing these extension functions to be called directly from within the XSLT code to set Camel headers and properties on the exchange.
+
+Note that during a simulation, the newly created headers and properties are currently not displayed in the UI. However, they are set on the exchange and available to subsequent processing steps.
+
+See [Functions](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/functions).
+
+As Cloud Integration \(standalone\) customer, see [Functions](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/functions).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+RosettaNet Type System Available
+
+</td>
+<td valign="top">
+
+Integration Advisor now includes the RosettaNet message standard. The type system content is available a few days after the upgrade to the new software version.
+
+See [Overview of B2B Standards](https://help.sap.com/docs/integration-suite/sap-integration-suite/overview-of-b2b-standards).
+
+As Cloud Integration \(standalone\) customer, see [Overview of B2B Standards](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/overview-of-b2b-standards).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Integration Advisor: 2.18.\*
+-   Increment: 2609
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Create MIGs by Payload Supports IDocs and Custom IDocs
 
 </td>
 <td valign="top">

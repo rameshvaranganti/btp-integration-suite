@@ -39,7 +39,7 @@ To enable API access for API Management, API portal execute the steps in the sec
 
 Create a service instance using API Access plan to generate a service key.
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
+1.  In your web browser, open - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 3.  Select the *API Management, API portal* tile, and in the details section, choose *Create*.
 

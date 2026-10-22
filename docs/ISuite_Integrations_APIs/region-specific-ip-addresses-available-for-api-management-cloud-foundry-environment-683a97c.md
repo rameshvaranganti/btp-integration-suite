@@ -105,6 +105,43 @@ Microsoft Azure
 </td>
 <td valign="top">
 
+eu22
+
+</td>
+<td valign="top">
+
+Europe \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+cf-eu22
+
+</td>
+<td valign="top">
+
+germanywestcentral
+
+</td>
+<td valign="top">
+
+20.52.148.178, 4.184.210.52
+
+</td>
+<td valign="top">
+
+4.184.96.186, 4.184.118.100
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
 ap20
 
 </td>
@@ -803,6 +840,43 @@ us-west-2
 <tr>
 <td valign="top">
 
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+eu13
+
+</td>
+<td valign="top">
+
+Europe \(Milan\)
+
+</td>
+<td valign="top">
+
+cf-eu13
+
+</td>
+<td valign="top">
+
+eu-south-1
+
+</td>
+<td valign="top">
+
+35.152.171.50, 35.152.228.149, 18.102.219.146, 18.102.176.162, 35.152.118.121, 35.152.162.52
+
+</td>
+<td valign="top">
+
+35.152.236.100, 35.152.240.163, 15.160.64.177, 18.102.194.105, 35.152.149.89, 18.102.115.231
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Google Cloud
 
 </td>
@@ -1136,6 +1210,43 @@ australia-southeast1
 <tr>
 <td valign="top">
 
+Google Cloud
+
+</td>
+<td valign="top">
+
+jp31
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\)
+
+</td>
+<td valign="top">
+
+cf-jp31
+
+</td>
+<td valign="top">
+
+asia-northeast1
+
+</td>
+<td valign="top">
+
+34.84.172.69, 34.146.11.74
+
+</td>
+<td valign="top">
+
+34.146.72.3, 34.85.117.139
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP Cloud Infrastructure
 
 </td>
@@ -1235,12 +1346,12 @@ eu-de-1
 </td>
 <td valign="top">
 
-130.214.90.213, 130.214.91.148
+130.214.90.213, 130.214.91.148, 130.214.91.23, 130.214.91.177
 
 </td>
 <td valign="top">
 
-130.214.90.209, 130.214.91.168
+130.214.90.209, 130.214.91.168, 130.214.90.59, 130.214.90.57
 
 </td>
 </tr>

@@ -7,6 +7,9 @@ An MCP Server is an artifact you create in SAP Integration Suite to expose your 
 > ### Note:  
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
+> ### Note:  
+> SAP Integration Suite supports both MCP specification version 2025-11-25 and version 2026-07-28. Version 2025-11-25 uses a stateful, session-based interaction model with an initialize handshake and `Mcp-Session-Id`. Version 2026-07-28 uses a stateless, per-request model. Connect your MCP client using the specification version it is built on.
+
 In SAP Integration Suite, the MCP Server capability is realized through the MCP gateway. The MCP gateway acts as the runtime layer that exposes enterprise APIs, tools, and backend services as MCP-compatible endpoints for AI agents. It provides capabilities such as security, traffic management, routing, and multi-protocol connectivity while enabling governed access to enterprise systems
 
 

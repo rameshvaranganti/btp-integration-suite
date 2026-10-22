@@ -10,7 +10,9 @@ Restrict write access to some artifacts in Integration Advisor by protecting the
 
 ## Prerequisites
 
-Your user in SAP BTP cockpit must have the role `ExtendedContentDeveloper` assigned.
+Your user in SAP BTP cockpit must have the following role assigned:
+
+-   `ExtendedContentDeveloper`
 
 
 

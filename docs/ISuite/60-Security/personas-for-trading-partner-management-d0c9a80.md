@@ -2,7 +2,9 @@
 
 # Personas for Trading Partner Management
 
-When you perform user management tasks using SAP BTP Cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with B2B scenarios, these roles are associated to certain persona relevant for an B2B scenario.
+Predefined personas and their associated role collections for B2B scenarios define the access and tasks available to business experts and integration developers when managing trading partner configurations and monitoring integration flows.
+
+When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with B2B scenarios, these roles are associated to certain persona relevant for an B2B scenario.
 
 Personas cover the different tasks associated with an integration project. To assign roles that are application-based, see [Configuring User Access](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?version=CLOUD).
 

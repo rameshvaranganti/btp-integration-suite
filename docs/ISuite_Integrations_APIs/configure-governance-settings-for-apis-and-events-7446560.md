@@ -40,7 +40,7 @@ Configure and manage governance levels in Developer Hub to control developer acc
     > 
     > In this setup, the customer subaccount administrator must implement the Service Provider Interface \(SPI\). See step 2 *Complete the Prerequisites* in [Setting Up External Governance](setting-up-external-governance-8b4f848.md).
     > 
-    > Once the SPI implementation is completed, the subaccount administrator must configure a destination in the SAP BTP Cockpit with the SPI details. This destination enables Developer Hub to route subscription requests to the external service for approval. See, [Create a Destination for Approving and Rejecting Subscriptions](create-a-destination-for-approving-and-rejecting-subscriptions-71230dc.md).
+    > Once the SPI implementation is completed, the subaccount administrator must configure a destination in the SAP BTP cockpit with the SPI details. This destination enables Developer Hub to route subscription requests to the external service for approval. See, [Create a Destination for Approving and Rejecting Subscriptions](create-a-destination-for-approving-and-rejecting-subscriptions-71230dc.md).
     > 
     > Now, when a developer requests a subscription, Developer Hub triggers this interface to seek approval. The service can then approve or reject the request via an API.
 

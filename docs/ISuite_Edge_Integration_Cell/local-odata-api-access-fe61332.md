@@ -79,11 +79,11 @@ The following authentication methods are supported:
 -   **Basic authentication with clientId / clientsecret**. Authenticate users based on the user credentials \(clientid and clientsecret\) that are generated together with a service key. See [Basic Authentication with clientId and clientsecret for API Clients](https://help.sap.com/docs/integration-suite/dev-integrations-and-apis/basic-authentication-with-clientid-and-clientsecret-for-api-clients?version=CLOUD) for more details.
 
 > ### Remember:  
-> To authenticate, you need to create a service key in the BTP cockpit. For more information, see [Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/creating-service-instance-and-service-key-for-inbound-authentication?ai=true&version=CLOUD).
+> To authenticate, you need to create a service key in the SAP BTP. For more information, see [Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/creating-service-instance-and-service-key-for-inbound-authentication?ai=true&version=CLOUD).
 
 
 
-## Making Local API Calls
+## Make Local API Calls
 
 To distinguish the local API calls from the calls via cloud, you need to add the <code><b>/local</b></code> prefix to your defined Virtual Host followed by `/ap1/v1/<Desired Endpoint>`: **`https://<YOUR_DEFINED_VIRTUAL_HOST>/local/api/v1/<DESIRED_ENDPOINT_TO_BE_CALLED>`**
 
@@ -99,7 +99,7 @@ To distinguish the local API calls from the calls via cloud, you need to add the
 > 
 > -   `https://edge-runtime.acme.com/local/api/v1/MessageProcessingLogs`
 > -   `https://edge-runtime.acme.com/local/api/v1/MessageStoreEntries`
-> -   `https://edge-runtime.acme.com/local/api//eic/v1/Components`
+> -   `https://edge-runtime.acme.com/local/api/eic/v1/Components`
 
 > ### Note:  
 > If you do not use the `/local` prefix then a 401 Unauthorized error will occur, even if you use a valid credential.
@@ -114,7 +114,7 @@ To trigger modifying actions \(POST, PUT, PATCH, and DELETE\), you need to fetch
 2.  The response includes the token value in the `X-CSRF-Token` header.
 3.  When you send the modifying request, add the `X-CSRF-Token` header with the token retrieved from the first call.
 
-The API package is organized on SAP Business Accelerator Hub based on the sections shown in the following table:
+The API package is organized on SAP Business Accelerator Hub into the following sections:
 
 
 <table>
@@ -127,6 +127,11 @@ Section
 <th valign="top">
 
 Supported API Endpoints
+
+</th>
+<th valign="top">
+
+Access Type
 
 </th>
 <th valign="top">
@@ -159,6 +164,11 @@ Description
 
 
 
+
+</td>
+<td valign="top">
+
+Local
 
 </td>
 <td valign="top">
@@ -198,6 +208,11 @@ You can find the Message Processing Logs API on SAP Business Accelerator Hub at:
 </td>
 <td valign="top">
 
+Local
+
+</td>
+<td valign="top">
+
 Access message store entries, JMS resources, and data store entries.
 
 > ### Note:  
@@ -206,6 +221,46 @@ Access message store entries, JMS resources, and data store entries.
 You can find the Message Stores API on SAP Business Accelerator Hub at: [Overview | Message Stores | SAP Business Accelerator Hub](https://api.sap.com/api/sap-int-eic-message-store-v1/overview)
 
 You can find the JMS APIs on SAP Business Accelerator Hub at: [JMS Resources | Message Stores | SAP Business Accelerator Hub](https://api.sap.com/api/MessageStore/resource/JMS_Resources)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Partner Directory](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/partner-directory?ai=true&version=CLOUD)
+
+> ### Note:  
+> Read-only access.
+
+
+
+</td>
+<td valign="top">
+
+-   `/PartnerDirectory`
+    -   `/StringParameters`
+    -   `/Partners`
+    -   `/BinaryParameters`
+    -   `/AlternativePartners`
+    -   `/AuthorizedUsers`
+
+
+
+
+</td>
+<td valign="top">
+
+Local and Cloud
+
+</td>
+<td valign="top">
+
+Read data about partners that are connected to an Edge Integration Cell.
+
+> ### Note:  
+> This API is implemented based on OData version 2 specification.
+
+You can find the Partner Directory API on SAP Business Accelerator Hub at: [Overview | Partner Directory | SAP Business Accelerator Hub](https://api.sap.com/api/sap-int-eic-partner-directory-v1/overview)
 
 </td>
 </tr>
@@ -232,6 +287,11 @@ You can find the JMS APIs on SAP Business Accelerator Hub at: [JMS Resources | M
 
 
 
+
+</td>
+<td valign="top">
+
+Local
 
 </td>
 <td valign="top">

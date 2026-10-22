@@ -143,7 +143,7 @@ If you want to configure the API Management solution to access data from a serve
         Select the checkbox to secure the connection using SSL \(HTTPS protocol\).
 
         > ### Note:  
-        > Setting this option is sufficient to set up the SSL connection. If you want to use SSL to secure connections to the configured destination, then upload the server certificate in the SAP BTP cockpit.
+        > Setting this option is sufficient to set up the SSL connection. If you want to use SSL to secure connections to the configured destination, then upload the server certificate in the .
 
 
         
@@ -223,7 +223,7 @@ If you want to configure the API Management solution to access data from a serve
         </td>
         <td valign="top">
         
-        If you have configured multiple cloud connectors to your SAP BTP account, then provide the location ID of the cloud connector that you want to add.
+        If you have configured multiple cloud connectors to your account, then provide the location ID of the cloud connector that you want to add.
 
         > ### Note:  
         > The *Location ID* value for a cloud connector is set while configuring the cloud connector.

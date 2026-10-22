@@ -11,7 +11,7 @@ You perform this task to assign XSLT mapping that is available in your local wor
 You perform this task to assign XSLT mapping that is available in your local workspace.
 
 > ### Note:  
-> You can now leverage the XSLT 3.0 capabilities through XSLT mapping version 1.2. Some of the capablities are:
+> You can now leverage the XSLT 3.0 capabilities through XSLT mapping version 1.2. Some of the capabilities are:
 > 
 > -   Converting JSON to XML
 > 

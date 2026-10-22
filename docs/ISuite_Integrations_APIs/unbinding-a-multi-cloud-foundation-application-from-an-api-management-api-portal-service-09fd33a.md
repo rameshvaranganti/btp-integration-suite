@@ -30,5 +30,5 @@ cf unbind-route-service cfapps.sap.hana.ondemand.com apim-prod-instance --hostna
 ```
 
 > ### Note:  
-> You can unbind an application from a service only from the command-line interface and not from SAP BTP Cockpit.
+> You can unbind an application from a service only from the command-line interface and not from SAP BTP cockpit.
 

@@ -23,7 +23,7 @@ Before deleting an API Management or API Portal instance, it is important to car
 
 ## Procedure
 
-1.  In your Web browser, open the*SAP BTP Cockpit*.
+1.  In your Web browser, open the SAP BTP cockpit.
 
 2.  In the provider account, choose *Services* \> *Service Marketplace* \> *Instances*.
 

@@ -16,12 +16,14 @@ You can create an API artifact by selecting the destination of your choice from 
 
 -   The *PI\_Integration\_Developer* role collection must be assigned to you.
 
--   Set up a destination in SAP BTP Cockpit. To set up a HTTP destination from scratch, navigate to *Connectivity* \> *Destinations* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud). Also, ensure that you scroll to the *Labels* section \(below Additional Properties\) and add the label*IntegrationCell.Include* and set its value to *true*.
+-   Set up a destination in SAP BTP cockpit. To set up a HTTP destination from scratch, navigate to *Connectivity* \> *Destinations* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud). Also, ensure that you scroll to the *Labels* section \(below Additional Properties\) and add the label*IntegrationCell.Include* and set its value to *true*.
 
     > ### Note:  
-    > Only destinations with the *Proxy Type* set to `Internet` or `OnPremise` are currently supported.
+    > Only destinations with the *Proxy Type* set to `Internet` or `OnPremise` are currently supported. To set up a HTTP destination from scratch, navigate to SAP BTP cockpit, select *Destination* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud).
     > 
     > The following authentication mechanisms are supported for Internet and OnPremise destinations:
+    > 
+    > **Supported Authentication Types**
     > 
     > 
     > <table>
@@ -55,6 +57,10 @@ You can create an API artifact by selecting the destination of your choice from 
     > 
     > -   ClientCertificate
     > 
+    > -   OAuth2JWTBearer
+    > 
+    > -   OAuth2SAMLBearerAssertion
+    > 
     > 
     > 
     > 
@@ -76,6 +82,12 @@ You can create an API artifact by selecting the destination of your choice from 
     > 
     > -   OAuth2Password
     > 
+    > -   PrincipalPropagation
+    > 
+    > -   OAuth2SAMLBearerAssertion
+    > 
+    > -   OAuth2JWTBearer
+    > 
     > 
     > 
     > 
@@ -83,7 +95,28 @@ You can create an API artifact by selecting the destination of your choice from 
     > </tr>
     > </table>
 
-    To set up a HTTP destination from scratch, navigate to SAP BTP Cockpit, select *Destination* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud).
+    > ### Note:  
+    > To set up Principal Propagation, complete the following steps in order:
+    > 
+    > 1.  [Configure the Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-cloud-connector?version=Cloud&ai=true).
+    > 2.  [Configuring Principal Propagation](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configuring-principal-propagation?version=Cloud&ai=true)
+    > 
+    >     Ensure that the user for whom you are configuring Principal Propagation exists in the onpremise system.
+    > 
+    > 3.  Create a destination for Principal Propagation. See, [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud). Add the label*IntegrationCell.Include* and set its value to *true*.
+    > 4.  Create the Process Integration Runtime \(PIR\) credentials and configure the grant types "client\_credentials" and "password". For more information, see [Invoke an API Artifact by Obtaining Credentials through Process Integration Runtime](https://help.sap.com/docs/integration-suite/dev-integrations-and-apis/invoke-api-artifact-by-obtaining-api-credentials-through-process-integration-runtime?locale=en-US&state=DRAFT&version=DEV).
+    > 5.  Create and API using this destination, deploy and invoke the API using the following command following command:
+    > 
+    >     ```
+    >     curl '<token url from the Process Integration Runtime (PIR) instance>' \
+    >     --header 'Content-Type: application/x-www-form-urlencoded' \
+    >     --data-urlencode 'client_id=<encoded client ID>' \
+    >     --data-urlencode 'client_secret=<encoded client ID>' \
+    >     --data-urlencode 'grant_type=password' \
+    >     --data-urlencode 'username=<'username>' \
+    >     --data-urlencode 'password=<'password>'
+    >     
+    >     ```
 
 
 

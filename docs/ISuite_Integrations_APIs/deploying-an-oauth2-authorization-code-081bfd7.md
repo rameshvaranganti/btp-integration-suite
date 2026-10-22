@@ -20,6 +20,8 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0 Autho
 **Related Information**  
 
 
+[Where Used](where-used-0559942.md "This feature lets you identify all integration flows that reference a specific security material through externalized parameters.")
+
 [OAuth 2.0 Authorization Code Grant](40-RemoteSystems/oauth-2-0-3823134.md#loio508a70db7eac4addbb6ac69a06d46e79 "")
 
 [OAuth 2.0](40-RemoteSystems/oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b82b9e15d "OAuth 2.0 allows a user to grant a client access to a protected resource (hosted by a resource server). The user typically restricts the access of the client and doesn't allow full access.")

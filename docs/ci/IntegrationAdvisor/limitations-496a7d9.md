@@ -78,25 +78,6 @@ Recursion \(limited support\)
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-Global `xml:lang` attribute must be declared explicitly
-
-</td>
-<td valign="top">
-
-If your message definition includes `xml:lang` attributes, you must explicitly declare the XML namespace.
-
-</td>
-<td valign="top">
-
-Before the upload, add an appropriate `xml.xsd` file to your ZIP file. This `xml.xsd` file should only declare the required global `xml:lang` attribute without using more complex, unsupported XSD features.
-
-This workaround requires intermediate XSD knowledge.
-
-</td>
-</tr>
 </table>
 
 

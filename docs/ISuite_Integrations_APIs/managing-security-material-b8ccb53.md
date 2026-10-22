@@ -61,6 +61,7 @@ Possible values:
     For *User Credentials* artifacts \(a tooltip indicates the kind of the artifact\).
 
 -   *OAuth2 Credentials*
+-   *OAuth2 Password Credentials*
 -   *OAuth2 Authorization Code*
 
 -   *Secure Parameter*
@@ -137,7 +138,7 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 
 
 
-## Actions
+## What this Screen Supports
 
 **Actions**
 
@@ -219,6 +220,8 @@ You can also delete an artifact \(supported for all artifact types except *Keyst
 
 **Related Information**  
 
+
+[Where Used](where-used-0559942.md "This feature lets you identify all integration flows that reference a specific security material through externalized parameters.")
 
 [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifact-6912d63.md "To set up a connection using basic authentication or username token authentication, you have to specify the required attributes (for example, user name and password).")
 

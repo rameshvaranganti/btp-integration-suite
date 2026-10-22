@@ -20,7 +20,7 @@ To add a Destination node in the Cloud Transport Management Applications, execut
 
 ## Procedure
 
-1.  In your web browser, log on to SAP BTP Cockpit and navigate to your Transport subaccount.
+1.  In your web browser, log on to and navigate to your Transport subaccount.
 
 2.  Choose *Instances and Subscriptions* from the left pane.
 

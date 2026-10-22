@@ -62,7 +62,7 @@
     -   [Exporting MIG/MAG](exporting-mig-mag-c8bba26.md)
     -   [Exporting Documentation](exporting-documentation-f7dbd2d.md)
 -   [Runtime Artifacts](runtime-artifacts-d016138.md)
-    -   [Consuming Artifacts in Integration Flows](consuming-artifacts-in-integration-flows-a33a6c6.md)
+    -   [Consuming Integration Advisor Artifacts in Integration Flows](consuming-integration-advisor-artifacts-in-integration-flows-a33a6c6.md)
     -   [Exporting Runtime Artifacts](exporting-runtime-artifacts-5ab4cfe.md)
     -   [Inject Mapping Artifacts to SAP Cloud Integration](inject-mapping-artifacts-to-sap-cloud-integration-47ad97e.md)
         -   [Creating OAuth Client Credentials for Cloud Foundry Environment](creating-oauth-client-credentials-for-cloud-foundry-environment-50b63c6.md)

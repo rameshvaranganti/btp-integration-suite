@@ -18,6 +18,7 @@ The B2B standards are grouped as follows:
 -   XML standards
     -   [cXML](overview-of-b2b-standards-c339707.md#loioc339707982d141efa7c7849d033ca70d__section_srg_dtb_vsb)
     -   [GS1 XML](overview-of-b2b-standards-c339707.md#loioc339707982d141efa7c7849d033ca70d__section_qnl_p2j_2xb)
+    -   [RosettaNet](overview-of-b2b-standards-c339707.md#loioc339707982d141efa7c7849d033ca70d__section_rosettanet)
     -   [xCBL](overview-of-b2b-standards-c339707.md#loioc339707982d141efa7c7849d033ca70d__section_brl_jv4_kdc)
 
 -   Codelist standards
@@ -27184,6 +27185,4622 @@ X
 <td valign="top">
 
  
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loioc339707982d141efa7c7849d033ca70d__section_rosettanet"/>
+
+## RosettaNet
+
+
+
+### Version
+
+The RosettaNet message standard used a different versioning strategy than other standards \(for example, [UN/EDIFACT](overview-of-b2b-standards-c339707.md#loioc339707982d141efa7c7849d033ca70d__section_h1c_cvx_qsb)\), as it didn't publish full release versions. RosettaNet versioned all Partner Interface Processes \(PIPs\) separately.
+
+Due to this versioning strategy and the fact that no updates to the RosettaNet messages are expected, you can find all definitions in a version called *All*.
+
+
+
+### Message Types
+
+Integration Advisor currently offers all RosettaNet PIPs of the series `01`, `02`, and `03` with either the status `V` \(Validated\) or the final status `R` \(Released\).
+
+**Message Types \(269\)**
+
+
+<table>
+<tr>
+<th valign="top">
+
+ID
+
+</th>
+<th valign="top">
+
+Original DTD File Name
+
+</th>
+<th valign="top">
+
+Also Known As
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0A1\_V02\_00\_FailureNotification
+
+</td>
+<td valign="top">
+
+0A1\_MS\_V02\_00\_FailureNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C1\_R01\_01\_AsynchronousTestNotification
+
+</td>
+<td valign="top">
+
+0C1\_MS\_R01\_01\_AsynchronousTestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C1\_R01\_02\_AsynchronousTestNotification
+
+</td>
+<td valign="top">
+
+0C1\_MS\_R01\_02\_AsynchronousTestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C2\_R01\_01\_AsynchronousTestConfirmation
+
+</td>
+<td valign="top">
+
+0C2\_MS\_R01\_01\_AsynchronousTestConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C2\_R01\_01\_AsynchronousTestRequest
+
+</td>
+<td valign="top">
+
+0C2\_MS\_R01\_01\_AsynchronousTestRequestt.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C2\_R01\_02\_AsynchronousTestConfirmation
+
+</td>
+<td valign="top">
+
+0C2\_MS\_R01\_02\_AsynchronousTestConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C2\_R01\_02\_AsynchronousTestRequest
+
+</td>
+<td valign="top">
+
+0C2\_MS\_R01\_02\_AsynchronousTestRequestt.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C2\_R01\_03D\_AsynchronousTestConfirmation
+
+</td>
+<td valign="top">
+
+0C2\_MS\_R01\_03D\_AsynchronousTestConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C2\_R01\_03D\_AsynchronousTestRequest
+
+</td>
+<td valign="top">
+
+0C2\_MS\_R01\_03D\_AsynchronousTestRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C3\_R01\_01\_SynchronousTestNotification
+
+</td>
+<td valign="top">
+
+0C3\_MS\_R01\_01\_SynchronousTestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C3\_R01\_02\_SynchronousTestNotification
+
+</td>
+<td valign="top">
+
+0C3\_MS\_R01\_02\_SynchronousTestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C4\_R01\_01\_SynchronousTestQuery
+
+</td>
+<td valign="top">
+
+0C4\_MS\_R01\_01\_SynchronousTestQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C4\_R01\_01\_SynchronousTestResponse
+
+</td>
+<td valign="top">
+
+0C4\_MS\_R01\_01\_SynchronousTestResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C4\_R01\_02\_SynchronousTestQuery
+
+</td>
+<td valign="top">
+
+0C4\_MS\_R01\_02\_SynchronousTestQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP0C4\_R01\_02\_SynchronousTestResponse
+
+</td>
+<td valign="top">
+
+0C4\_MS\_R01\_02\_SynchronousTestResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A12\_V01\_00\_ProductMasterNotification
+
+</td>
+<td valign="top">
+
+2A12\_MS\_V01\_00\_ProductMasterNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A12\_V01\_01\_ProductMasterNotification
+
+</td>
+<td valign="top">
+
+2A12\_MS\_V01\_01\_ProductMasterNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A12\_V01\_02\_ProductMasterNotification
+
+</td>
+<td valign="top">
+
+2A12\_MS\_V01\_02\_ProductMasterNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A12\_V01\_03\_ProductMasterNotification
+
+</td>
+<td valign="top">
+
+2A12\_MS\_V01\_03\_ProductMasterNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A1\_V02\_00\_ProductCatalogInformationNotification
+
+</td>
+<td valign="top">
+
+2A1\_MS\_V02\_00\_ProductCatalogInformationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A1\_V02\_01\_ProductCatalogInformationNotification
+
+</td>
+<td valign="top">
+
+2A1\_MS\_V02\_01\_ProductCatalogInformationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A1\_V02\_02\_ProductCatalogInformationNotification
+
+</td>
+<td valign="top">
+
+2A1\_MS\_V02\_02\_ProductCatalogInformationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A1\_V02\_03\_ProductCatalogInformationNotification
+
+</td>
+<td valign="top">
+
+2A1\_MS\_V02\_03\_ProductCatalogInformationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2A1\_V02\_04\_ProductCatalogInformationNotification
+
+</td>
+<td valign="top">
+
+2A1\_MS\_V02\_04\_ProductCatalogInformationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C10\_R01\_00\_ApprovedManufacturerListNotification
+
+</td>
+<td valign="top">
+
+2C10\_MS\_R01\_00\_ApprovedManufacturerListNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C11\_R01\_00\_ApprovedManufacturerListRequestNotification
+
+</td>
+<td valign="top">
+
+2C11\_MS\_R01\_00\_ApprovedManufacturerListRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C12\_V01\_00\_ApprovedManufacturerListConfirmationNotification
+
+</td>
+<td valign="top">
+
+2C12\_MS\_V01\_00\_ApprovedManufacturerListConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C1\_R01\_00\_EngineeringChangeStatusNotification
+
+</td>
+<td valign="top">
+
+2C1\_MS\_R01\_00\_EngineeringChangeStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C2\_R01\_00\_EngineeringChangeConfirmation
+
+</td>
+<td valign="top">
+
+2C2\_MS\_R01\_00\_EngineeringChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C2\_R01\_00\_EngineeringChangeRequest
+
+</td>
+<td valign="top">
+
+2C2\_MS\_R01\_00\_EngineeringChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C3\_R01\_00\_EngineeringChangeResponseNotification
+
+</td>
+<td valign="top">
+
+2C3\_MS\_R01\_00\_EngineeringChangeResponseNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C4\_R01\_00\_EngineeringChangeApprovalConfirmation
+
+</td>
+<td valign="top">
+
+2C4\_MS\_R01\_00\_EngineeringChangeApprovalConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C4\_R01\_00\_EngineeringChangeApprovalRequest
+
+</td>
+<td valign="top">
+
+2C4\_MS\_R01\_00\_EngineeringChangeApprovalRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C5\_R01\_00\_EngineeringChangeOrderNotification
+
+</td>
+<td valign="top">
+
+2C5\_MS\_R01\_00\_EngineeringChangeOrderNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C6\_R01\_00\_EngineeringChangeImplementationPlanNotification
+
+</td>
+<td valign="top">
+
+2C6\_MS\_R01\_00\_EngineeringChangeImplementationPlanNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C7\_R01\_00\_BillOfMaterialConfirmation
+
+</td>
+<td valign="top">
+
+2C7\_MS\_R01\_00\_BillOfMaterialConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C7\_R01\_00\_BillOfMaterialRequest
+
+</td>
+<td valign="top">
+
+2C7\_MS\_R01\_00\_BillOfMaterialRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C8\_R01\_00\_BillOfMaterialNotification
+
+</td>
+<td valign="top">
+
+2C8\_MS\_R01\_00\_BillOfMaterialNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C9\_R01\_00\_ApprovedManufacturerListConfirmation
+
+</td>
+<td valign="top">
+
+2C9\_MS\_R01\_00\_ApprovedManufacturerListConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C9\_R01\_00\_ApprovedManufacturerListRequest
+
+</td>
+<td valign="top">
+
+2C9\_MS\_R01\_00\_ApprovedManufacturerListRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C9\_V01\_00\_ApprovedManufacturerListConfirmation
+
+</td>
+<td valign="top">
+
+2C9\_MS\_V01\_00\_ApprovedManufacturerListConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP2C9\_V01\_00\_ApprovedManufacturerListRequest
+
+</td>
+<td valign="top">
+
+2C9\_MS\_V01\_00\_ApprovedManufacturerListRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A10\_R01\_00\_QuoteAcknowledgmentNotification
+
+</td>
+<td valign="top">
+
+3A10\_MS\_R01\_00\_QuoteAcknowledgmentNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A13\_V01\_00\_PurchaseOrderInformationNotification
+
+</td>
+<td valign="top">
+
+3A13\_MS\_V01\_00\_PurchaseOrderInformationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A14\_R01\_00A\_PlannedOrderNotification
+
+</td>
+<td valign="top">
+
+3A14\_MS\_R01\_00A\_PlannedOrderNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A15\_V01\_00\_QuoteRequestNotification
+
+</td>
+<td valign="top">
+
+3A15\_MS\_V01\_00\_QuoteRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A16\_V01\_00\_QuoteConfirmationNotification
+
+</td>
+<td valign="top">
+
+3A16\_MS\_V01\_00\_QuoteConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A17\_V01\_00\_PriceAndAvailabilityRequestNotification
+
+</td>
+<td valign="top">
+
+3A17\_MS\_V01\_00\_PriceAndAvailabilityRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A18\_V01\_00\_PriceAndAvailabilityResponseNotification
+
+</td>
+<td valign="top">
+
+3A18\_MS\_V01\_00\_PriceAndAvailabilityResponseNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A19\_V01\_00\_PurchaseOrderRequestNotification
+
+</td>
+<td valign="top">
+
+3A19\_MS\_V01\_00\_PurchaseOrderRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_00\_QuoteConfirmation
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_00\_QuoteConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_00\_QuoteRequest
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_00\_QuoteRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_01\_QuoteConfirmation
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_01\_QuoteConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_01\_QuoteRequest
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_01\_QuoteRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_02\_QuoteConfirmation
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_02\_QuoteConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_02\_QuoteRequest
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_02\_QuoteRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_03\_QuoteConfirmation
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_03\_QuoteConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A1\_V02\_03\_QuoteRequest
+
+</td>
+<td valign="top">
+
+3A1\_MS\_V02\_03\_QuoteRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A20\_V01\_00\_PurchaseOrderConfirmationNotification
+
+</td>
+<td valign="top">
+
+3A20\_MS\_V01\_00\_PurchaseOrderConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A21\_V01\_00\_PurchaseOrderChangeRequestNotification
+
+</td>
+<td valign="top">
+
+3A21\_MS\_V01\_00\_PurchaseOrderChangeRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A22\_V01\_00\_PurchaseOrderChangeConfirmationNotification
+
+</td>
+<td valign="top">
+
+3A22\_MS\_V01\_00\_PurchaseOrderChangeConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A23\_V01\_00\_PurchaseOrderCancellationRequestNotification
+
+</td>
+<td valign="top">
+
+3A23\_MS\_V01\_00\_PurchaseOrderCancellationRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A24\_V01\_00\_PurchaseOrderCancellationConfirmationNotification
+
+</td>
+<td valign="top">
+
+3A24\_MS\_V01\_00\_PurchaseOrderCancellationConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A2\_V02\_00\_PriceAndAvailabilityRequest
+
+</td>
+<td valign="top">
+
+3A2\_MS\_V02\_00\_PriceAndAvailabilityRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A2\_V02\_00\_PriceAndAvailabilityResponse
+
+</td>
+<td valign="top">
+
+3A2\_MS\_V02\_00\_PriceAndAvailabilityResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A2\_V02\_01\_PriceAndAvailabilityRequest
+
+</td>
+<td valign="top">
+
+3A2\_MS\_V02\_01\_PriceAndAvailabilityRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A2\_V02\_01\_PriceAndAvailabilityResponse
+
+</td>
+<td valign="top">
+
+3A2\_MS\_V02\_01\_PriceAndAvailabilityResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A3\_R02\_00\_ShoppingCartTransferConfirmation
+
+</td>
+<td valign="top">
+
+3A3\_MS\_R02\_00\_ShoppingCartTransferConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A3\_R02\_00\_ShoppingCartTransferRequest
+
+</td>
+<td valign="top">
+
+3A3\_MS\_R02\_00\_ShoppingCartTransferRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_00\_PurchaseOrderConfirmation
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_00\_PurchaseOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_00\_PurchaseOrderRequest
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_00\_PurchaseOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_01\_PurchaseOrderConfirmation
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_01\_PurchaseOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_01\_PurchaseOrderRequest
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_01\_PurchaseOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_02\_PurchaseOrderConfirmation
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_02\_PurchaseOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_02\_PurchaseOrderRequest
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_02\_PurchaseOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_03\_PurchaseOrderConfirmation
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_03\_PurchaseOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_03\_PurchaseOrderRequest
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_03\_PurchaseOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_04\_PurchaseOrderConfirmation
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_04\_PurchaseOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_04\_PurchaseOrderRequest
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_04\_PurchaseOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_05\_PurchaseOrderConfirmation
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_05\_PurchaseOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_05\_PurchaseOrderRequest
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_05\_PurchaseOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_06\_PurchaseOrderConfirmation
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_06\_PurchaseOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A4\_V02\_06\_PurchaseOrderRequest
+
+</td>
+<td valign="top">
+
+3A4\_MS\_V02\_06\_PurchaseOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A5\_R02\_00\_PurchaseOrderStatusQuery
+
+</td>
+<td valign="top">
+
+3A5\_MS\_R02\_00\_PurchaseOrderStatusQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A5\_R02\_00\_PurchaseOrderStatusResponse
+
+</td>
+<td valign="top">
+
+3A5\_MS\_R02\_00\_PurchaseOrderStatusResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A6\_V02\_00\_PurchaseOrderStatusNotification
+
+</td>
+<td valign="top">
+
+3A6\_MS\_V02\_00\_PurchaseOrderStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A6\_V02\_02\_PurchaseOrderStatusNotification
+
+</td>
+<td valign="top">
+
+3A6\_MS\_V02\_02\_PurchaseOrderStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A6\_V02\_03\_PurchaseOrderStatusNotification
+
+</td>
+<td valign="top">
+
+3A6\_MS\_V02\_03\_PurchaseOrderStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A6\_V02\_04\_PurchaseOrderStatusNotification
+
+</td>
+<td valign="top">
+
+3A6\_MS\_V02\_04\_PurchaseOrderStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A7\_V02\_00\_PurchaseOrderUpdateNotification
+
+</td>
+<td valign="top">
+
+3A7\_MS\_V02\_00\_PurchaseOrderUpdateNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A7\_V02\_01\_PurchaseOrderUpdateNotification
+
+</td>
+<td valign="top">
+
+3A7\_MS\_V02\_01\_PurchaseOrderUpdateNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A7\_V02\_02\_PurchaseOrderUpdateNotification
+
+</td>
+<td valign="top">
+
+3A7\_MS\_V02\_02\_PurchaseOrderUpdateNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A7\_V02\_03\_PurchaseOrderUpdateNotification
+
+</td>
+<td valign="top">
+
+3A7\_MS\_V02\_03\_PurchaseOrderUpdateNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A7\_V02\_04\_PurchaseOrderUpdateNotification
+
+</td>
+<td valign="top">
+
+3A7\_MS\_V02\_04\_PurchaseOrderUpdateNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_00\_PurchaseOrderChangeConfirmation
+
+</td>
+<td valign="top">
+
+3A8\_MG\_V01\_00\_00\_PurchaseOrderChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_00\_PurchaseOrderChangeRequest
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_00\_PurchaseOrderChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_01\_PurchaseOrderChangeConfirmation
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_01\_PurchaseOrderChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_01\_PurchaseOrderChangeRequest
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_01\_PurchaseOrderChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_02\_PurchaseOrderChangeConfirmation
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_02\_PurchaseOrderChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_02\_PurchaseOrderChangeRequest
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_02\_PurchaseOrderChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_03\_PurchaseOrderChangeConfirmation
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_03\_PurchaseOrderChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_03\_PurchaseOrderChangeRequest
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_03\_PurchaseOrderChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_04\_PurchaseOrderChangeConfirmation
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_04\_PurchaseOrderChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_04\_PurchaseOrderChangeRequest
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_04\_PurchaseOrderChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_05\_PurchaseOrderChangeConfirmation
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_05\_PurchaseOrderChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A8\_V01\_05\_PurchaseOrderChangeRequest
+
+</td>
+<td valign="top">
+
+3A8\_MS\_V01\_05\_PurchaseOrderChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A9\_V01\_00\_PurchaseOrderCancellationConfirmation
+
+</td>
+<td valign="top">
+
+3A9\_MG\_V01\_00\_PurchaseOrderCancellationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A9\_V01\_00\_PurchaseOrderCancellationRequest
+
+</td>
+<td valign="top">
+
+3A9\_MG\_V01\_00\_PurchaseOrderCancellationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A9\_V01\_01\_PurchaseOrderCancellationConfirmation
+
+</td>
+<td valign="top">
+
+3A9\_MS\_V01\_01\_PurchaseOrderCancellationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A9\_V01\_01\_PurchaseOrderCancellationRequest
+
+</td>
+<td valign="top">
+
+3A9\_MS\_V01\_01\_PurchaseOrderCancellationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A9\_V01\_02\_PurchaseOrderCancellationConfirmation
+
+</td>
+<td valign="top">
+
+3A9\_MS\_V01\_02\_PurchaseOrderCancellationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3A9\_V01\_02\_PurchaseOrderCancellationRequest
+
+</td>
+<td valign="top">
+
+3A9\_MS\_V01\_02\_PurchaseOrderCancellationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B11\_R01\_00A\_ShippingOrderNotification
+
+</td>
+<td valign="top">
+
+3B11\_MS\_R01\_00A\_ShippingOrderNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B11\_V01\_00\_ShippingOrderNotification
+
+</td>
+<td valign="top">
+
+3B11\_MS\_V01\_00\_ShippingOrderNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_00\_ShippingOrderConfirmation
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_00\_ShippingOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_00\_ShippingOrderRequest
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_00\_ShippingOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_01\_ShippingOrderConfirmation
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_01\_ShippingOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_01\_ShippingOrderRequest
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_01\_ShippingOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_02\_ShippingOrderConfirmation
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_02\_ShippingOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_02\_ShippingOrderRequest
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_02\_ShippingOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_03\_ShippingOrderConfirmation
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_03\_ShippingOrderConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B12\_V01\_03\_ShippingOrderRequest
+
+</td>
+<td valign="top">
+
+3B12\_MS\_V01\_03\_ShippingOrderRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B13\_V01\_00\_ShippingOrderConfirmationNotification
+
+</td>
+<td valign="top">
+
+3B13\_MS\_V01\_00\_ShippingOrderConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B13\_V01\_01\_ShippingOrderConfirmationNotification
+
+</td>
+<td valign="top">
+
+3B13\_MS\_V01\_01\_ShippingOrderConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B13\_V01\_03\_ShippingOrderConfirmationNotification
+
+</td>
+<td valign="top">
+
+3B13\_MS\_V01\_03\_ShippingOrderConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B13\_V01\_04\_ShippingOrderConfirmationNotification
+
+</td>
+<td valign="top">
+
+3B13\_MS\_V01\_04\_ShippingOrderConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B14\_V01\_00\_ShippingOrderCancellationConfirmation
+
+</td>
+<td valign="top">
+
+3B14\_MS\_V01\_00\_ShippingOrderCancellationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B14\_V01\_00\_ShippingOrderCancellationRequest
+
+</td>
+<td valign="top">
+
+3B14\_MS\_V01\_00\_ShippingOrderCancellationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B14\_V01\_02\_ShippingOrderCancellationConfirmation
+
+</td>
+<td valign="top">
+
+3B14\_MS\_V01\_02\_ShippingOrderCancellationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B14\_V01\_02\_ShippingOrderCancellationRequest
+
+</td>
+<td valign="top">
+
+3B14\_MS\_V01\_02\_ShippingOrderCancellationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B18\_V01\_00\_ShippingDocumentationNotification
+
+</td>
+<td valign="top">
+
+3B18\_MS\_V01\_00\_ShippingDocumentationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B18\_V01\_01\_ShippingDocumentationNotification
+
+</td>
+<td valign="top">
+
+3B18\_MS\_V01\_01\_ShippingDocumentationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B18\_V01\_02\_ShippingDocumentationNotification
+
+</td>
+<td valign="top">
+
+3B18\_MS\_V01\_02\_ShippingDocumentationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B19\_V01\_00\_ShippingOrderRequestNotification
+
+</td>
+<td valign="top">
+
+3B19\_MS\_V01\_00\_ShippingOrderRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B19\_V01\_01\_ShippingOrderRequestNotification
+
+</td>
+<td valign="top">
+
+3B19\_MS\_V01\_00\_ShippingOrderRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B1\_R01\_00\_TransportationProjectionNotification
+
+</td>
+<td valign="top">
+
+3B1\_MS\_R01\_00\_TransportationProjectionNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B20\_V01\_00\_ShippingOrderConfirmationNotification
+
+</td>
+<td valign="top">
+
+3B20\_MS\_V01\_00\_ShippingOrderConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B20\_V01\_01\_ShippingOrderConfirmationNotification
+
+</td>
+<td valign="top">
+
+3B20\_MS\_V01\_01\_ShippingOrderConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B21\_V01\_00\_ShippingOrderCancellationRequestNotification
+
+</td>
+<td valign="top">
+
+3B21\_MS\_V01\_00\_ShippingOrderCancellationRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B22\_V01\_00\_ShippingOrderCancellationConfirmationNotification
+
+</td>
+<td valign="top">
+
+3B22\_MS\_V01\_00\_ShippingOrderCancellationConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B2\_V01\_01\_AdvanceShipmentNotification
+
+</td>
+<td valign="top">
+
+3B2\_MS\_V01\_01\_AdvanceShipmentNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B2\_V01\_02\_AdvanceShipmentNotification
+
+</td>
+<td valign="top">
+
+3B2\_MS\_V01\_02\_AdvanceShipmentNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B2\_V01\_03\_AdvanceShipmentNotification
+
+</td>
+<td valign="top">
+
+3B2\_MS\_V01\_03\_AdvanceShipmentNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B3\_R01\_00\_ShipmentStatusNotification
+
+</td>
+<td valign="top">
+
+3B3\_MS\_R01\_00\_ShipmentStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B4\_R01\_00\_ShipmentStatusQuery
+
+</td>
+<td valign="top">
+
+3B4\_MS\_R01\_00\_ShipmentStatusQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B4\_R01\_00\_ShipmentStatusResponse
+
+</td>
+<td valign="top">
+
+3B4\_MS\_R01\_00\_ShipmentStatusResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B5\_R01\_00\_ShipmentChangeConfirmation
+
+</td>
+<td valign="top">
+
+3B5\_MS\_R01\_00\_ShipmentChangeConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B5\_R01\_00\_ShipmentChangeRequest
+
+</td>
+<td valign="top">
+
+3B5\_MS\_R01\_00\_ShipmentChangeRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3B6\_R01\_00\_ShipmentsTenderedNotification
+
+</td>
+<td valign="top">
+
+3B6\_MS\_R01\_00\_ShipmentsTenderedNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C1\_V01\_00\_ReturnProductConfirmation
+
+</td>
+<td valign="top">
+
+3C1\_MS\_V01\_00\_ReturnProductConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C1\_V01\_00\_ReturnProductRequest
+
+</td>
+<td valign="top">
+
+3C1\_MS\_V01\_00\_ReturnProductRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C1\_V01\_01\_ReturnProductConfirmation
+
+</td>
+<td valign="top">
+
+3C1\_MS\_V01\_01\_ReturnProductConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C1\_V01\_01\_ReturnProductRequest
+
+</td>
+<td valign="top">
+
+3C1\_MS\_V01\_01\_ReturnProductRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C1\_V01\_02\_ReturnProductConfirmation
+
+</td>
+<td valign="top">
+
+3C1\_MS\_V01\_02\_ReturnProductConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C1\_V01\_02\_ReturnProductRequest
+
+</td>
+<td valign="top">
+
+3C1\_MS\_V01\_02\_ReturnProductRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C2\_R01\_00\_FinancingRequest
+
+</td>
+<td valign="top">
+
+3C2\_MS\_R01\_00\_FinancingRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C2\_R01\_00\_FinancingResponse
+
+</td>
+<td valign="top">
+
+3C2\_MS\_R01\_00\_FinancingResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C3\_V01\_00\_InvoiceNotification
+
+</td>
+<td valign="top">
+
+3C3\_MS\_V01\_00\_InvoiceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C3\_V01\_01\_InvoiceNotification
+
+</td>
+<td valign="top">
+
+3C3\_MS\_V01\_01\_InvoiceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C3\_V01\_02\_InvoiceNotification
+
+</td>
+<td valign="top">
+
+3C3\_MS\_V01\_02\_InvoiceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C3\_V01\_03\_InvoiceNotification
+
+</td>
+<td valign="top">
+
+3C3\_MS\_V01\_03\_InvoiceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C4\_V01\_00\_InvoiceRejectNotification
+
+</td>
+<td valign="top">
+
+3C4\_MS\_V01\_00\_InvoiceRejectNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C4\_V01\_01\_InvoiceRejectNotification
+
+</td>
+<td valign="top">
+
+3C4\_MS\_V01\_01\_InvoiceRejectNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C5\_R01\_00\_BillingStatementNotification
+
+</td>
+<td valign="top">
+
+3C5\_MS\_R01\_00\_BillingStatementNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C6\_V01\_00\_RemittanceAdviceNotification
+
+</td>
+<td valign="top">
+
+3C6\_MS\_V01\_00\_RemittanceAdviceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C6\_V01\_01\_RemittanceAdviceNotification
+
+</td>
+<td valign="top">
+
+3C6\_MS\_V01\_01\_RemittanceAdviceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C6\_V01\_02\_RemittanceAdviceNotification
+
+</td>
+<td valign="top">
+
+3C6\_MS\_V01\_02\_RemittanceAdviceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C6\_V01\_03\_RemittanceAdviceNotification
+
+</td>
+<td valign="top">
+
+3C6\_MS\_V01\_03\_RemittanceAdviceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C7\_V01\_00\_SelfBillingInvoiceNotification
+
+</td>
+<td valign="top">
+
+3C7\_MS\_V01\_01\_SelfBillingInvoiceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C7\_V01\_01\_SelfBillingInvoiceNotification
+
+</td>
+<td valign="top">
+
+3C7\_MS\_V01\_01\_SelfBillingInvoiceNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C8\_V01\_00\_ReturnProductRequestNotification
+
+</td>
+<td valign="top">
+
+3C8\_MS\_V01\_00\_ReturnProductRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP3C9\_V01\_00\_ReturnProductConfirmationNotification
+
+</td>
+<td valign="top">
+
+3C9\_MS\_V01\_00\_ReturnProductConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A1\_V02\_00\_StrategicForecastNotification
+
+</td>
+<td valign="top">
+
+4A1\_MS\_V02\_00\_StrategicForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A2\_V02\_00\_EmbeddedReleaseForecastNotification
+
+</td>
+<td valign="top">
+
+4A2\_MS\_V02\_00\_EmbeddedReleaseForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A3\_V01\_00\_ThresholdReleaseForecastNotification
+
+</td>
+<td valign="top">
+
+4A3\_MS\_V01\_00\_ThresholdReleaseForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A3\_V02\_00\_ThresholdReleaseForecastNotification
+
+</td>
+<td valign="top">
+
+4A3\_MS\_V02\_00\_ThresholdReleaseForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A3\_V02\_01\_ThresholdReleaseForecastNotification
+
+</td>
+<td valign="top">
+
+4A3\_MS\_V02\_01\_ThresholdReleaseForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A3\_V02\_02\_ThresholdReleaseForecastNotification
+
+</td>
+<td valign="top">
+
+4A3\_MS\_V02\_02\_ThresholdReleaseForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A3\_V02\_03\_ThresholdReleaseForecastNotification
+
+</td>
+<td valign="top">
+
+4A3\_MS\_V02\_03\_ThresholdReleaseForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A4\_V01\_00\_ForecastNotification
+
+</td>
+<td valign="top">
+
+4A4\_MS\_V01\_00\_ForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A4\_V03\_00\_PlanningReleaseForecastNotification
+
+</td>
+<td valign="top">
+
+4A4\_MS\_V03\_00\_PlanningReleaseForecastNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A5\_V01\_00\_NotifyofForecastReply
+
+</td>
+<td valign="top">
+
+4A5\_MS\_V01\_00\_NotifyofForecastReply.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A5\_V02\_00\_NotifyofForecastReply
+
+</td>
+<td valign="top">
+
+4A5\_MS\_V02\_00\_NotifyofForecastReply.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4A6\_R01\_00A\_NotifyOfForecastingException
+
+</td>
+<td valign="top">
+
+4A6\_MS\_R01\_00A\_NotifyOfForecastingException.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4B2\_V01\_00\_ShipmentReceiptNotification
+
+</td>
+<td valign="top">
+
+4B2\_MS\_V01\_00\_ShipmentReceiptNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4B2\_V01\_01\_ShipmentReceiptNotification
+
+</td>
+<td valign="top">
+
+4B2\_MS\_V01\_01\_ShipmentReceiptNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4B3\_V01\_00\_NotifyOfConsumption
+
+</td>
+<td valign="top">
+
+4B3\_MS\_V01\_00\_NotifyOfConsumption.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4B3\_V01\_01\_NotifyOfConsumption
+
+</td>
+<td valign="top">
+
+4B3\_MS\_V01\_01\_NotifyOfConsumption.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4B3\_V01\_02\_NotifyOfConsumption
+
+</td>
+<td valign="top">
+
+4B3\_MS\_V01\_02\_NotifyOfConsumption.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_00\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_00\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_01\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_01\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_02\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_02\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_03\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_03\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_04\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_04\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_05\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_05\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_06\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_06\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_07\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_07\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4C1\_V02\_08\_InventoryReportNotification
+
+</td>
+<td valign="top">
+
+4C1\_MS\_V02\_08\_InventoryReportNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP4D1\_V01\_00\_NotifyOfMaterialRelease
+
+</td>
+<td valign="top">
+
+4D1\_MS\_V01\_00\_NotifyOfMaterialRelease.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C1\_V01\_00\_ProductListNotification
+
+</td>
+<td valign="top">
+
+5C1\_MS\_V01\_00\_ProductListNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_00\_DesignRegistrationConfirmation
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_00\_DesignRegistrationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_00\_DesignRegistrationRequest
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_00\_DesignRegistrationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_01\_DesignRegistrationConfirmation
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_01\_DesignRegistrationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_01\_DesignRegistrationRequest
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_01\_DesignRegistrationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_02\_DesignRegistrationConfirmation
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_02\_DesignRegistrationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_02\_DesignRegistrationRequest
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_02\_DesignRegistrationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_03\_DesignRegistrationConfirmation
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_03\_DesignRegistrationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C2\_V01\_03\_DesignRegistrationRequest
+
+</td>
+<td valign="top">
+
+5C2\_MS\_V01\_03\_DesignRegistrationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C3\_V01\_00\_WinClaimConfirmation
+
+</td>
+<td valign="top">
+
+5C3\_MS\_V01\_00\_WinClaimConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C3\_V01\_00\_WinClaimRequest
+
+</td>
+<td valign="top">
+
+5C3\_MS\_V01\_00\_WinClaimRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C3\_V01\_01\_WinClaimConfirmation
+
+</td>
+<td valign="top">
+
+5C3\_MS\_V01\_01\_WinClaimConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C3\_V01\_01\_WinClaimRequest
+
+</td>
+<td valign="top">
+
+5C3\_MS\_V01\_01\_WinClaimRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C3\_V01\_02\_WinClaimConfirmation
+
+</td>
+<td valign="top">
+
+5C3\_MS\_V01\_02\_WinClaimConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C3\_V01\_02\_WinClaimRequest
+
+</td>
+<td valign="top">
+
+5C3\_MS\_V01\_02\_WinClaimRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C4\_V01\_01\_RegistrationStatusNotification
+
+</td>
+<td valign="top">
+
+5C4\_MS\_V01\_01\_RegistrationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C4\_V01\_02\_RegistrationStatusNotification
+
+</td>
+<td valign="top">
+
+5C4\_MS\_V01\_02\_RegistrationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C4\_V01\_03\_RegistrationStatusNotification
+
+</td>
+<td valign="top">
+
+5C4\_MS\_V01\_03\_RegistrationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C4\_V01\_04\_RegistrationStatusNotification
+
+</td>
+<td valign="top">
+
+5C4\_MS\_V01\_04\_RegistrationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C4\_V01\_05\_RegistrationStatusNotification
+
+</td>
+<td valign="top">
+
+5C4\_MS\_V01\_05\_RegistrationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C4\_V01\_06\_RegistrationStatusNotification
+
+</td>
+<td valign="top">
+
+5C4\_MS\_V01\_06\_RegistrationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C6\_V01\_00\_DesignRegistrationRequestNotification
+
+</td>
+<td valign="top">
+
+5C6\_MS\_V01\_00\_DesignRegistrationRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C7\_V01\_00\_DesignRegistrationConfirmationNotification
+
+</td>
+<td valign="top">
+
+5C7\_MS\_V01\_00\_DesignRegistrationConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C8\_V01\_00\_WinClaimRequestNotification
+
+</td>
+<td valign="top">
+
+5C8\_MS\_V01\_00\_WinClaimRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5C9\_V01\_00\_WinClaimConfirmationNotification
+
+</td>
+<td valign="top">
+
+5C9\_MS\_V01\_00\_WinClaimConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D10\_V01\_00\_ShipFromStockAndDebitClaimConfirmationNotification
+
+</td>
+<td valign="top">
+
+5D10\_MS\_V01\_00\_ShipFromStockAndDebitClaimConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D1\_V01\_00\_ShipFromStockAndDebitAuthorizationConfirmation
+
+</td>
+<td valign="top">
+
+5D1\_MS\_V01\_00\_ShipFromStockAndDebitAuthorizationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D1\_V01\_00\_ShipFromStockAndDebitAuthorizationRequest
+
+</td>
+<td valign="top">
+
+5D1\_MS\_V01\_00\_ShipFromStockAndDebitAuthorizationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D1\_V01\_01\_ShipFromStockAndDebitAuthorizationConfirmation
+
+</td>
+<td valign="top">
+
+5D1\_MS\_V01\_01\_ShipFromStockAndDebitAuthorizationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D1\_V01\_01\_ShipFromStockAndDebitAuthorizationRequest
+
+</td>
+<td valign="top">
+
+5D1\_MS\_V01\_01\_ShipFromStockAndDebitAuthorizationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D1\_V01\_02\_ShipFromStockAndDebitAuthorizationConfirmation
+
+</td>
+<td valign="top">
+
+5D1\_MS\_V01\_02\_ShipFromStockAndDebitAuthorizationConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D1\_V01\_02\_ShipFromStockAndDebitAuthorizationRequest
+
+</td>
+<td valign="top">
+
+5D1\_MS\_V01\_02\_ShipFromStockAndDebitAuthorizationRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D2\_R01\_00\_BlanketShipFromStockAndDebitAuthorizationNotification
+
+</td>
+<td valign="top">
+
+5D2\_MS\_R01\_00\_BlanketShipFromStockAndDebitAuthorizationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D3\_V01\_00\_OpenShipFromStockAndDebitAuthorizationStatusNotification
+
+</td>
+<td valign="top">
+
+5D3\_MS\_V01\_00\_OpenShipFromStockAndDebitAuthorizationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D3\_V01\_01\_OpenShipFromStockAndDebitAuthorizationStatusNotification
+
+</td>
+<td valign="top">
+
+5D3\_MS\_V01\_01\_OpenShipFromStockAndDebitAuthorizationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D3\_V01\_02\_OpenShipFromStockAndDebitAuthorizationStatusNotification
+
+</td>
+<td valign="top">
+
+5D3\_MS\_V01\_02\_OpenShipFromStockAndDebitAuthorizationStatusNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D4\_R01\_00A\_ShipFromStockAndDebitAuthorizationStatusQuery
+
+</td>
+<td valign="top">
+
+5D4\_MS\_R01\_00A\_ShipFromStockAndDebitAuthorizationStatusQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D4\_R01\_00A\_ShipFromStockAndDebitAuthorizationStatusResponse
+
+</td>
+<td valign="top">
+
+5D4\_MS\_R01\_00A\_ShipFromStockAndDebitAuthorizationStatusResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D5\_V01\_00\_ShipFromStockAndDebitClaimConfirmation
+
+</td>
+<td valign="top">
+
+5D5\_MS\_V01\_00\_ShipFromStockAndDebitClaimConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D5\_V01\_00\_ShipFromStockAndDebitClaimRequest
+
+</td>
+<td valign="top">
+
+5D5\_MS\_V01\_00\_ShipFromStockAndDebitClaimRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D5\_V01\_01\_ShipFromStockAndDebitClaimConfirmation
+
+</td>
+<td valign="top">
+
+5D5\_MS\_V01\_01\_ShipFromStockAndDebitClaimConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D5\_V01\_01\_ShipFromStockAndDebitClaimRequest
+
+</td>
+<td valign="top">
+
+5D5\_MS\_V01\_01\_ShipFromStockAndDebitClaimRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D6\_R01\_00A\_ShipFromStockAndDebitClaimAcknowledgmentNotification
+
+</td>
+<td valign="top">
+
+5D6\_MS\_R01\_00A\_ShipFromStockAndDebitClaimAcknowledgmentNotification.dtd
+
+</td>
+<td valign="top">
+
+5D6\_MS\_D01\_03\_ShipFromStockAndDebitClaimAcknowledgmentNotification.dtd
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D7\_V01\_00\_ShipFromStockAndDebitAuthorizationRequestNotification
+
+</td>
+<td valign="top">
+
+5D7\_MS\_V01\_00\_ShipFromStockAndDebitAuthorizationRequestNotifiction.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D7\_V01\_00\_ShipFromStockAndDebitAuthorizationUpdateNotification
+
+</td>
+<td valign="top">
+
+5D7\_MS\_V01\_00\_ShipFromStockAndDebitAuthorizationUpdateNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D8\_V01\_00\_SFSAndDAConfirmationNotification
+
+</td>
+<td valign="top">
+
+5D8\_MS\_V01\_00\_ShipFromStockAndDebitAuthorizationConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP5D9\_V01\_00\_ShipFromStockAndDebitClaimRequestNotification
+
+</td>
+<td valign="top">
+
+5D9\_MS\_V01\_00\_ShipFromStockAndDebitClaimRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C1\_V01\_00\_ServiceEntitlementQuery
+
+</td>
+<td valign="top">
+
+6C1\_MS\_V01\_00\_ServiceEntitlementQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C1\_V01\_00\_ServiceEntitlementStatusResponse
+
+</td>
+<td valign="top">
+
+6C1\_MS\_V01\_00\_ServiceEntitlementStatusResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C1\_V01\_01\_ServiceEntitlementQuery
+
+</td>
+<td valign="top">
+
+6C1\_MS\_V01\_01\_ServiceEntitlementQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C1\_V01\_01\_ServiceEntitlementStatusResponse
+
+</td>
+<td valign="top">
+
+6C1\_MS\_V01\_01\_ServiceEntitlementStatusResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C2\_V01\_00\_WarrantyClaimConfirmation
+
+</td>
+<td valign="top">
+
+6C2\_MS\_V01\_00\_WarrantyClaimConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C2\_V01\_00\_WarrantyClaimRequest
+
+</td>
+<td valign="top">
+
+6C2\_MS\_V01\_00\_WarrantyClaimRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C2\_V01\_01\_WarrantyClaimConfirmation
+
+</td>
+<td valign="top">
+
+6C2\_MS\_V01\_01\_WarrantyClaimConfirmation.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C2\_V01\_01\_WarrantyClaimRequest
+
+</td>
+<td valign="top">
+
+6C2\_MS\_V01\_01\_WarrantyClaimRequest.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C5\_V01\_00\_ServiceEntitlementQueryNotification
+
+</td>
+<td valign="top">
+
+6C5\_MS\_V01\_00\_ServiceEntitlementQueryNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C6\_V01\_00\_ServiceEntitlementStatusResponseNotification
+
+</td>
+<td valign="top">
+
+6C6\_MS\_V01\_00\_ServiceEntitlementStatusResponseNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C7\_V01\_00\_WarrantyClaimRequestNotification
+
+</td>
+<td valign="top">
+
+6C7\_MS\_V01\_00\_WarrantyClaimRequestNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP6C8\_V01\_00\_WarrantyClaimConfirmationNotification
+
+</td>
+<td valign="top">
+
+6C8\_MS\_V01\_00\_WarrantyClaimConfirmationNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B1\_V01\_00\_WorkInProcessNotification
+
+</td>
+<td valign="top">
+
+7B1\_MS\_V01\_00\_WorkInProcessNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B1\_V01\_01\_WorkInProcessNotification
+
+</td>
+<td valign="top">
+
+7B1\_MS\_V01\_01\_WorkInProcessNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B1\_V01\_02\_WorkInProcessNotification
+
+</td>
+<td valign="top">
+
+7B1\_MS\_V01\_02\_WorkInProcessNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B2\_R01\_00A\_WorkInProcessQuery
+
+</td>
+<td valign="top">
+
+7B2\_MS\_R01\_00A\_WorkInProcessQuery.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B2\_R01\_00A\_WorkInProcessResponse
+
+</td>
+<td valign="top">
+
+7B2\_MS\_R01\_00A\_WorkInProcessResponse.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B5\_V01\_00\_NotifyOfManufacturingWorkOrder
+
+</td>
+<td valign="top">
+
+7B5\_MS\_V01\_00\_NotifyOfManufacturingWorkOrder.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B5\_V01\_01\_NotifyOfManufacturingWorkOrder
+
+</td>
+<td valign="top">
+
+7B5\_MS\_V01\_01\_NotifyOfManufacturingWorkOrder.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B5\_V01\_02\_NotifyOfManufacturingWorkOrder
+
+</td>
+<td valign="top">
+
+7B5\_MS\_V01\_02\_NotifyOfManufacturingWorkOrder.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7B6\_V01\_00\_NotifyOfManufacturingWorkOrderReply
+
+</td>
+<td valign="top">
+
+7B6\_MS\_V01\_00\_NotifyOfManufacturingWorkOrderReply.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7C6\_V01\_00\_ProductQualityEventDataNotification
+
+</td>
+<td valign="top">
+
+7C6\_MS\_V01\_00\_ProductQualityEventDataNotification.dtd
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PIP7C6\_V01\_01\_ProductQualityEventDataNotification
+
+</td>
+<td valign="top">
+
+7C6\_MS\_V01\_01\_ProductQualityEventDataNotification.dtd
 
 </td>
 <td valign="top">

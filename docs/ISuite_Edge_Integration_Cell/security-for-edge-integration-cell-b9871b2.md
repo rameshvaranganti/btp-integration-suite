@@ -13,7 +13,7 @@ For secure runtime parameter configurations and operations, see [Runtime Paramet
 
 [User Authentication and Authorization](user-authentication-and-authorization-bff88cd.md "")
 
-[Network and Communication Security for Edge Integration Cell](network-and-communication-security-for-edge-integration-cell-7051f88.md "")
+[Network and Communication Security for Edge Integration Cell](network-and-communication-security-for-edge-integration-cell-7051f88.md "Learn about the communication flows used by Edge Integration Cell and the security measures that protect data exchange between edge and cloud environments.")
 
 [Data Storage Security](data-storage-security-6a89d6d.md "")
 

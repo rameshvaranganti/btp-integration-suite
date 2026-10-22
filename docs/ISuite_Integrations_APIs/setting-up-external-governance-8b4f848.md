@@ -24,7 +24,7 @@ In this section, we’ll take you step by step through the configuration process
         > ### Note:  
         > It is recommended to use SAP Integration Suite API Management to implement the Service Provider Interface \(SPI\), and leverage SAP Build Process Automation to design the external governance workflow. For more information on SAP Build Process Automation, see [SAP Process Automation | SAP Learning](https://learning.sap.com/products/sap-build/process-automation). However, you can implement the Service Provider Interface \(SPI\) and the external governance workflow using any other method that suits your requirements.
 
-    2.  **Create a Destination in SAP BTP Cockpit**: After implementing the Service Provider Interface \(SPI\), the customer subaccount administrator creates a destination in their SAP BTP subaccount pointing to the SPI endpoint.
+    2.  **Create a Destination in SAP BTP cockpit**: After implementing the Service Provider Interface \(SPI\), the customer subaccount administrator creates a destination in their SAP BTP subaccount pointing to the SPI endpoint.
 
         This destination must include:
 

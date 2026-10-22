@@ -140,7 +140,7 @@ To achieve this, you:
     Select one or more RFC functions to include as MCP tools and choose *Next*.
 
     > ### Note:  
-    > The maximum number of tools allowed for RFC is 30.
+    > The maximum number of tools allowed for RFC is 50.
 
 8.  In the *Provide MCP Details* step, enter the required information:
 

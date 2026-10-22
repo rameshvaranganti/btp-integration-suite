@@ -4,8 +4,6 @@
 
 Configure the OFTP Receiver Adapter to send files to partners and act as a Transmission Control Protocol \(TCP\) client.
 
-
-
 The OFTP receiver adapter acts as an initiator according to the OFTP2 specification. The adapters connect to the partners' configured hosts and ports.
 
 > ### Note:  
@@ -21,11 +19,11 @@ Before you configure the OFTP Receiver Adapter, make sure that you have complete
 
 -   **Security**: Uses Cryptographic Message Syntax \(CMS\) for outbound encryption, signing, and decompression handshake. It also supports secure OFTP handshake, TLS, client authentication and hostname verification.
 
--   **Acknowledgement \(ERP\) support**: The adapter can request signed ERP messages. When it receives an ERP \(EERP or NERP\), the adapter tries to correlate them to processed messages or files and adds them to an `ERPDeliveryReportsPackage` XML in the response.
+-   **Acknowledgement \(ERP\) support**: The adapter can request signed ERP messages. When it receives an ERP \(EERP or NERP\), the adapter tries to correlate them to processed messages or files and adds them to an `ERPDeliveryReportsPackage` XML in the response. See: [Synchronous ERP Delivery Report](configure-the-oftp-receiver-adapter-8a6b283.md#loio8a6b283dade6419eb907920117983156__erp).
 
 -   **Proxy**: Supports optional proxy usage for HTTP or SOCKS protocols.
 
--   **Dynamic Configuration**: Provides dynamic configuration. You can override most fields for each message through headers or exchange properties. See [Dynamic Configuration and Per-message Overrides](configure-the-oftp-receiver-adapter-8a6b283.md#loio8a6b283dade6419eb907920117983156__dynamic).
+-   **Dynamic Configuration**: Provides dynamic configuration. You can override most fields for each message through headers or exchange properties. See: [Dynamic Configuration and Per-message Overrides](configure-the-oftp-receiver-adapter-8a6b283.md#loio8a6b283dade6419eb907920117983156__dynamic).
 
 -   **Timestamp Determination**: You can control how the SFID timestamp is determined for resend and retry handling. By default, the system generates a unique timestamp for each transmission.
 
@@ -1113,7 +1111,7 @@ CRYPTOGRAPHIC MESSAGE SYNTAX PARAMETERS
 <td valign="top">
 
 -   *Alias*. The security material alias for the partner's CMS public certificate.
--   *Dynamic*. Specify the header or property dynamically to fetch the certificate.
+-   *Certificate*. Specify the header or property dynamically to fetch the certificate.
 
 
 
@@ -1162,7 +1160,7 @@ Enter the security material alias for the partner's CMS public certificate. The 
 *Partner Certificate*
 
 > ### Note:  
-> Only visible if **Partner Certificate Source** is set to **Dynamic**.
+> Only visible if **Partner Certificate Source** is set to **Certificate**.
 
 
 
@@ -1847,6 +1845,54 @@ Request for signed ERPs
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio8a6b283dade6419eb907920117983156__erp"/>
+
+## Synchronous ERP Delivery Report
+
+When the trading partner returns an EERP or NERP within the same session, the adapter correlates it to the outbound transfer and delivers an ERP delivery report to your integration flow as the message body.
+
+The delivery report package can contain ERP responses for multiple files: both for the file sent in the current session and for files sent in previous sessions. The adapter correlates each received ERP to its original outbound transfer using the stored message key and produces a separate ERPDeliveryReport element per ERP. ERPs that cannot be matched to any known transfer are handled according to the Unexpected ERP Handling setting on the ERP tab.
+
+The following example shows the XML structure of a synchronous ERP delivery report:
+
+```
+<?xml version='1.0' encoding='UTF-8'?>
+<ERPDeliveryReportsPackage>
+  <PackageInfo>
+    <CreatedOn>2026-08-31T10:21:14.811493454</CreatedOn>
+  </PackageInfo>
+  <ERPDeliveryReport>
+    <CorrelationMPLID>AGqVVZf3FnToF4hU8Y5wd3_a7NYp</CorrelationMPLID>
+    <ERPSource>Partner:O0000PARTNERTEST00</ERPSource>
+    <EERP>
+      <EERPCMD>E</EERPCMD>
+      <EERPDSN>outfile</EERPDSN>
+      <EERPRSV1></EERPRSV1>
+      <EERPDATE>20260831</EERPDATE>
+      <EERPTIME>1021120158</EERPTIME>
+      <EERPUSER></EERPUSER>
+      <EERPDEST>O0000PARTNERTEST00</EERPDEST>
+      <EERPORIG>O0000EICTEST00000</EERPORIG>
+      <EERPHSHL>0</EERPHSHL>
+      <EERPHSH></EERPHSH>
+      <EERPSIGL>0</EERPSIGL>
+      <EERPSIG></EERPSIG>
+    </EERP>
+  </ERPDeliveryReport>
+</ERPDeliveryReportsPackage>
+```
+
+The `CorrelationMPLID` field contains the MPL ID of the integration flow execution that sent the file. The `ERPSource` field is set to `Partner:<partnerId>`.
+
+> ### Note:  
+> -   A negative response uses the same format, with a `<NERP>` element in place of `<EERP>`.
+> 
+> -   The `ERPDeliveryReportsPackage` can contain multiple `ERPDeliveryReport` elements when the partner returns acknowledgments for several files in a single session, including files sent in previous sessions.
+
+If an ERP Acknowledgements channel is deployed, a copy of this delivery report is also forwarded to it automatically. For more information, see [OFTP2 ERP Acknowledgements Channel](oftp2-erp-acknowledgements-channel-1983988.md).
 
 **Related Information**  
 

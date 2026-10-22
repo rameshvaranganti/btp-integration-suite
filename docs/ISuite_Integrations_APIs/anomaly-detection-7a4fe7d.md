@@ -14,7 +14,7 @@ Anomaly detection is an AI-based feature that involves the identification of pat
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 > ### Note:  
-> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through September 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion until the January 2027 software release. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620) Information published on SAP site.
 
 Anomaly detection involves training an AI model to understand the behavior of your API calls. It works by comparing a current time frame \(referred to as a 'window'\) of API calls with the corresponding historical time-series data. The AI model is trained automatically using all available historical API data, with a minimum requirement of three months of historical API data. The historical data must also meet the required volume threshold to enable reliable model training. For more information, see [Prerequisites for API Selection](anomaly-detection-7a4fe7d.md#loio7a4fe7d85e10416e9dd63f98ccd780b2__section_qp4_nms_p3c).
 

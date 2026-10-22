@@ -222,7 +222,7 @@ Create and publish the standard integration flow. Make sure that it contains the
 
 [ProcessDirect Adapter](processdirect-adapter-7445718.md "Use ProcessDirect adapter (sender and receiver) to establish fast and direct communication between integration flows by reducing latency and network overhead provided both of them are available within a same tenant.")
 
-[Configure Externalized Parameters of an Integration Flow](configure-externalized-parameters-of-an-integration-flow-462a478.md "")
+[Configure Externalized Parameters of an Integration Flow](configure-externalized-parameters-of-an-integration-flow-462a478.md "Cloud Integration supports runtime-aware configuration, enabling you to configure integration flows across one or more runtime profiles in a centralized way.")
 
 [Define Process Call](define-process-call-cf0251e.md "")
 

@@ -11,7 +11,7 @@ Learn how to activate the Data Space Integration capability within SAP Integrati
 ## Prerequisites
 
 -   You've completed the steps described in [Preparatory Steps](preparatory-steps-95366b2.md).
--   Check that you have the `Integration_Provisioner` role assigned to your user in the BTP cockpit. See [Subscribing and Configuring Initial Access to SAP Integration Suite](https://help.sap.com/docs/integration-suite/sap-integration-suite/subscribing-to-integration-suite).
+-   Check that you have the `Integration_Provisioner` role assigned to your user in the SAP BTP cockpit. See [Subscribing and Configuring Initial Access to SAP Integration Suite](https://help.sap.com/docs/integration-suite/sap-integration-suite/subscribing-to-integration-suite).
 
 
 

@@ -18,7 +18,7 @@ The Script step type supports the following script languages:
 
 
 > ### Note:  
-> Upgrade your groovy script step to version 2.0 to ensure your groovy scripts are clean, consistent, and prepared for future software and runtime version upgrades. See [Upgrading Script](upgrading-script-917e014.md) and [Ensure Upgrade Readiness](ensure-upgrade-readiness-6adb0ca.md).
+> Upgrade your groovy script step to version 2.0 to ensure your groovy scripts are clean, consistent, and prepared for future software and runtime version upgrades. See [Upgrading Scripts](upgrading-scripts-917e014.md) and [Ensure Upgrade Readiness](ensure-upgrade-readiness-6adb0ca.md).
 
 For more information on this feature, see [Define a Local Script Step](define-a-local-script-step-03b32eb.md).
 

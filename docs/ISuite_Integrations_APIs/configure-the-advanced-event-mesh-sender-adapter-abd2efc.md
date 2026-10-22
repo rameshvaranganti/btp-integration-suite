@@ -615,6 +615,9 @@ Settlement outcome for failed messages after all processing attempts have been e
 -   Rejected: This negative acknowledgment notifies the event broker that the message was not accepted. The event broker will remove the message from its queue and then move the message to the Dead Message Queue \(DMQ\) if it is configured.
 
 
+> ### Note:  
+> The outcome can be overridden for an individual message by setting the SettlementOutcomeOverride exchange property in the integration flow. See [Overriding the Settlement Outcome per Message \(applicable to v1.4.3\)](configure-the-advanced-event-mesh-sender-adapter-abd2efc.md#loioabd2efcc810442edaf17a750904d1d3a__section_overriding_the_settlement).
+
 
 
 </td>
@@ -673,6 +676,86 @@ The multiplier to apply to the current time interval delay after every subsequen
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioabd2efcc810442edaf17a750904d1d3a__section_overriding_the_settlement"/>
+
+## Overriding the Settlement Outcome per Message \(applicable to v1.4.3\)
+
+By default the sender adapter acknowledges a message whose exchange completes successfully \(ACCEPTED\) and settles a message whose exchange fails with the configured Settlement Outcome After Maximum Attempts once all processing attempts are exhausted. An integration flow can override this for an individual message by setting the exchange property SettlementOutcomeOverride before the exchange completes.
+
+
+<table>
+<tr>
+<td valign="top">
+
+Value
+
+</td>
+<td valign="top">
+
+Effect
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ACCEPTED
+
+</td>
+<td valign="top">
+
+The message is acknowledged and removed from the queue or durable topic endpoint.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FAILED
+
+</td>
+<td valign="top">
+
+The message is negatively acknowledged; the event broker redelivers it while adhering to delivery count limits.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REJECTED
+
+</td>
+<td valign="top">
+
+The message is negatively acknowledged; the event broker removes it and moves it to the Dead Message Queue \(DMQ\) if one is configured.
+
+</td>
+</tr>
+</table>
+
+Values are case-insensitive. An unsupported value is ignored with a warning in the log; an absent, empty or unsupported value results in the default outcome.
+
+Set the property with a Content Modifier \(Exchange Property tab: Action Create, Name SettlementOutcomeOverride, Source Type Constant or Expression, Source Value for example REJECTED\) or in a Groovy Script:
+
+`message.setProperty("SettlementOutcomeOverride", "REJECTED")`
+
+The property is honored on both successful and failed exchanges, so it is a general tool for conditional settlement, not only for error handling. For example:
+
+-   A Router branch for messages that fail a business rule sets REJECTED and the flow ends normally: the message goes to the DMQ without an exception or adapter-level retries.
+-   An Exception Subprocess chooses between FAILED \(redeliver\) and REJECTED \(DMQ\) based on the error, for example REJECTED for an HTTP 4xx response that will not succeed on redelivery.
+-   An Exception Subprocess logs a poison message and sets ACCEPTED so that the event broker does not redeliver it.
+
+Keep the following in mind:
+
+-   The override applies only with Guaranteed or Durable Topic Endpoint consumer mode and Automatic On Exchange Complete acknowledgment mode. In Automatic Immediate acknowledgment mode or Direct consumer mode the message is already acknowledged on receipt, so the property is ignored with a warning in the log.
+-   On a failed exchange all Maximum Message Processing Attempts are still made and the property is read only when the final attempt fails. Each attempt runs on a new exchange, so set the property in the attempt that finally fails, for example in the Exception Subprocess.
+
+> ### Note:  
+> The override changes only how the message is settled with the event broker, not the exchange status in the message processing log \(MPL\). Settling a failed exchange with ACCEPTED still shows the failure in the MPL while the event broker removes the message; settling a successful exchange with FAILED or REJECTED shows a completed run while the message is redelivered or moved to the DMQ.
 
 
 

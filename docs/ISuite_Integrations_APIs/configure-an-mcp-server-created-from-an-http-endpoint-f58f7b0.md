@@ -45,7 +45,7 @@ To add and define MCP tools:
 2.  Select the API operations that you want to expose as tools based on the HTTP method and resource path, and choose *Add*.
 
 > ### Note:  
-> Each MCP server supports up to 30 tools.
+> Each MCP server supports up to 50 tools.
 
 The selected operations are added as tools. For each tool, you can:
 
@@ -153,6 +153,8 @@ Policies govern how tools are accessed and executed.
     > 
     > The following authentication mechanisms are supported:
     > 
+    > **Supported Authentication Mechanisms**
+    > 
     > 
     > <table>
     > <tr>
@@ -226,6 +228,8 @@ Policies govern how tools are accessed and executed.
     > </td>
     > </tr>
     > </table>
+    > 
+    > To set up a HTTP destination from scratch, navigate to SAP BTP Cockpit, select *Destination* from the side navigation pane, and follow the step-by-step instructions in [Create HTTP Destinations](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-http-destinations?version=Cloud).
 
 
 
@@ -447,30 +451,13 @@ Every MCP server contains two adapters:
 
         You can select one of the following authentication methods:
 
-        -   Basic
+        -   BasicAuthentication
 
-            The tenant authenticates itself against the receiver using user credentials \(user name and password\).
+        -   NoAuthentication
 
-        -   None
+        -   OAuth2ClientCredentials
 
-            When not to use any authentication can include, but not limited to, the following cases:
-
-            -   If the target system that you want to communicate doesn't require any authentication.
-
-            -   If you want to set an authorization header via a Content Modifier step before the adapter.
-
-            -   If you want to set an authorization header via a Script step before the adapter.
-
-
-        -   OAuth2 Client Credentials
-
-            Use this grant type to access web resources by authorizing the client application to perform required actions on behalf of a user.
-
-        -   Client Certificate
-
-            The tenant authenticates itself against the receiver using a client certificate.
-
-            It's a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
+        -   ClientCertificateAuthentication
 
 
 
@@ -691,35 +678,43 @@ Every MCP server contains two adapters:
     
     Defines how the tenant \(as the HTTP client\) authenticates itself against the receiver.
 
-    You can select one of the following authentication methods:
+    The following authentication mechanisms are supported:
 
-    -   Basic
+    -   Internet
+        -   ClientCertificateAuthentication
 
-        The tenant authenticates itself against the receiver using user credentials \(user name and password\).
+        -   OAuth2ClientCredentials
 
-    -   None
+        -   NoAuthentication
 
-        When not to use any authentication can include, but not limited to, the following cases:
+        -   BasicAuthentication
 
-        -   If the target system that you want to communicate doesn't require any authentication.
+        -   OAuth2Password
 
-        -   If you want to set an authorization header via a Content Modifier step before the adapter.
+        -   OAuth2JWTBearer
 
-        -   If you want to set an authorization header via a Script step before the adapter.
+        -   SAMLAssertion
 
-
-    -   OAuth2 Client Credentials
-
-        Use this grant type to access web resources by authorizing the client application to perform required actions on behalf of a user.
+        -   OAuth2SAMLBearerAssertion
 
 
-    Enabled only if you choose *Proxy Type* as *Internet*:
+    -   OnPremise
+        -   OAuth2ClientCredentials
 
-    -   Client Certificate
+        -   NoAuthentication
 
-        The tenant authenticates itself against the receiver using a client certificate.
+        -   BasicAuthentication
 
-        It's a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
+        -   PrincipalPropagation
+
+        -   OAuth2Password
+
+        -   OAuth2JWTBearer
+
+        -   SAMLAssertion
+
+        -   OAuth2SAMLBearerAssertion
+
 
 
 

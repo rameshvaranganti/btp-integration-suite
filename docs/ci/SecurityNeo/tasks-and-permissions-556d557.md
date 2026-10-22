@@ -2,7 +2,7 @@
 
 # Tasks and Permissions
 
-The following table provides an overview of which roles are required in order to accomplish the various tasks related to Cloud Integration. It's also indicated in how far the tasks and roles are relevant for the main persona defined for Cloud Integration.
+The following table provides an overview of which roles are required in order to accomplish the various tasks related to Cloud Integration. It's also indicated in how far the tasks and roles are relevant for the main personas defined for Cloud Integration. You can use these individual roles or role templates to define your own custom authorization groups \(Neo\) or role collections \(Cloud Foundry\), giving you fine-grained control over user permissions. If you prefer to work with predefined permission sets instead, see [Personas](../SecurityCF/personas-4b4ba1c.md).
 
 
 
@@ -10,7 +10,7 @@ In the different environments, these persona are mapped to different objects.
 
 -   In the Neo environment, a persona is realized by an authorization group \(beginning with the string *AuthGroup*\).
 
--   In the Cloud Foundry environment, a persona ia realized by a role collection.
+-   In the Cloud Foundry environment, a persona is realized by a role collection.
 
 
 The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Personas](personas-2937e5c.md).
@@ -2524,4 +2524,9 @@ n.a.
 </td>
 </tr>
 </table>
+
+**Related Information**  
+
+
+[Authorization Entities](https://help.sap.com/docs/btp/sap-business-technology-platform/authorization-entities?version=Cloud)
 

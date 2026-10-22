@@ -7,7 +7,7 @@
 The analytics dashboard provides powerful and easy-to-use analytical reporting tools to analyze the usage and performance of your APIs and MCP servers. Most of the reports on the analytics dashboard are a graphical representation of data, derived using visually appealing charts. The analytical data is spread across various report pages, namely *Overview*, *Health*, and *Usage*, with each page providing information about key metrics for the selected artifact type.
 
 > ### Note:  
-> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through September 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion until the January 2027 software release. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620) Information published on SAP site.
 
 
 

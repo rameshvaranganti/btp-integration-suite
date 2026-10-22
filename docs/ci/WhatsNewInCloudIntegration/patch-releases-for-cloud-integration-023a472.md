@@ -79,6 +79,253 @@ Patches for different components are associated with different major software ve
 
 
 
+## October 2026
+
+Software Increment: 2608
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.56.22
+
+</td>
+<td valign="top">
+
+his patch fixes the database procedure responsible for creating the `RT_LOC` column, which can cause data store operations to fail on some Neo tenants with error
+
+```
+com.sybase.jdbc4.jdbc.SybSQLException: Invalid column name
+    'RT_LOC'.
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.47.24
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   The RNIF adapter supports integration with Partner Directory, where the PID is constructed using RNIF data fields. Some partners, however, send data containing whitespace characters, which are then included in the generated PID. Because Partner Directory does not support whitespace characters in PIDs, this patch escapes them when constructing the PID.
+-   Resolves an FTPS adapter issue where the DNS name is re-resolved when opening the data connection in EPSV mode. The fix reuses the IP address resolved for the control connection and combines it with the port returned in the EPSV response. This prevents IP mismatches when DNS resolves to different IP addresses, for example when using round-robin DNS. The fix is opt-in and can be enabled by setting `ESB_FTP_REUSE_CONTROL_IP=true`. It is disabled by default and preserves Cloud Connector routing behavior.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.83.112
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   The RNIF adapter supports integration with Partner Directory, where the PID is constructed using RNIF data fields. Some partners, however, send data containing whitespace characters, which are then included in the generated PID. Because Partner Directory does not support whitespace characters in PIDs, this patch escapes them when constructing the PID.
+-   Resolves an FTPS adapter issue where the DNS name is re-resolved when opening the data connection in EPSV mode. The fix reuses the IP address resolved for the control connection and combines it with the port returned in the EPSV response. This prevents IP mismatches when DNS resolves to different IP addresses, for example when using round-robin DNS. The fix is opt-in and can be enabled by setting `ESB_FTP_REUSE_CONTROL_IP=true`. It is disabled by default and preserves Cloud Connector routing behavior.
+-   Removes sequential mapping parameters during agreement reactivation and deactivation, mismatch of first name and last name labels, and incorrect API call from the Trading Partner Management user interface.
+-   Makes Kafka notifications optional.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.83.108
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   This patch corrects the underlying logic within Trading Partner management's backend, which is currently broken.
+-   This patch enhances the logs in ITCO and removes the state entries for tenants whose runtime locations have been offboarded.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.47.22
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Optimizes query execution during evaluation to resolve evaluation run failures.
+-   Fixes an issue where JSON key ordering could silently break on Java 21 for Groovy scripts using `JsonSlurper.parseText()`.
+-   After the recent parallel deployment enhancement, OData Sender endpoint registration became inconsistent on certain worker nodes, causing 404 responses on invocation. This was due to a race condition introduced by concurrent deployment threads during endpoint registration. The fix ensures that endpoint registration is handled correctly in the parallel, multi-threaded deployment flow.
+-   The recent deployment introducing enhanced attachment handling for XI messages and the generation of standard CIDs for attachments without a Content-ID caused the payload `Name` attribute to be replaced by the newly generated CID instead of retaining the original attachment ID. The fix ensures that the attachment ID is used for the payload name in the manifest.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.83.105
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Free usage of the AI feature has been extended from September 30 to January 2027.
+-   Fixes an issue with displaying the number of message queues on the Monitoring overview.
+-   Corrects the processing of agreement templates so that company- and subsidiary-owned communication settings are preserved during template import and save operations. This resolves cases where such settings were previously removed unintentionally.
+-   The RNIF adapter was sending the XML declaration as `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`. However, since the DTDs are not included in the RNIF message, the `standalone="yes"` value is inaccurate and can cause issues. With this patch, the XML declaration is changed to `<?xml version="1.0" encoding="UTF-8"?>`, which is correct.
+-   After the recent parallel deployment enhancement, OData Sender endpoint registration became inconsistent on certain worker nodes, causing 404 responses on invocation. This was due to a race condition introduced by concurrent deployment threads during endpoint registration. The fix ensures that endpoint registration is handled correctly in the parallel, multi-threaded deployment flow.
+-   The job scheduler will update its API to restrict the result set to 100 entries and enforce pagination. The existing implementation does implement pagination but sets the page size to 1000 by default, which causes an error instead of returning 100 results with pagination. The fix sets the initial page size to 100 and adjusts the size based on the error returned when the provided size is not acceptable.
+-   The recent deployment introducing enhanced attachment handling for XI messages and the generation of standard CIDs for attachments without a Content-ID caused the payload `Name` attribute to be replaced by the newly generated CID instead of retaining the original attachment ID. The fix ensures that the attachment ID is used for the payload name in the manifest.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.56.21
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   The recent deployment introducing enhanced attachment handling for XI messages and the generation of standard CIDs for attachments without a Content-ID caused the payload `Name` attribute to be replaced by the newly generated CID instead of retaining the original attachment ID. The fix ensures that the attachment ID is used for the payload name in the manifest.
+-   After the recent parallel deployment enhancement, OData Sender endpoint registration became inconsistent on certain worker nodes, causing 404 responses on invocation. This was due to a race condition introduced by concurrent deployment threads during endpoint registration. The fix ensures that endpoint registration is handled correctly in the parallel, multi-threaded deployment flow.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.56.19
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Decouples message queue count requests from the Monitoring overview page request.
+-   Fixes an issue that prevented the correct use of TLS in the AMQP Connectivity Test.
+-   Fixes an issue where JSON key ordering could silently break on Java 21 for Groovy scripts using `JsonSlurper.parseText()`.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.83.98
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Enables content synchronization optimization, reducing the RFM \(Ready for Mission\) time.
+-   Fixes an issue where XSLT files were created with \{\{ScenarioName\}\} instead of the actual integration flow name when creating PD entries during the migration of a scenario using the pipeline approach in the migration tool.
+-   Decouples message queue count requests from the Monitoring overview page request.
+-   Extends free usage of the AI feature from September 30, 2026, to January 2027.
+-   Fixes an issue that prevented the correct use of TLS in the AMQP Connectivity Test.
+-   Optimizes the archiving task by enforcing a maximum batch size through a configurable variable.
+-   Restores blue-green deployment behavior by updating the configuration.
+-   Optimizes query execution during evaluation to resolve evaluation run failures.
+-   Fixes an issue where JSON key ordering could silently break on Java 21 for Groovy scripts using `JsonSlurper.parseText()`.
+-   Updates the SFTP outbound public key during agreement activation.
+-   Fixes self-healing template versioning issues caused by existing data corruption.
+-   Resolves the partial activation of agreement updates.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## September 2026
 
 Software Increment: 2607
@@ -101,6 +348,28 @@ Software Version
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.82.112
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Decouples the message queues count request from the generic Monitoring overview page request.
+-   Provides the timeout optimization for customers opting in for a rolling update of Cloud Foundry worker.
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">

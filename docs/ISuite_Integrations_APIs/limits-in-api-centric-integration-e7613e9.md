@@ -70,12 +70,12 @@ Tool
 </td>
 <td valign="top">
 
-A maximum of 30 tools can be generated and exposed per MCP Server, regardless of the source type.
+A maximum of 50 tools can be generated and exposed per MCP Server, regardless of the source type.
 
 </td>
 <td valign="top">
 
-30
+50
 
 </td>
 <td valign="top">
@@ -102,7 +102,7 @@ Maximum token limit for response.
 </td>
 <td valign="top">
 
-200,000
+500,000
 
 </td>
 <td valign="top">

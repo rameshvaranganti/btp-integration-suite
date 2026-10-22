@@ -76,5 +76,5 @@ Task
 **Related Information**  
 
 
-[OData Provisioning](odata-provisioning-d257fc3.md "OData Provisioning, a capability of SAP Integration Suite, exposes business data and business logic as OData services on SAP Business Technology Platform, enabling you to run user-centric applications.")
+[OData Provisioning](odata-provisioning-d257fc3.md "OData Provisioning, a capability of SAP Integration Suite, exposes business data and business logic as OData services on SAP BTP, enabling you to run user-centric applications.")
 

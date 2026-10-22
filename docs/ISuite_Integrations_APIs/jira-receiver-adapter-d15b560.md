@@ -54,9 +54,11 @@ Description
 </td>
 <td valign="top">
 
-Specify the login endpoint to your Jira endpoint url.
+Specify the login endpoint to your Jira instance URL.
 
-Example: `https://your-domain.atlassian.net`
+For Basic and API Token: `https://your-domain.atlassian.net`
+
+For API Token with Scopes:`https://api.atlassian.net`
 
 </td>
 </tr>
@@ -68,7 +70,13 @@ Example: `https://your-domain.atlassian.net`
 </td>
 <td valign="top">
 
-Select *Basic* to use simple authentication to connect to the Jira endpoint with a username and password.
+Select an authentication method:
+
+-   *Basic*
+-   *API Token*
+-   *API Token with Scopes*
+
+
 
 </td>
 </tr>
@@ -77,10 +85,52 @@ Select *Basic* to use simple authentication to connect to the Jira endpoint with
 
 *Basic Credentials Alias*
 
+\(Only available when Authentication is selected as *Basic*\)
+
 </td>
 <td valign="top">
 
-Specify the user credential to be stored as a security artifact in *Security Material*.
+Specify the user credentials \(username-password\) to be stored as a security artifact in Security Material.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client Email Alias*
+
+\(Only available when Authentication is selected as *API Token*\)
+
+</td>
+<td valign="top">
+
+Specify the Secure Parameter that stores Client Email.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*API Token Alias*
+
+</td>
+<td valign="top">
+
+Specify the Secure Parameter that stores the API Token.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Cloud ID*
+
+\(Only available when Authentication is selected as *API Token with Scopes*\)
+
+</td>
+<td valign="top">
+
+Specify the Cloud ID.
 
 </td>
 </tr>
@@ -106,7 +156,7 @@ Enable to reuse the connection. This option enables the reuse of connection obje
 
 Specify the maximum waiting time \(in milliseconds\) for the connection to be established.
 
-Example: `6000`
+Example: `60000`
 
 </td>
 </tr>
@@ -120,7 +170,7 @@ Example: `6000`
 
 Specify the maximum waiting time \(in milliseconds\) for a response message.
 
-Example: `6000`
+Example: `60000`
 
 </td>
 </tr>

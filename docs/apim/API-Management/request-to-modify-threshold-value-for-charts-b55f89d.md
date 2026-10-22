@@ -30,7 +30,7 @@ To create a support ticket for changing the threshold value for charts, follow t
 
         To find the subdomain name and ID, follow these steps:
 
-        1.  Open the SAP BTP Cockpit and navigate to your subaccount.
+        1.  Open the Cockpit and navigate to your subaccount.
 
         2.  On the *Overview* page of your subaccount, locate the *Subdomain* attribute.
         3.  Make a note of the value marked against the *Subdomain* attribute. This value represents the subdomain name.

@@ -2,6 +2,8 @@
 
 # Configure Externalized Parameters of an Integration Flow
 
+Cloud Integration supports runtime-aware configuration, enabling you to configure integration flows across one or more runtime profiles in a centralized way.
+
 
 
 ## Context

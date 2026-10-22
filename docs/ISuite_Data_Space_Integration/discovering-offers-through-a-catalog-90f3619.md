@@ -34,7 +34,7 @@ The discovery of a provider's catalog is the first step to consuming an asset.
     > /api/dsi/v1/catalog
     > ```
 
-    Provide the following request body with the following information. Have a look at the sample code and replace the example values with your specific value. The counter party address can be found in the discovery service of the data space, for example, Cofinity-X Beta Jupiter.
+    Provide the following request body, replacing the example values with your specific values. You can retrieve the counter party address using the POST call `/api/dsi/v1/connector-address`, entering a BPN or DID.
 
     > ### Sample Code:  
     > ```

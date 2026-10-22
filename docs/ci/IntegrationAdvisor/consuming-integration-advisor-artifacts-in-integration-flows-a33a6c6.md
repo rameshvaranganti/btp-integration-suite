@@ -2,17 +2,27 @@
 
 # Consuming Integration Advisor Artifacts in Integration Flows
 
-A B2B integration scenario involves many tasks associated with the exchange of business messages between the business partners. The required tasks include defining interfaces for the involved partners, creating mappings between the interfaces, generating the runtime artifacts and, finally, modeling the integration scenario. SAP Integration Advisor and SAP Cloud Integration play a key role in simplifying and streamlining the integration tasks.
+Integration flows that process B2B messages between business partners by consuming runtime artifacts generated from Integration Advisor, including XSD schemas, XSLT mappings, and validation resources. Use this approach to streamline EDI-to-IDoc and similar B2B integration scenarios with predefined templates and automated artifact generation.
 
-Integration Advisor unifies all the required tasks for defining the desired interfaces, mappings, and generating the runtime artifacts. The runtime artifacts generated are used within the processing steps of an integration flow. An integration flow defines how messages are processed and exchanged between the sender and receiver systems in a B2B scenario. The Cloud Integration platform provides a graphical designer interface to configure – the sender and receiver systems, the adapters to connect the sender and receiver systems to the tenant, and the steps that define the message processing. For more information, see [Getting Started with Integration Flow Development](../Development/getting-started-with-integration-flow-development-e5724cd.md) and [Configure Adapter in Communication Channels](../Development/configure-adapter-in-communication-channels-1f06633.md).
+B2B integration scenarios involve many tasks associated with the exchange of business messages between the business partners. The required tasks include defining interfaces for the involved partners, creating mappings between the interfaces, generating the runtime artifacts and, finally, modeling the integration scenario. SAP Integration Advisor and SAP Cloud Integration play a key role in simplifying and streamlining the integration tasks.
 
-To get you started with minimum effort in your integration flow creation, Integration Advisor provides a pre-defined set of templates for various B2B integration scenarios. These templates are available in the EDI Integration Templates for SAP Integration Advisor integration package. You can access the integration package via the SAP Business Accelerator Hub. You can copy the integration package into your Cloud Integration tenant and adapt or extend the predefined integration flow as per your requirements. The package provides the required templates for inbound and outbound integration flows. These cover the standard integration scenarios such as EDI to IDoc, EDI to SOAP, IDoc to EDI, and IDoc to cXML. However, the list of templates and scenarios covered is growing rapidly.
+Integration Advisor unifies all the required tasks for defining the desired interfaces, mappings, and generating the runtime artifacts. The runtime artifacts generated are used within the processing steps of an integration flow. An integration flow defines how messages are processed and exchanged between the sender and receiver systems in a B2B scenario. The Cloud Integration platform provides a graphical designer interface to configure – the sender and receiver systems, the adapters to connect the sender and receiver systems to the tenant, and the steps that define the message processing. See [Getting Started with Integration Flow Development](../Development/getting-started-with-integration-flow-development-e5724cd.md) and [Configure Adapter in Communication Channels](../Development/configure-adapter-in-communication-channels-1f06633.md).
 
-The Documents tab of the integration package provides details regarding the templates and the usage of the Integration Advisor runtime artifacts in the integration flow steps.
+To get you started with minimum effort in your integration flow creation, Integration Advisor provides a predefined set of templates for various B2B integration scenarios. These templates are available in the [EDI Integration Templates for SAP Integration Advisor](https://api.sap.com/package/ICAPrepackagedContent/integrationflow) package on the SAP Business Accelerator Hub. Copy the integration package into your Cloud Integration tenant and adapt or extend the predefined integration flow as per your requirements. The package provides the required templates for inbound and outbound integration flows, covering the standard integration scenarios such as EDI to IDoc, EDI to SOAP, IDoc to EDI, and IDoc to cXML. However, the list of templates and scenarios covered is growing rapidly.
 
-Let's consider the example of EDI to IDoc integration scenario. The various processing steps and the artifacts involved in this scenario are detailed in the following table.
+The *Documents* tab of the integration package provides details regarding the templates and the usage of the Integration Advisor runtime artifacts in the integration flow steps.
 
-![](images/EDIFACT_to_IDOC_iflow_635e047.png)
+
+
+## Example: EDI to IDoc
+
+Consider the example of the EDI-to-IDoc integration scenario.
+
+![Integration process flow diagram showing EDI to SAP IDoc conversion and validation steps.](images/EDIFACT_to_IDOC_iflow_635e047.png)
+
+The following table details the various processing steps and the artifacts involved in this scenario:
+
+**Processing Steps and Artifacts for EDI to IDoc Integration Scenario**
 
 
 <table>
@@ -48,7 +58,7 @@ Validate and Analyze EDI Interchange
 </td>
 <td valign="top">
 
-The incoming EDI message is validated, and an acknowledgement is generated. The validation of the inbound message is done based on the XSD configured in this step. You've to use the XSD schema located in the `source Message Implementation Guideline (MIG)` folder within the exported zip file generated in Integration Advisor \(IA\) – `UN-EDIFACT<MessageType>.xsd`. The payload is forwarded for further processing based on the result of validation.
+The incoming EDI message is validated, and an acknowledgment is generated. The validation of the inbound message is done based on the XSD configured in this step. You've to use the XSD schema located in the `source Message Implementation Guideline (MIG)` folder within the exported zip file generated in Integration Advisor \(IA\) – `UN-EDIFACT<MessageType>.xsd`. The payload is forwarded for further processing based on the result of validation.
 
 </td>
 </tr>
@@ -60,7 +70,7 @@ Router
 </td>
 <td valign="top">
 
-Acknowledgement messages and EDI messages are routed separately.
+Acknowledgment messages and EDI messages are routed separately.
 
 </td>
 </tr>
@@ -84,7 +94,7 @@ EDI - Qualifier Pre-Processing
 </td>
 <td valign="top">
 
-The qualifier suffixes are added in the XML based on the source MIG definition to perform a content validation of the message in the next step. The resource `<SourceMIGName>_preproc.xsl`, located in the `source MIG` folder within the exported zip file is used. After this step, the payload validation is executed based on the defined qualifiers and qualifier values.
+The qualifier suffixes are added in the XML based on the source MIG definition to perform a content validation of the message in the next step. The resource `<SourceMIGName>_preproc.xsl`, located in the `source MIG` folder within the exported zip file is used. After this step, the payload validation is performed based on the defined qualifiers and qualifier values.
 
 </td>
 </tr>

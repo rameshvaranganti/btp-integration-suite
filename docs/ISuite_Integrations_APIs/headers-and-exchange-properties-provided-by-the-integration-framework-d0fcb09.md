@@ -5027,6 +5027,28 @@ Contains the name of the remote-enabled function module that the calling SAP sys
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+SAP\_DisableExternalW3CTraceContextTransmission
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+Content Modifier
+
+</td>
+<td valign="top">
+
+You can prevent the propagation of the `traceparent` header in outbound requests by setting the `SAP_DisableExternalW3CTraceContextTransmission` exchange property to `true` in the *Content Modifier* step of the integration flow. This property controls only the automatic derivation of `traceparent` from the SAP Passport. A `traceparent` header explicitly added in the *Content Modifier* step is not affected by this property and still propagates to the outbound request.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  

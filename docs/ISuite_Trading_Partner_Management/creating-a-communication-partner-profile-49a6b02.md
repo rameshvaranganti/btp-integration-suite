@@ -887,12 +887,29 @@ To create such a partner, complete the following steps.
     <tr>
     <td valign="top">
     
-    Public Key Alias \(appears only if you select the checkbox for *Encrypt Message*\)
+    Certificate Source \(appears only if you select the checkbox for *Encrypt Message*\)
     
     </td>
     <td valign="top">
     
-    Specify the public key alias to encrypt the AS2 message.
+    Specify the source of the public certificate: *From Current Profile* or *Cloud Integration Key Store*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Public Key/Public Key Alias \(appears only if you select the checkbox for *Encrypt Message*\)
+    
+    </td>
+    <td valign="top">
+    
+    This value depends on the *Certificate Source* that you specified in the previous field:
+
+    -   *From Current Profile*: Select a certificate from the certificates uploaded in the current profile
+    -   *Cloud Integration Key Store*: Fill the alias for the certificate which is uploaded using the Cloud Integration key store
+
+
     
     </td>
     </tr>

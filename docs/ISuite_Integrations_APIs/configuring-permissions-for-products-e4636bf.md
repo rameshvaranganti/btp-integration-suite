@@ -50,13 +50,13 @@ You can currently only configure static custom roles for the products. You creat
     -   *Subscription*: Controls who can subscribe to and use the product.
 
         > ### Note:  
-        > Even if all the standard roles are assigned to an application developer \(such as AuthGroup.API.ApplicationDeveloper\), they must also be explicitly assigned the custom role defined by the organization to create a subscription. If a product’s subscription permissions include this custom role, the application developer will not be able to create a subscription to the product unless they also have that role. This restriction also applies when attempting to create a subscription on behalf of another application developer—the operation will fail if the initiating user does not possess the required custom role, as permission checks are enforced based on the logged-in user rather than the target user.
+        > Even if all the standard roles are assigned to an application developer \(such as **AuthGroup.API.ApplicationDeveloper**\), they must also be explicitly assigned the custom role defined by the organization to create a subscription. If a product’s subscription permissions include this custom role, the application developer will not be able to create a subscription to the product unless they also have that role. This restriction also applies when attempting to create a subscription on behalf of another application developer—the operation will fail if the initiating user does not possess the required custom role, as permission checks are enforced based on the logged-in user rather than the target user.
 
 
 8.  Choose *Save* to apply the permission changes.
 
     > ### Note:  
-    > The roles listed are the custom roles you previously defined in the SAP BTP Cockpit.
+    > The roles listed are the custom roles you previously defined in the SAP BTP cockpit.
 
 9.  You can choose *Publish* to apply the permission to the product.
 

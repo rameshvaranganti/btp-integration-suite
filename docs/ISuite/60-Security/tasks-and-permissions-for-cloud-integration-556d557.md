@@ -2,7 +2,7 @@
 
 # Tasks and Permissions for Cloud Integration
 
-The following table provides an overview of which roles are required in order to accomplish the various tasks related to Cloud Integration. It's also indicated in how far the tasks and roles are relevant for the main persona defined for Cloud Integration.
+The following table provides an overview of which roles are required in order to accomplish the various tasks related to Cloud Integration. It's also indicated in how far the tasks and roles are relevant for the main personas defined for Cloud Integration. You can use these individual roles or role templates to define your own custom authorization groups \(Neo\) or role collections \(Cloud Foundry\), giving you fine-grained control over user permissions. If you prefer to work with predefined permission sets instead, see [Personas](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/4b4ba1c553474259b5be661f4ef0702c.html "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:.
 
 
 
@@ -2502,4 +2502,9 @@ n.a.
 </td>
 </tr>
 </table>
+
+**Related Information**  
+
+
+[Authorization Entities](https://help.sap.com/docs/btp/sap-business-technology-platform/authorization-entities?version=Cloud)
 

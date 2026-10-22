@@ -10,6 +10,11 @@ Learn about the personas and roles in Data Space Integration, as well as their t
 
 ## Personas and Roles
 
+> ### Note:  
+> Having one of the following role collections assigned to your user doesn't automatically grant you access to connector-specific information. You always need an additional connector-specific role. For example, if you want to create assets in connector A, you need the role collection `DataspaceProvider` **and** a role collection containing a role that references connector A.
+> 
+> Connector-specific role collections are created and assigned to you separately by the administrator of your SAP BTP subaccount. See [Creating Role Collections for Connectors](https://help.sap.com/viewer/c6f026f9206e4a60948e827535eef449/CLOUD/en-US/119b70af305845d3aa1414b280353c6d.html "For your users to have access to connector settings, you need to create roles and role collections that contain the rights to these connectors.") :arrow_upper_right:.
+
 The following role collections exist for Data Space Integration:
 
 

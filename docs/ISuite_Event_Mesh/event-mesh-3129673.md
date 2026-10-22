@@ -13,3 +13,5 @@ To know more about how to initially subscribe and set up Event Mesh in SAP Integ
 -   [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD)
 -   [Configuring User Access to SAP Integration Suite](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?version=CLOUD)
 
+If you are working with SAP Event Mesh Default Plan and want to migrate to the Event Mesh on SAP Integration Suite, see [Migration Guide](https://help.sap.com/docs/event-mesh/migrating-from-sap-event-mesh-to-event-mesh-in-sap-integration-suite-75f1a2ddbfb74b6480f935d4a4c68d17/overview).
+

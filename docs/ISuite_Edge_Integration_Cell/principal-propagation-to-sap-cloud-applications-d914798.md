@@ -10,6 +10,8 @@ Edge Integration Cell can propagate an authenticated user's identity to SAP clou
 
 When a user triggers an integration that calls an SAP cloud application \(such as SAP SuccessFactors or SAP Concur\), the target application needs to know who that specific user is. Edge Integration Cell uses the SAML 2.0 Bearer Assertion mechanism to obtain a user-specific OAuth 2.0 access token, which is then used to call the target application. All SAML operations are handled automatically by the Destination Service. The integration developer does not work with SAML directly. For more information, see [Deploying an OAuth2 SAML Bearer Assertion](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/deploying-oauth2-saml-bearer-assertion?version=CLOUD&ai=true)
 
+This configuration supports integration flow and API artifacts; HTTP and ODATA V2 Receiver adapters. It is not supported in the offline mode. For more information, see [Offline Mode Overview](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/offline-mode-overview?version=CLOUD&ai=true)
+
 
 
 ## How It Works

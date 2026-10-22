@@ -4,7 +4,7 @@
 
 # Creating Service Instance and Service Key for Inbound Authentication
 
-With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Integration Suite , a service instance is the definition of an OAuth client.
+With a service instance, you define how to access a certain SAP Integration Suite service. In the context of SAP Integration Suite , a service instance is the definition of an OAuth client.
 
 Create a service instance to implement inbound communication. A service instance is an OAuth client \(with grant type `Client Credentials`\).
 

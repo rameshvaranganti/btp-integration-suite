@@ -179,8 +179,11 @@ To add a new job, select :heavy_plus_sign: \(Add\). Depending on the **Action** 
 </td>
 <td valign="top">
 
--   *Retention Period for Completed Message Log \(Days\)* 
+-   *Retention Period for Completed Message Log \(Days\)*
 -   *Retention Period for Monitoring Data \(Days\)*
+-   *Deletion Period Start*
+-   *Deletion Period End*
+-   *Delete MPL Aggregation Data Older Than \(Days\)*
 
 
 
@@ -189,6 +192,9 @@ To add a new job, select :heavy_plus_sign: \(Add\). Depending on the **Action** 
 
 -   Enter the number of days after which the system deletes completed MPL data.
 -   Enter the number of days after which the system deletes monitoring data.
+-   Enter the start of the explicit deletion period. When set together with `deletionPeriodEnd`, only MPLs with `logStart` within this range are deleted, bypassing the 48-hour window cap. This allows targeted, time-range-based deletion of monitoring data.
+-   Enter the end of the explicit deletion period. When set together with `deletionPeriodStart`, only MPLs with `logStart` within this range are deleted, bypassing the 48-hour window cap.
+-   Enter the number of days after which the system deletes MPL aggregation data. Use 0 for the job handler's default.
 
 
 
@@ -259,6 +265,57 @@ Enter the number of days after which the system deletes diagnostic data and heap
 <td valign="top">
 
 Enter a specific time frame to consolidate MPL statistics data. The default is set to the last 6 hours.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Crun Frun Data Transfer*
+
+</td>
+<td valign="top">
+
+No parameters.
+
+</td>
+<td valign="top">
+
+Pushes message processing log data to SAP Cloud ALM or FRUN \(Focused Run\) systems.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Update Expiring OAuth2 Refresh Tokens*
+
+</td>
+<td valign="top">
+
+No parameters.
+
+</td>
+<td valign="top">
+
+Update Refresh Tokens of the OAuth2 Credentials with grant type Authorization Code before they expire.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Update MPL Status*
+
+</td>
+<td valign="top">
+
+Abandon Processing Messages, Inactive Since \(Hours\)
+
+</td>
+<td valign="top">
+
+Specify how long messages stuck in status *Processing* must remain without updates before the status changes to *Abandoned*.
 
 </td>
 </tr>

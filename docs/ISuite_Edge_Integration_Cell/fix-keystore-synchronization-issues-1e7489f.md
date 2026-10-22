@@ -4,6 +4,9 @@
 
 Fix keystore issues by synchronizing the nodes of your Kubernetes cluster with Coordinated Universal Time \(UTC\).
 
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
 
 
 <a name="loio1e7489f7226545e9a7936b99d1de298a__section_dt3_btl_zbc"/>
@@ -29,7 +32,7 @@ Fix keystore issues by synchronizing the nodes of your Kubernetes cluster with C
     > 
     > ```
 
-    You can access the stack trace by following this navigation path in the diagnostics zip file:`edge-icell/pod-logs/edge-icell/esac-<guid>/esac`.
+    You can access the stack trace by following this navigation path in the diagnostics zip file:`<your-namespace>/pod-logs/<your-namespace>/esac-<guid>/esac`.
 
     For more information, see [Downloading Diagnostic Data from an Edge Node](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/3ac0188c92124823a2ce921f40e317af.html).
 

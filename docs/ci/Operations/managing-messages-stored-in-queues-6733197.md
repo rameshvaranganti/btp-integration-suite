@@ -57,6 +57,8 @@ You can copy the JMS Message ID by choosing <span class="SAP-icons-V5"></span
 
 ID of the message processing log.
 
+On clicking the *Message ID* link, you navigate to the message processing log for the message \(*Monitor Message Processing* screen\). Here, you can find the integration flow name, the time the message was sent, and other message processing details \([Monitor Message Processing](monitor-message-processing-314df3f.md)\).
+
 </td>
 </tr>
 <tr>
@@ -231,6 +233,15 @@ The identifier set by the `SAP_MessageProcessingLogCustomStatus` header, which y
 </td>
 </tr>
 </table>
+
+> ### Tip:  
+> You can choose *Table Settings* \(:gear:\) to customize how your messages are displayed. The dialog provides three configuration tabs:
+> 
+> -   *Sort* \(<span class="SAP-icons-V5"></span>\). Sort your messages based on their available details. For example, if you sort by *Descending* and *Created At*, the list reorders to place the most recent messages at the top.
+> -   *Filter* \(<span class="SAP-icons-V5"></span>\). Narrow down the list to display only the messages that match your specified criteria. You can apply several filters simultaneously.
+> -   *Columns* \(<span class="SAP-icons-V5"></span>\). Select which attributes are shown as columns in the table and in which order.
+> 
+> Choose *OK* to apply your settings. You can always choose *Reset* to restore the table settings to their default state.
 
 You can perform the following actions for the messages you select:
 

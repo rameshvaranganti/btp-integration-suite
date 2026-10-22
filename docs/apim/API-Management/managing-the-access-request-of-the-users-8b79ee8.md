@@ -20,7 +20,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
 
 1.  Log on to **Developer Hub**.
 
-    Use the *Manage Users* page to approve or reject the developer's registration requests and manage the roles of the registered users. For assigning roles to the users, use the SAP BTP Cockpit.
+    Use the *Manage Users* page to approve or reject the developer's registration requests and manage the roles of the registered users. For assigning roles to the users, use the .
 
 2.  Choose *Admin Center* \> *Manage Users* \> *E-mail Configuration* and add the administrator’s email in the *E-mail Configuration* textbox.
 

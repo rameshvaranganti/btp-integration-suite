@@ -15,7 +15,7 @@ The SAP Cloud Application Lifecycle Management \(ALM\) platform allows you to mo
 You can monitor the health of custom domain virtual host certificates using SAP Cloud ALM by integrating it with the Health API provided by API Management \(https://<host\>:<port\>/api/1.0/Health\). This API returns expiry details for certificates uploaded by customers for their custom domain virtual hosts.
 
 > ### Note:  
-> To enable access, go to the SAP BTP Cockpit, create a service instance with the *apiportal-apiaccess* plan, and assign the *APIManagement.SelfService.Administrator* role. Once the instance is created, generate a service key, which includes the base URL—append */api/1.0/Health* to this URL to access the API. For secure access from SAP Cloud ALM, use *OAuth* authentication.
+> To enable access, go to the , create a service instance with the *apiportal-apiaccess* plan, and assign the *APIManagement.SelfService.Administrator* role. Once the instance is created, generate a service key, which includes the base URL—append */api/1.0/Health* to this URL to access the API. For secure access from SAP Cloud ALM, use *OAuth* authentication.
 
 
 
@@ -26,7 +26,7 @@ You can monitor the health of custom domain virtual host certificates using SAP 
 You can monitor the health of centralized Developer Hub certificates by integrating API Management \(APIM\) with SAP Cloud Application Lifecycle Management \(CALM\). By leveraging CALM’s health monitoring capabilities, you can configure automated email notifications when certificates approach their expiry, enabling proactive certificate management and helping prevent unexpected disruptions.
 
 > ### Note:  
-> To enable access, go to the SAP BTP Cockpit, create a service instance with the *devportal-apiaccess* plan, and assign the *AuthGroup.API.Admin* role. Once the instance is created, generate a service key, which includes the base URL—append */api/1.0/Health* to this URL to access the API. For secure access from SAP Cloud ALM, use *OAuth* authentication.
+> To enable access, go to the , create a service instance with the *devportal-apiaccess* plan, and assign the *AuthGroup.API.Admin* role. Once the instance is created, generate a service key, which includes the base URL—append */api/1.0/Health* to this URL to access the API. For secure access from SAP Cloud ALM, use *OAuth* authentication.
 
 > ### Note:  
 > You can monitor the health of centralized Developer Hub certificates either directly from the Centralized Developer Hub or from each individual API Portal connected to it. For more information, see [Centralized Developer Hub](APIM-Initial-Setup/centralized-developer-hub-38422de.md).

@@ -15,7 +15,7 @@ The Cloud Integration capability of SAP Integration Suite currently provides the
 
 ## Implication for Script Step
 
-While [executing](design-guidelines-view-d62dfe0.md) the design guidelines from your integration flow, unlike other [design guidelines](IntegrationSettings/design-guidelines-4d1c84f.md) these guidelines can't be skipped. If the non-compliace is highlighted regarding the underlying [Script](scripts-fa29f02.md) guidelines, you must navigate to the respective Script and [fix the incompatibilities](fix-script-incompatibilities-7397c42.md). To help compatibility with future runtime and software upgrades, and receive resolution support for violations, you should also upgrade your Script step to the latest version, which utilizes runtime 4.0.29. See [Upgrading Script](upgrading-script-917e014.md)
+While [executing](design-guidelines-view-d62dfe0.md) the design guidelines from your integration flow, unlike other [design guidelines](IntegrationSettings/design-guidelines-4d1c84f.md) these guidelines can't be skipped. If the non-compliace is highlighted regarding the underlying [Script](scripts-fa29f02.md) guidelines, you must navigate to the respective Script and [fix the incompatibilities](fix-script-incompatibilities-7397c42.md). To help compatibility with future runtime and software upgrades, and receive resolution support for violations, you should also upgrade your Script step to the latest version, which utilizes runtime 4.0.29. See [Upgrading Scripts](upgrading-scripts-917e014.md)
 
 **Related Information**  
 

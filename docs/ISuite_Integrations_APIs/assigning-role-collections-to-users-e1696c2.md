@@ -10,7 +10,7 @@ Role collections enable you to group together the roles you create. The role col
 
 ## Procedure
 
-1.  In your web browser, open *SAP BTP Cockpit* and choose the relevant subaccount.
+1.  In your web browser, open SAP BTP cockpit and choose the relevant subaccount.
 
 2.  In the left-hand pane, choose *Security* \> *Role Collections*
 

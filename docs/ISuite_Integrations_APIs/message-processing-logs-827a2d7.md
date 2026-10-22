@@ -267,11 +267,14 @@ On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant
 
 `https://<host address>/api/v1/<relative resource path>`
 
+The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+
 For Edge Integration Cell, use this,
 
-`https://<host address>/location/<runtime location id>/api/v1/<relative resource path>`
+`https://<host address>/location/<runtime location id>/api/v1`
 
-The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
+> ### Example:  
+> https://\{API Host URL\}.hana.ondemand.com/location/\{Edge Runtime Location\}/api/v1
 
 You can find the relative resource path for each operation on SAP Business Accelerator Hub.
 

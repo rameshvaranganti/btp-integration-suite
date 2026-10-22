@@ -42,7 +42,7 @@ To request a custom domain with one-way TLS, perform the following steps:
 
     To create a virtual host:
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the SAP BTP cockpit and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 
@@ -130,7 +130,7 @@ To request a custom domain with one-way TLS, perform the following steps:
 
 2.  To update a virtual host:
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the SAP BTP cockpit and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 
@@ -241,7 +241,7 @@ To request a custom domain with one-way TLS, perform the following steps:
     > -   No existing proxy revisions are linked to the virtual host.
     > -   The virtual host is not marked as the **Default**.
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the SAP BTP cockpit and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 

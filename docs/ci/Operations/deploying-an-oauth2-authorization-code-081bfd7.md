@@ -20,6 +20,8 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0 Autho
 **Related Information**  
 
 
+ <?sap-ot O2O class="- topic/link " href="05599423e42f4c1c86500edb5cac449c.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/081bfd7fe8b141219db523491e2b7023.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
 [OAuth 2.0 Authorization Code Grant](../ConnectionSetup/oauth-2-0-3823134.md#loio508a70db7eac4addbb6ac69a06d46e79 "")
 
 [OAuth 2.0](../ConnectionSetup/oauth-2-0-3823134.md#loio382313443b8d4453b0fd536b82b9e15d "OAuth 2.0 allows a user to grant a client access to a protected resource (hosted by a resource server). The user typically restricts the access of the client and doesn't allow full access.")

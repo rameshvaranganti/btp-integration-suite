@@ -8,6 +8,60 @@ The OFTP sender adapter acts as a responder according to the OFTP 2 specificatio
 
 The sender adapters use multi-step integration flow filtering. This process includes transport \(port\), session, and file filtering and matching. If multiple sender channels listen on the same port, make sure that the Partner Odette IDs are different or use the same values for the required fields across channels. For more information, see [Channel Matching for Incoming Files](configure-the-oftp-sender-adapter-3420f2a.md#loio3420f2aab78f441d840cf8331de5893b__matching).
 
+The OFTP sender adapter supports the following two message protocols. You should select one per channel.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Message Protocol
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+OFTP2
+
+</td>
+<td valign="top">
+
+Standard file transfer.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OFTP2 ERP \(ERP Acknowledgements\)
+
+</td>
+<td valign="top">
+
+Receive asynchronous ERPs that a partner sends in a separate session after a file transfer is complete. For information about configuring the adapter to receive asynchronous ERPs, see [OFTP2 ERP Acknowledgements Channel](oftp2-erp-acknowledgements-channel-1983988.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OFTP2 PD
+
+</td>
+<td valign="top">
+
+Operate a single sender channel for multiple OFTP2 partners, with partner-specific parameters resolved dynamically at runtime from the Partner Directory. For more information, see  <?sap-ot O2O class="- topic/xref " href="b8f15881adac4d90931b9212885a3669.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/3420f2aab78f441d840cf8331de5893b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+</td>
+</tr>
+</table>
+
 
 
 ## Prerequisites

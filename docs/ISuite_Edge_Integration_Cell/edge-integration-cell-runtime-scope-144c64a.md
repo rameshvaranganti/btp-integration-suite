@@ -180,7 +180,7 @@ Partner Directory
 </td>
 <td valign="top">
 
-Read data about partners that are connected to an Edge Integration Cell. See: [Partner Directory](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/0fe80dc9d3be4dfbbb89ee4c791d326e.html "The Partner Directory contains information on partners that are connected to a tenant in the context of a larger business partner network.") :arrow_upper_right: 
+Read data about partners that are connected to an Edge Integration Cell. See: [Partner Directory](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/0fe80dc9d3be4dfbbb89ee4c791d326e.html "The Partner Directory contains information on partners that are connected to a tenant in the context of a larger business partner network.") :arrow_upper_right: 
 
 </td>
 </tr>

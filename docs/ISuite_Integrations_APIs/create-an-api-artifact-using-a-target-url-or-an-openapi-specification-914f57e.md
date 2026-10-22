@@ -158,6 +158,8 @@ The specification-driven approach allows you to quickly create an API artifact b
 
         > ### Note:  
         > The base path shouldn't be left empty or set to only "/".
+        > 
+        > When creating an API artifact on Integration Cell, the base paths `/graph` and `/graph/*` are reserved and cannot be used.
 
 
         
@@ -220,7 +222,7 @@ The specification-driven approach allows you to quickly create an API artifact b
         After you provide the API details, the subsequent steps depend on whether the *OpenAPI Specification Generator* is enabled in *Settings* \> *Artificial Intelligence*
 
         > ### Note:  
-        > AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through September 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
+        > AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion until the January 2027 software release. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620) Information published on SAP site.
 
         > ### Note:  
         > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).

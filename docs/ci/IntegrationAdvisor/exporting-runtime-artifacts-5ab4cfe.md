@@ -41,7 +41,7 @@ You can then import these runtime artifacts in either of these integration solut
 
 ## Exporting XSD File from EDI Type System
 
-You can now directly export Message Types of EDI Type Systems as an XSD file, eliminating the need to create a Message Implementation Guideline \(MIG\). This streamlined process saves time and effort. Follow the following procedure to know more:
+You can now directly export message types of EDI type systems as an XSD file, eliminating the need to create a message implementation guideline \(MIG\). This streamlined process saves time and effort. Follow the following procedure to know more:
 
 1.  Log in to your application.
 2.  Navigate to the *Type Systems* tab from the left pane.
@@ -100,7 +100,7 @@ You can now directly export Message Types of EDI Type Systems as an XSD file, el
     </tr>
     </table>
     
-    The automatically downloaded ZIP file contains the runtime artifacts as XSD, XSL, HTML and text files.
+    The automatically downloaded ZIP file contains the runtime artifacts as XSD, XSL, HTML, and text files.
 
 
 
@@ -238,7 +238,7 @@ You might come across the following scenarios while trying to update your integr
 
     -   Or use a relative XPath starting from the level where you've defined the XSD Assertion.
 
--   •Your integration flow has an additional flow step within the internal processing and this flow step defines an absolute XPath including the root node.
+-   Your integration flow has an additional flow step within the internal processing and this flow step defines an absolute XPath including the root node.
     -   If so, you also need to add the root node namespace prefix to this XPath.
 
 

@@ -10,7 +10,7 @@ Access and analyze anomalies in the analytics dashboard. Discover details about 
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 > ### Note:  
-> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through September 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion until the January 2027 software release. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620) Information published on SAP site.
 
 
 
@@ -182,7 +182,7 @@ In this screen, you can access the following information:
 
 
 > ### Note:  
-> *Intelligent Recommendations* is available under a free and fair usage model. You can generate a limited number of intelligent recommendations per tenant each calendar month until September, 2026. The number of generative AI transactions \(token quota\) varies based on the anomalies identified in your tenant, and the exact token quota limit cannot be determined in advance.
+> *Intelligent Recommendations* is available under a free and fair usage model. You can generate a limited number of intelligent recommendations per tenant each calendar month until January, 2027. The number of generative AI transactions \(token quota\) varies based on the anomalies identified in your tenant, and the exact token quota limit cannot be determined in advance.
 > 
 > You can also provide feedback on each generated insight, cause, and recommendation by selecting the :thumbsup: or :thumbsdown: option. This feedback helps improve the quality and relevance of your intelligent recommendations.
 

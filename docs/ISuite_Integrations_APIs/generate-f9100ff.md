@@ -94,6 +94,9 @@ After the extraction of integration scenarios from SAP Process Integration/SAP P
 
 14. In the *Message Mapping Resources* tab, identify and appropriately import the dependent resources of the message mapping objects like function library, message and data types, WSDL, and a few more.
 
+    > ### Note:  
+    > In the *Message Mapping Resources* tab, the message mapping objects are collapsed by default. Choose the collapsible drop down to expand a message type and view its referenced data types.
+
     This step is applicable only if you're creating at least one message mapping object in the previous step. If you're reusing all associated message mapping objects in the previous step, skip the substeps that follow and move to the [next step](generate-f9100ff.md#loiof9100ff320ea4f3db85e200463b34d76__step_i2p_zvj_dkc).
 
     1.  Enable the option *Import Only Supported Message Mappings* if you like to skip the import of message mapping objects \(and the dependent resources\) that aren't supported by Integration Suite.

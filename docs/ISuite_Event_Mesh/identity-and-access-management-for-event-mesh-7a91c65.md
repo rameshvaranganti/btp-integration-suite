@@ -52,7 +52,7 @@ Messaging gateways
 </td>
 <td valign="top">
 
-The consumer application, for example SAP S/4 HANA, calls the messaging gateways with the OAuth token of the OAuth client. The OAuth token is created when you create a service instance of the *Event Mesh Message Client* in the SAP Business Technology Platform cockpit.
+The consumer application, for example SAP S/4 HANA, calls the messaging gateways with the OAuth token of the OAuth client. The OAuth token is created when you create a service instance of the *Event Mesh Message Client* in the SAP BTPcockpit.
 
 </td>
 </tr>

@@ -92,6 +92,306 @@ Cloud Integration
 </td>
 <td valign="top">
 
+Migration Tooling: Java Mapping Support for `.class` Files Available Now
+
+</td>
+<td valign="top">
+
+In addition to Java mapping files with the `.java` extension, files with the `.class` extension are now supported for migration.
+
+See [Integration Content Migration Agent](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/java-mapping?version=CLOUD&ai=true)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Modernize Integrations: Expanding a message type view Available Now
+
+</td>
+<td valign="top">
+
+You can now expand a message type and view its referenced data types.
+
+See [Generate](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/generate?version=CLOUD&ai=true)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Configuring Basic and Advanced Timer flow step Available Now
+
+</td>
+<td valign="top">
+
+You can configure the Basic and Advanced Timer flow step of an integration flow using the OData API.
+
+See
+
+-   [Configure Basic Timer Parameters Using the OData API](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/configure-timer-parameters-using-odata-api?)
+-   [Configure Advanced Timer Parameters Using the OData API](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/configure-advanced-timer-parameters-using-odata-api?)
+
+SAP Cloud Integration customers, see
+
+-   [Configure Basic Timer Parameters Using the OData API](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-timer-parameters-using-odata-api?)
+-   [Configure Advanced Timer Parameters Using the OData API](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-advanced-timer-parameters-using-odata-api?)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Expanding Recursive Nodes in Message Mapping Available Now
+
+</td>
+<td valign="top">
+
+You can now expand recursive nodes in the source and target message structures to view their nested nodes.
+
+See [Defining the Standard Message Mapping](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/defining-standard-message-mapping?version=CLOUD&ai=true)
+
+SAP Cloud Integration customers, see [Defining the Standard Message Mapping](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/defining-standard-message-mapping?version=Cloud&ai=true)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Software Version Update
 
 </td>
@@ -537,7 +837,7 @@ RNIF Adapter
 
 Use the RNIF \(RosettaNet Implementation Framework\) adapter to exchange RosettaNet business messages with trading partners.
 
-See: [RNIF Adapter](https://help.sap.com/docs/integration-suite/dev-integrations-and-apis/rnif-adapter?version=CLOUD) 
+See: [RNIF Adapter](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/rnif-adapter?version=CLOUD) 
 
 </td>
 <td valign="top">

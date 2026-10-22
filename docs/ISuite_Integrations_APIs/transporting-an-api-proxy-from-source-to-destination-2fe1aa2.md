@@ -56,7 +56,7 @@ API proxies always get imported to the destination API portal in the deployed st
 
 6.  Go to the Transport subaccount and perform the following steps to navigate to the *Transport Nodes*.
 
-    1.  In your web browser, log on to SAP BTP Cockpit and navigate to your Transport subaccount.
+    1.  In your web browser, log on to SAP BTP cockpit and navigate to your Transport subaccount.
 
     2.  Choose *Instances and Subscriptions* from the left pane.
 

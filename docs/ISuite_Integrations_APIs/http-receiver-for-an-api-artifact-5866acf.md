@@ -159,11 +159,11 @@ Defines how the tenant \(as the HTTP client\) authenticates itself against the r
 
 You can select one of the following authentication methods:
 
--   Basic
+-   *Basic*
 
     The tenant authenticates itself against the receiver using user credentials \(user name and password\).
 
--   None
+-   *None*
 
     When not to use any authentication can include, but not limited to, the following cases:
 
@@ -174,11 +174,11 @@ You can select one of the following authentication methods:
     -   If you want to set an authorization header via a Script step before the adapter.
 
 
--   OAuth2 Client Credentials
+-   *OAuth2 Client Credentials*
 
     Use this grant type to access web resources by authorizing the client application to perform required actions on behalf of a user.
 
--   Client Certificate
+-   *Client Certificate*
 
     The tenant authenticates itself against the receiver using a client certificate.
 
@@ -511,40 +511,7 @@ Authentication mechanism used to invoke the backend service.
 </td>
 <td valign="top">
 
-Defines how the tenant \(as the HTTP client\) authenticates itself against the receiver.
-
-You can select one of the following authentication methods:
-
--   Basic
-
-    The tenant authenticates itself against the receiver using user credentials \(user name and password\).
-
--   None
-
-    When not to use any authentication can include, but not limited to, the following cases:
-
-    -   If the target system that you want to communicate doesn't require any authentication.
-
-    -   If you want to set an authorization header via a Content Modifier step before the adapter.
-
-    -   If you want to set an authorization header via a Script step before the adapter.
-
-
--   OAuth2 Client Credentials
-
-    Use this grant type to access web resources by authorizing the client application to perform required actions on behalf of a user.
-
-
-Enabled only if you choose *Proxy Type* as *Internet*:
-
--   Client Certificate
-
-    The tenant authenticates itself against the receiver using a client certificate.
-
-    It's a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
-
-
-
+Defines how the tenant \(as the HTTP client\) authenticates itself against the receiver. For the list of supported authentication methods, see the Supported Authentication Types table in [Create an API Artifact Using a Destination](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-api-artifact-by-referring-to-destination?version=CLOUD&ai=true).
 
 </td>
 </tr>

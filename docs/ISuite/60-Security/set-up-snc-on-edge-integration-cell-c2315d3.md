@@ -28,17 +28,20 @@ You need to enable Secure Network Communication \(SNC\) when using the RFC adapt
 
 The steps below will guide you through the process of setting up SNC on Edge Integration Cell, which is a prerequisite for enabling SNC in the RFC Adapter.
 
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
 
 
 ## Procedure
 
 1.  In your command-line interface \(CLI\) navigate to the local directory where you've extracted the crypto library SAPCRYPTOLIB.
 
-2.  To copy the *libsapcrypto.so* file to the Worker pod, run the following command: `kubectl cp libsapcrypto.so edge-icell/<worker-pod>:/var/lib/worker/snc/lib -c worker`. Replace the placeholder `<worker-pod>` with the name of a Worker pod. If you have multiple Worker pods, you can select one at random.
+2.  To copy the *libsapcrypto.so* file to the Worker pod, run the following command: `kubectl cp libsapcrypto.so <your-namespace>/<worker-pod>:/var/lib/worker/snc/lib -c worker`. Replace the placeholder `<worker-pod>` with the name of a Worker pod. If you have multiple Worker pods, you can select one at random.
 
-3.  To copy the `sapgenpse` executable file from the same local directory to the Worker pod, run the following command: `kubectl cp sapgenpse edge-icell/<worker-pod>:/var/lib/worker/snc/lib -c worker`. The cryptography tool SAPGENPSE is essential for managing the PSE \(Personal Security Environment\) files, which facilitate secure connections.
+3.  To copy the `sapgenpse` executable file from the same local directory to the Worker pod, run the following command: `kubectl cp sapgenpse <your-namespace>/<worker-pod>:/var/lib/worker/snc/lib -c worker`. The cryptography tool SAPGENPSE is essential for managing the PSE \(Personal Security Environment\) files, which facilitate secure connections.
 
-4.  To verify the files have been copied successfully, open a shell session to the Worker pod by running the following command: `kubectl exec -c worker -it -n edge-icell -- /bin/sh`. Execute the following command within the shell session to list the contents of the SNC\_LIB directory: `ls /var/lib/worker/snc/lib`. Ensure the output contains the *libsapcrypto.so* and *sapgenpse* files.
+4.  To verify the files have been copied successfully, open a shell session to the Worker pod by running the following command: `kubectl exec -c worker -it -n <your-namespace> -- /bin/sh`. Execute the following command within the shell session to list the contents of the SNC\_LIB directory: `ls /var/lib/worker/snc/lib`. Ensure the output contains the *libsapcrypto.so* and *sapgenpse* files.
 
 5.  In the *Manage Keystore* section create a new key pair or upload an existing one into the keystore that is assigned to the Edge Integration Cell runtime. Create an alias named *snc.edge.key* for the key pair. This key pair is crucial because it establishes secure communication with SNC partners. For more information, see [Creating a Key Pair/SSH Key Pair](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/creating-key-pair-ssh-key-pair?version=CLOUD), [Uploading a Key Pair](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/uploading-key-pair?version=CLOUD).
 

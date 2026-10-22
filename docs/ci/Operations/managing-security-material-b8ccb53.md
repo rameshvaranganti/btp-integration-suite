@@ -61,6 +61,7 @@ Possible values:
     For *User Credentials* artifacts \(a tooltip indicates the kind of the artifact\).
 
 -   *OAuth2 Credentials*
+-   *OAuth2 Password Credentials*
 -   *OAuth2 Authorization Code*
 
 -   *Secure Parameter*
@@ -137,7 +138,7 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 
 
 
-## Actions
+## What this Screen Supports
 
 **Actions**
 
@@ -219,6 +220,8 @@ You can also delete an artifact \(supported for all artifact types except *Keyst
 
 **Related Information**  
 
+
+ <?sap-ot O2O class="- topic/link " href="05599423e42f4c1c86500edb5cac449c.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/b8ccb53b9ec44652b885476f02184a0f.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Deploying a User Credentials Artifact](deploying-a-user-credentials-artifact-6912d63.md "To set up a connection using basic authentication or username token authentication, you have to specify the required attributes (for example, user name and password).")
 

@@ -86,5 +86,5 @@ To configure and establish trust between SAP HANA Cloud Platform and SAP Cloud I
 **Related Information**  
 
 
-[Establishing Trust between SAP Cloud Identity Account and BTP Offerings](establishing-trust-between-sap-cloud-identity-account-and-btp-offerings-7208200.md "Connect SAP Cloud Identity services with the BTP offerings.")
+[Establishing Trust between SAP Cloud Identity Account and SAP BTP Offerings](establishing-trust-between-sap-cloud-identity-account-and-sap-btp-offerings-7208200.md "Connect SAP Cloud Identity services with the SAP BTP offerings.")
 

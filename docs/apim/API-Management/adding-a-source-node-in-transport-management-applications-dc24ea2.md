@@ -20,7 +20,7 @@ To add a Source node in the Transport Management Applications, execute the follo
 
 ## Procedure
 
-1.  In your web browser, log on to SAP BTP Cockpit and navigate to your Transport subaccount.
+1.  In your web browser, log on to Cockpit and navigate to your Transport subaccount.
 
 2.  Choose *Instances and Subscriptions* from the left pane.
 

@@ -34,7 +34,7 @@ To configure mutual TLS for default domain virtual host, perform the following s
 
     To create a virtual host:
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the SAP BTP cockpit and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 
@@ -84,7 +84,7 @@ To configure mutual TLS for default domain virtual host, perform the following s
 
 2.  To update a virtual host:
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the SAP BTP cockpit and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 
@@ -152,7 +152,7 @@ To configure mutual TLS for default domain virtual host, perform the following s
     > -   No existing proxy revisions are linked to the virtual host.
     > -   The virtual host is not marked as the **Default**.
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the SAP BTP cockpit and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 

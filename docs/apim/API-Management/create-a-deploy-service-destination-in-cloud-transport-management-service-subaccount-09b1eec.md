@@ -36,7 +36,7 @@ Import request is delegated to deploy-service using destination D4.
 
 ## Procedure
 
-1.  In your web browser, log on to SAP BTP Cockpit and navigate to Transport subaccount.
+1.  In your web browser, log on to and navigate to Transport subaccount.
 
 2.  Choose the *Destinations* tab in the left-hand pane.
 
@@ -111,12 +111,12 @@ Import request is delegated to deploy-service using destination D4.
     > 
     > For more information, see SAP Note [3695458](https://me.sap.com/notes/3695458).
 
-    For `<myorg>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Org Name* that appears in this section.
+    For `<myorg>` details navigate to your subaccount in and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Org Name* that appears in this section.
 
     > ### Note:  
     > If your Org Name has spaces, add escape characters in place of spaces, for example, SAP BTP should be written as SAP%20BTP.
 
-    For `<myspace>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Space name* that appears in this section. This is the space for target destination subaccount.
+    For `<myspace>` details navigate to your subaccount in and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Space name* that appears in this section. This is the space for target destination subaccount.
     
     </td>
     </tr>

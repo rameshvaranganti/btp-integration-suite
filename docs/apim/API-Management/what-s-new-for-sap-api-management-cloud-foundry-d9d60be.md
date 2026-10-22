@@ -92,14 +92,221 @@ API Management
 </td>
 <td valign="top">
 
-Connect to Remote MCP Servers
+Principal Propagation Available as Authentication Type for On-Premise API Artifacts
 
 </td>
 <td valign="top">
 
-You can now connect to remote Model Context Protocol \(MCP\) servers and expose their capabilities through a single, managed endpoint.
+You can now configure Principal Propagation as the authentication type for an API artifact when On-Premise is selected as the proxy type. This enables you to securely propagate the calling user's identity to on-premise backend systems through the Cloud Connector, allowing the backend to perform user-specific authorization. See, [Create an API Artifact Using a Destination](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-api-artifact-by-referring-to-destination?locale=en-US&version=CLOUD&state=PRODUCTION).
 
-Discover available tools, resources, and prompts, synchronize the tool catalog, and selectively expose the capabilities required by AI agents. You can also apply security and traffic policies at the proxy layer without modifying the underlying remote MCP server. See, [Create an MCP Server Using a Remote MCP Server as the Source](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-mcp-server-using-remote-mcp-server-as-source?version=CLOUD&ai=true).
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Reserved API/MCP Base Path on Integration cell
+
+</td>
+<td valign="top">
+
+When creating an API or MCP Server artifact on Integration Cell, the base paths `/graph` and `/graph/*` are reserved and cannot be used. See, [Create an API Artifact Using a Target URL or an OpenAPI Specification](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-api-artifact-using-target-url?locale=en-US&version=CLOUD&state=PRODUCTION) and [Create an MCP Server from an API Artifact](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-mcp-server-from-api-artifact?locale=en-US&version=CLOUD&state=PRODUCTION).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for MCP Specification 2026-07-28
+
+</td>
+<td valign="top">
+
+SAP Integration Suite now supports Model Context Protocol \(MCP\) specification version 2026-07-28, in addition to the existing support for version 2025-11-25. The 2026-07-28 specification introduces a stateless, per-request interaction model, with changes to protocol negotiation, HTTP header handling, result handling, and capability negotiation.
+
+With this update, you can connect MCP clients built on either specification to SAP Integration Suite. See, [MCP Server](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/model-context-protocol-mcp?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Client SDK version 3.0.6
+
+</td>
+<td valign="top">
+
+The outdated libraries in the Client SDK have been upgraded to the latest version. For more information, see [API Services](https://help.sap.com/docs/integration-suite/sap-integration-suite/api-services?version=CLOUD).
 
 </td>
 <td valign="top">
@@ -163,12 +370,523 @@ API Management
 </td>
 <td valign="top">
 
-Update Client SDK to Version 3.0.0
+Configure Up to 50 Tools per MCP Server
 
 </td>
 <td valign="top">
 
-The Client SDK has been updated from version 2.0.1 to version 3.0.0. As part of this update, the outdated libraries in the Client SDK have been upgraded to their latest versions. For more information, see [API Services](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/api-services?version=CLOUD&ai=true).
+You can now configure up to 50 tools per MCP server, increased from the previous limit of 30. This allows you to expose more API operations through a single MCP server without splitting them across multiple servers. See, Create an MCP Server from an API Artifact. and.
+
+See,
+
+-   [Limits in API-Centric Integration](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/limits-in-api-centric-integration?version=CLOUD&ai=true)
+-   [Create an MCP Server from an API Artifact](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-mcp-server-from-api-artifact?version=CLOUD&ai=true)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Route Messages Before Security and Traffic Management Policies
+
+</td>
+<td valign="top">
+
+You can now place a Router step before security policies \(except authentication policies\) and before traffic management policies in your API artifact. Previously, the Router was supported only in the mediation step. This enables you to route messages based on conditions before these policies are applied, giving you more control over which messages reach them. In this position, only non-XML, header-based conditions are supported. See, [Routing in API Artifact](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/router-in-api-artifact?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Context Expressions for API Artifact Policies
+
+</td>
+<td valign="top">
+
+You can now use context expressions, such as `${context.authn.getClientID()}`, in dynamic expression fields of API artifact policies. These expressions provide access to runtime authentication data and support string functions such as `toUpperCase()`, `toLowerCase()`, `substring()`, and `contains()`. Previously, transforming or evaluating authentication context values required additional logic outside the policy expression. This enables you to derive, transform, and compare authentication data directly within your policy configuration. See, [Supported Dynamic Expressions for API Artifacts](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/supported-dynamic-expressions-for-api-artifacts?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+New Configurable Properties for the OData Receiver Adapter in API Artifacts
+
+</td>
+<td valign="top">
+
+You can now configure additional properties for the HTTP and OData Receiver adapters for both the URL and Destination connection methods.
+
+-   HTTP Receiver in API Artifacts - You can now configure **Request Header**, **Response Header**, and **Send Body**.. Under **Retry**, you can also configure **Throw Exception on Failure**.
+-   OData Receiver Adapter - You can now configure **Timeout**, **Attach Error Details on Failure**, **Request Header**, and **Response Header**.
+
+Previously, these properties were hidden and could not be configured. This enhancement gives you greater control over adapter behavior and helps you align the configuration with your integration requirements.
+
+See,
+
+-   [HTTP Receiver for an API Artifact](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/http-receiver-for-api-and-mcp-server?version=CLOUD&ai=true)
+-   [OData Receiver Adapter for API Artifact](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/odata-receiver-adapter-for-api-artifact?version=CLOUD&ai=true)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Connect to an SAP SuccessFactors Business System for API Discovery
+
+</td>
+<td valign="top">
+
+You can now connect your SAP SuccessFactors business system to SAP Integration Suite for API discovery. Create a destination in the SAP BTP cockpit using the SAP SuccessFactors Extensibility Service to enable browsing and discovering SAP SuccessFactors APIs directly in Integration Suite. This helps you identify the APIs you need and build integrations with SAP SuccessFactors faster. See, [Connect to an SAP SuccessFactors Business System for API Discovery](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/connect-to-sap-successfactors-business-system-for-api-discovery?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+MCP Server Tool Simplification
+
+</td>
+<td valign="top">
+
+MCP Server Tool definitions can be refined directly in SAP Integration Suite to give agents a cleaner, more focused schema. Hide unnecessary input and output parameters and simplify enum values — all without modifying the source definition. Hidden parameters can be restored at any time with no resync required.
+
+See:
+
+-   [MCP Server Tool Simplification](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/mcp-server-tool-simplification?version=CLOUD&ai=true)
+-   [Refine and Streamline MCP Server Tool Definitions](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/modify-mcp-server-created-from-api-artifact-using-visual-editor?version=CLOUD&ai=true)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2026-10-18
+
+</td>
+<td valign="top">
+
+2609
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+LLM Proxy for Managed Access to LLM Services
+
+</td>
+<td valign="top">
+
+LLM proxy is now available as an API artifact in SAP Integration Suite, providing an OpenAI-compatible interface for invoking LLM services. It enables AI applications and agents to access LLMs through the standard OpenAI Chat Completions API \(`/v1/chat/completions`\), while applying enterprise API Management capabilities. See, [LLM Proxy](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/llm-proxy?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Connect to Remote MCP Servers
+
+</td>
+<td valign="top">
+
+You can now connect to remote Model Context Protocol \(MCP\) servers and expose their capabilities through a single, managed endpoint.
+
+Discover available tools, resources, and prompts, synchronize the tool catalog, and selectively expose the capabilities required by AI agents. You can also apply security and traffic policies at the proxy layer without modifying the underlying remote MCP server. See, [Create an MCP Server Using a Remote MCP Server as the Source](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-mcp-server-using-remote-mcp-server-as-source?version=CLOUD&ai=true).
 
 </td>
 <td valign="top">

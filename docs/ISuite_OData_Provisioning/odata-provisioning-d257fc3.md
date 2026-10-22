@@ -2,7 +2,7 @@
 
 # OData Provisioning
 
-OData Provisioning, a capability of SAP Integration Suite, exposes business data and business logic as OData services on SAP Business Technology Platform, enabling you to run user-centric applications.
+OData Provisioning, a capability of SAP Integration Suite, exposes business data and business logic as OData services on SAP BTP, enabling you to run user-centric applications.
 
 The capability supports registering services from SAP Business Suite where connectivity towards data sources is achieved via back-end enablement.
 
@@ -20,7 +20,7 @@ Classic SAP Business Suite applications rely on SAP Gateway OData services to ex
 
 The SAP Gateway component in SAP Business Suite back-end systems gathers data from the back-end system. Whereas the SAP Gateway hub component converts the data from an SAP proprietary format to the OData standard. The conversion lets you consume data easily through the user interface.
 
-This capability streamlines the way in which SAP Gateway OData services are exposed to SAP Business Technology Platform. It replaces the need for an SAP Gateway hub \(front-end server\) in the cloud and reduces the total cost of ownership and shifts the responsibility for maintenance and security tasks from you to the cloud provider.
+This capability streamlines the way in which SAP Gateway OData services are exposed to SAP BTP. It replaces the need for an SAP Gateway hub \(front-end server\) in the cloud and reduces the total cost of ownership and shifts the responsibility for maintenance and security tasks from you to the cloud provider.
 
 > ### Remember:  
 > You need to fulfill the following pre-requisites:

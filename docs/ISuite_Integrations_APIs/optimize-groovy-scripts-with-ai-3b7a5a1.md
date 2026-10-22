@@ -11,7 +11,7 @@ Enhance your Groovy scripts using Generative AI.
 ## Prerequisites
 
 > ### Note:  
-> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through September 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion until the January 2027 software release. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620) Information published on SAP site.
 
 Ensure that Script Optimization feature is enabled in your SAP Integration Suite tenant. For more information, see [Artificial Intelligence](artificial-intelligence-6a6727c.md).
 
@@ -22,6 +22,9 @@ Ensure that Script Optimization feature is enabled in your SAP Integration Suite
 ## Context
 
 *Script Optimization* is a Generative AI feature that helps you improve Groovy scripts in the script editor by focusing on resource usage.
+
+> ### Tip:  
+> This feature doesn't resolve script incompatibilities, such as issues with third-party dependencies or Groovy versions. Your script may still contain these issues after you optimize it. To address any remaining incompatibilities, see [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
 
 
 

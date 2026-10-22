@@ -34,7 +34,7 @@ To configure mutual TLS for custom domain virtual host, perform the following st
 
     To create a virtual host:
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 
@@ -91,7 +91,7 @@ To configure mutual TLS for custom domain virtual host, perform the following st
 
 2.  To update a virtual host:
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 
@@ -166,7 +166,7 @@ To configure mutual TLS for custom domain virtual host, perform the following st
     > -   No existing proxy revisions are linked to the virtual host.
     > -   The virtual host is not marked as the **Default**.
 
-    1.  Navigate to the SAP BTP Cockpit and create a service instance using the apiportal-apiaccess plan.
+    1.  Navigate to the and create a service instance using the apiportal-apiaccess plan.
 
     2.  Assign the `APIManagement.SelfService.Administrator` role to your user.
 

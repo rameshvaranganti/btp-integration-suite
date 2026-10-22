@@ -27,7 +27,7 @@ Therefore, you must create a role for each connector and assign one or more of t
 
 ## Procedure
 
-1.  In your subaccount in SAP BTP cockpit, go to *Security* \> *Roles*.
+1.  In your subaccount in the SAP BTP cockpit, go to *Security* \> *Roles*.
 
 2.  For the entry for the application name `dsi`, find the role template `ConnectorNameTemplate`, and choose *Create Role*.
 

@@ -37,7 +37,7 @@ As an API administrator, you use this procedure to revoke an application develop
 4.  In the *Revoke* window, provide a reason for revoking the access.
 
     > ### Note:  
-    > By revoking roles, only the user account in SAP BTP Cockpit remains, while access to Developer Hub is removed.
+    > By revoking roles, only the user account in the SAP BTP cockpit remains, while access to Developer Hub is removed.
 
 
 

@@ -53,7 +53,7 @@ Activate the API Management capability
     On the next screen, the *API Modelling* checkbox appears, and is enabled by default.
 
 3.  To discover, consume and monitor APIs from a centralized API catalogue, select the *Developer Hub* checkbox.
-4.  For exposing data as a connected graph, select *Graph* checkbox.
+4.  For exposing data as a connected graph, select *API Composition* checkbox.
 5.  Once all desired capabilities are selected, choose *Review*.
 6.  Review the details and choose *Activate*.
 
@@ -62,7 +62,7 @@ Activate the API Management capability
 For more information, see:
 
 -   [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD)
--   [Graph](https://help.sap.com/docs/integration-suite/sap-integration-suite/graph-e03300f9f4134fbea2bbd16707e3dd8a?version=CLOUD)
+-   [API Composition](https://help.sap.com/docs/integration-suite/sap-integration-suite/graph-e03300f9f4134fbea2bbd16707e3dd8a?version=CLOUD)
 
 
 

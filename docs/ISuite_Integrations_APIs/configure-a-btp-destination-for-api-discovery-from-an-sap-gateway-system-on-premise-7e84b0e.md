@@ -2,7 +2,7 @@
 
 # Configure a BTP Destination for API Discovery from an SAP Gateway System \(On-Premise\)
 
-After you have discovered the list of APIs via the Gateway service destination, configure a destination with the **Proxy Type** set to **OnPremise** to make the runtime calls for the created API artifact. You can also reuse the same destination that was used for API discovery.
+After you have discovered the list of APIs via the Gateway service destination, configure a destination with the *Proxy Type* set to *OnPremise* to make the runtime calls for the created API artifact. You can also reuse the same destination that was used for API discovery.
 
 
 
@@ -14,13 +14,13 @@ The **Subaccount Administrator** role collection should be assigned to you.
 
 ## Procedure
 
-1.  Log on to SAP BTP Cockpit and navigate to your source subaccount.
+1.  Log on to SAP BTP cockpit and navigate to your source subaccount.
 
 2.  From the left navigation pane, choose *Connectivity* \> *Destinations*.
 
 3.  Choose *Create*. The *Create New Destination* window appears.
 
-4.  Choose *From Scratch* to create a new destinationation manually.
+4.  Choose *From Scratch* to create a new destination manually.
 
 5.  In the *Destination Details* section, enter all the required information as described in the table below:
 

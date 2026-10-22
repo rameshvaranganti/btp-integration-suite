@@ -45,18 +45,6 @@ Identity Mechanism
 <tr>
 <td valign="top">
 
-SAP cloud applications \(such as SAP SuccessFactors and SAP Concur\)
-
-</td>
-<td valign="top">
-
-OAuth 2.0 access token using a SAML 2.0 Bearer Assertion
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 On-premise SAP systems \(such as SAP ERP, SAP S/4HANA\)
 
 </td>
@@ -66,10 +54,22 @@ Short-lived X.509 client certificate
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+SAP cloud applications \(such as SAP SuccessFactors and SAP Concur\)
+
+</td>
+<td valign="top">
+
+OAuth 2.0 access token using a SAML 2.0 Bearer Assertion
+
+</td>
+</tr>
 </table>
 
 For more information about setup and configuration details, see:
 
--   [Principal Propagation to SAP Cloud Applications](principal-propagation-to-sap-cloud-applications-d914798.md)
 -   [Principal Propagation to On-Premise SAP Systems](principal-propagation-to-on-premise-sap-systems-78ab561.md)
+-   [Principal Propagation to SAP Cloud Applications](principal-propagation-to-sap-cloud-applications-d914798.md)
 

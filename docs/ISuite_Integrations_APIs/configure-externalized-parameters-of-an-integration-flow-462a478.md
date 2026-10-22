@@ -2,11 +2,13 @@
 
 # Configure Externalized Parameters of an Integration Flow
 
+Cloud Integration supports runtime-aware configuration, enabling you to configure integration flows across one or more runtime profiles in a centralized way.
+
 
 
 ## Context
 
-Cloud Integration supports runtime-aware configuration, enabling you to configure integration flows across one or more runtime profiles in a centralized way. This capability is critical for organizations operating across different runtime profiles, as it allows you to:
+This capability is critical for organizations operating across different runtime profiles, as it allows you to:
 
 -   Apply common configurations across multiple runtime profiles
 -   Enable runtime-specific overrides without duplicating configurations
@@ -154,6 +156,8 @@ Cloud Integration supports runtime-aware configuration, enabling you to configur
 
 **Related Information**  
 
+
+[Update and Validate Configuration Parameters via ODATA API](update-and-validate-configuration-parameters-2b92d3d.md "")
 
 [Externalize Parameters of an Integration Flow](externalize-parameters-of-an-integration-flow-45b2a07.md "")
 

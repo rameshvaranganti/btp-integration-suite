@@ -4,7 +4,7 @@
 
 # Where Used
 
-This feature lets you identify all integration flows that reference a specific security material.
+This feature lets you identify all integration flows that reference a specific security material through externalized parameters.
 
 In large organizations, a single credential or certificate can be referenced across multiple integration flows. This feature eliminates the need to manually inspect each one by giving you an immediate, accurate view of all impacted flows where the security material is used.
 
@@ -21,9 +21,9 @@ In large organizations, a single credential or certificate can be referenced acr
 
 
 
-## Scope and Static References
+## Scope and Externalized References
 
-Where Used identifies security materials that are statically referenced in the design-time integration flow configuration. Security materials referenced dynamically, for example, through message headers or exchange properties at runtime are not detected.
+Where Used identifies security materials that are referenced through externalized parameters in the design-time integration flow configuration. Security materials that are statically referenced \(hardcoded directly in the flow configuration\), or referenced dynamically through message headers or exchange properties at runtime, are not detected.
 
 
 

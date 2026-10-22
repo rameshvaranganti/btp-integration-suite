@@ -2,7 +2,7 @@
 
 # Create a Destination for Approving and Rejecting Subscriptions
 
-Create a destination in the SAP BTP Cockpit that contains the contains the connectivity details of the Service Provider Interface \(SPI\) implementation. This destination allows Developer Hub to forward subscription requests for external governance processing.
+Create a destination in the SAP BTP cockpit that contains the connectivity details of the Service Provider Interface \(SPI\) implementation. This destination allows Developer Hub to forward subscription requests for external governance processing.
 
 
 
@@ -10,7 +10,7 @@ Create a destination in the SAP BTP Cockpit that contains the contains the conne
 
 ## Procedure
 
-1.  In your web browser, log on to SAP BTP Cockpit and navigate to your source subaccount.
+1.  In your web browser, log on to SAP BTP cockpit and navigate to your source subaccount.
 
 2.  Choose the *Connectivity* \> *Destinations* tab in the left-hand pane.
 

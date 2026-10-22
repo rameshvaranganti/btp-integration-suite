@@ -41,7 +41,7 @@ The script editor categorizes the incompatibilities and further groups into erro
 5.  In the subsequent dialog box, read about the improvement the editor makes. Choose *Fix* to resolve all occurrences of the problem. After a successful fix, the incompatibility is removed from the Problems view.
 
     > ### Note:  
-    > Upgrade your Groovy script step to benefit from more automatic fixes and help better resolution support for violations. See [Upgrading Script](upgrading-script-917e014.md)
+    > Upgrade your Groovy script step to benefit from more automatic fixes and help better resolution support for violations. See [Upgrading Scripts](upgrading-scripts-917e014.md)
 
 6.  Choose *Apply*.
 

@@ -274,6 +274,8 @@ HTTP Headers
 
 If you want to transfer specific HTTP headers with certain values to the back end when fetching the asset, specify them in this section.
 
+Two HTTPS headers are predefined by default, but you can edit them if needed.
+
 </td>
 </tr>
 </table>

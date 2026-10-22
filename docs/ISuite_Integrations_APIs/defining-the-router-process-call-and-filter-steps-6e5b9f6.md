@@ -41,7 +41,7 @@ Now that you have defined the local integration process, you can continue with t
 
     `/p2:Messages/p2:Message1/p1:Order_MT`
 
-    Note that this setting contains two different namespace prefixes, `p1` and `p2`. The mapping of these prefixes with the relevant namespaces is defined on the *Runtime Configuration* tab of the integration flow \(as shown in [Defining the Standard Message Mapping](defining-the-standard-message-mapping-c0e0f6d.md)\).
+    Note that this setting contains two different namespace prefixes, `p1` and `p2`. The mapping of these prefixes with the relevant namespaces is defined on the *Runtime Configuration* tab of the integration flow \(as shown in [Defining the Message Mapping](defining-the-message-mapping-c0e0f6d.md)\).
 
     Using different namespace prefixes and addressing them correctly as described is necessary to make sure that the correct parts of the message are filtered. Note that this Filter step comes after the Process Call step, and so it gets the message processed in the post-exit integration flow as input.
 

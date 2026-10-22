@@ -7,7 +7,7 @@ This guideline helps identify the use of internal, unsupported, or restricted cl
 No automatic fix is provided for this; you must manually replace or remove unsupported implementations.
 
 > ### Note:  
-> The guideline scans both versions of groovy scripts version 1 and version 2. See [Upgrading Script](upgrading-script-917e014.md)
+> The guideline scans both versions of groovy scripts version 1 and version 2. See [Upgrading Scripts](upgrading-scripts-917e014.md)
 
 To ensure long-term stability and upgrade readiness:
 

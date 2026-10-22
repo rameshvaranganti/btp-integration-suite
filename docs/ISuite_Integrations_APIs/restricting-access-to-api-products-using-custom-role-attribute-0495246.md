@@ -11,7 +11,7 @@ You can control access to an API product using a custom role collection. During 
 ## Prerequisites
 
 -   The `APIPortal.Administrator` role collection is assigned to you.
--   Create a custom role collection in the SAP BTP Cockpit, then create a custom role and add it to the custom role collection you just created. For the step-by-step instructions, see [Creating and Assigning a Custom Role Collection](creating-and-assigning-a-custom-role-collection-9d827cd.md).
+-   Create a custom role collection in the SAP BTP cockpit, then create a custom role and add it to the custom role collection you just created. For the step-by-step instructions, see [Creating and Assigning a Custom Role Collection](creating-and-assigning-a-custom-role-collection-9d827cd.md).
 
 
 

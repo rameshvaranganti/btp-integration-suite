@@ -2,13 +2,13 @@
 
 # Creating a Custom Role Collection for Fine-Grained Access Control
 
-Create a custom role collection in the SAP BTP Cockpit by selecting only the specific roles required for a user’s responsibilities, enabling precise and least-privilege access management.
+Create a custom role collection in the SAP BTP cockpit by selecting only the specific roles required for a user’s responsibilities, enabling precise and least-privilege access management.
 
 
 
 ## Context
 
-SAP BTP Cockpit provides several predefined role collections that simplify permission assignment by bundling authorizations for common user personas. For example, the predefined role collection **PI\_Integration\_Developer** grants access to both the Design and Monitor sections of the SAP Integration Suite. It allows users to create, design, deploy, copy, import, download, and delete integration and API artifacts, as well as monitor integration processes. While predefined role collections are convenient, they may not always align with specific environments or user responsibilities — in some cases, they may grant broader permissions than necessary, while in others, they may not include all the permissions a user actually requires. In such cases, creating a custom role collection allows you to tailor permissions precisely to a user’s role — either by adding the additional roles needed or by including only a subset of roles — ensuring adherence to the principle of least privilege.
+SAP BTP cockpit provides several predefined role collections that simplify permission assignment by bundling authorizations for common user personas. For example, the predefined role collection **PI\_Integration\_Developer** grants access to both the Design and Monitor sections of the SAP Integration Suite. It allows users to create, design, deploy, copy, import, download, and delete integration and API artifacts, as well as monitor integration processes. While predefined role collections are convenient, they may not always align with specific environments or user responsibilities — in some cases, they may grant broader permissions than necessary, while in others, they may not include all the permissions a user actually requires. In such cases, creating a custom role collection allows you to tailor permissions precisely to a user’s role — either by adding the additional roles needed or by including only a subset of roles — ensuring adherence to the principle of least privilege.
 
 > ### Example:  
 > Consider a integration developer working on the Production tenant. Their job is to:

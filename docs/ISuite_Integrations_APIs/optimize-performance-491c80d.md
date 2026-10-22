@@ -16,19 +16,22 @@ The following design considerations affect performance:
 
 ## Message Size
 
-An incoming 1-KB message is processed faster and with less resources than a 5-MB message \(for the same integration flow design\). In particular, if your integration scenario uses many message transformation steps, make sure to process only messages that don't exceed the following size:
+Message size is one of the most direct factors affecting both performance and memory consumption. Example, an incoming 1-KB message is processed faster and with fewer resources than a 5-MB message for the same integration flow design.
 
--   Payload size: 40 MB
+There is no fixed maximum message size, efficient processing depends on following factors like:
 
--   Aggregated size for attachments: 100 MB
+-   Integration flow design
+-   Number and type of processing steps, adapters in use
+-   Frequency of concurrent messages
+-   Tenant environment and sizing
 
+Resource-efficient flows on appropriately sized tenants can process significantly larger messages.
 
-Following this recommendation helps you to avoid memory bottlenecks. Note that, however, there's no general maximum message size. If the integration flow is designed resource-efficient, it can process way larger messages.
-
-SAP is doing the general capacity management of all your SAP Integration Suite tenants, either of productively used tenants or test tenants. Capacity management is also based on the license model. Therefore, you don't need to care about that. However, memory is a limited resource in the Java virtual machines. Before you use your integration flows productively, it's recommended to perform extensive load testing. Try to use the maximum load for your test that you can expect in productive use and don't concentrate on isolated tests only. You can expect that the productive tenant doesn't process just 1 single integration flow. Therefore, choose a realistic tenant load profile as well. Consider doing this test not at the last minute of your development phase, because an integration flow redesign for performance optimizations can take some time.
+> ### Recommendation:  
+> SAP manages capacity for all SAP Cloud Integration tenants, including productive and test tenants, based on the license model. You do not need to manage this yourself. However, memory is a limited resource in the Java virtual machines. Perform load testing with realistic data volumes and a realistic tenant load profile before going productive. Do not leave this to the final stage of development, as redesigning for performance can take considerable time.
 
 > ### Note:  
-> If you've designed the integration flow in a performance-friendly way but still the performance isn't good, you can get in touch with SAP to check the tenant resources. Alternatively, check out the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
+> If you've designed the integration flow in a performance-friendly way but still the performance isn't good, you can contact SAP to check the tenant resources. Alternatively, check the following page to search for a service that helps you to optimize the implementation of your scenario: [SAP Services and Support](https://www.sap.com/services-support.html).
 
 
 

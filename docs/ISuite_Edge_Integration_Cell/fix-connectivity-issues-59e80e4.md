@@ -19,6 +19,13 @@ You've checked the following:
 
 
 
+## Context
+
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
+
+
 ## Procedure
 
 If the Edge Integration Cell solution deployment finished successfully, but the connection to the Edge Integration Cell fails with a timeout or a connect error, try the following steps:
@@ -33,19 +40,19 @@ If the Edge Integration Cell solution deployment finished successfully, but the 
 
 3.  **Check Ingress Gateway** 
 
-    To check the Ingress Gateway, use the kubectl tool to enter the command: `kubectl get gateway -n edge-icell`. The output is a gateway called `default-gateway`.
+    To check the Ingress Gateway, use the kubectl tool to enter the command: `kubectl get gateway -n <your-namespace>`. The output is a gateway called `default-gateway`.
 
-    In addition, verify the existence of the Ingress Virtual Service, using the following command: `kubectl get virtualservice -n edge-icell -o yaml`. The The output is a Virtual Service called `<default-virtualservice>`.
+    In addition, verify the existence of the Ingress Virtual Service, using the following command: `kubectl get virtualservice -n <your-namespace> -o yaml`. The The output is a Virtual Service called `<default-virtualservice>`.
 
     > ### Note:  
     > If the Gateway `<default-gateway>` and the Virtual Service `<default-virtualservice>` do not exist, exceute the following commands:
     > 
-    > 1.  Restart Edge Event Controller pod. `kubectl rollout restart deployment/edc -n edge-icell`
+    > 1.  Restart Edge Event Controller pod. `kubectl rollout restart deployment/edc -n <your-namespace>`
     > 
-    > 2.  Restart Policy Engine Pod. `kubectl rollout restart deployment/policyengine -n edge-icell`
+    > 2.  Restart Policy Engine Pod. `kubectl rollout restart deployment/policyengine -n <your-namespace>`
 
     -   Then recheck the existence of the Gateway and the Virtual Service as described in step 3.
     -   If the Gateway `<default-gateway>` and virtual service `<default-vitualservice>` do not exist, open a ticket on component BC-CP-IS-EDG-DPL, and attach the diagnostics file or the Edge Deploy Controller log. You can create the diagnostics file via Edge LM UI.
-    -   To get the Edge Deploy Controller log, first identify the Edge Deploy Controller pod by entering `kubectl get pod -n edge-icell` in the kubectl tool. Then get the Edge Deploy Controller log by entering `kubectl logs <edc-pod> -n edge-icell` in the kubectl tool.
+    -   To get the Edge Deploy Controller log, first identify the Edge Deploy Controller pod by entering `kubectl get pod -n <your-namespace>` in the kubectl tool. Then get the Edge Deploy Controller log by entering `kubectl logs <edc-pod> -n <your-namespace>` in the kubectl tool.
 
 

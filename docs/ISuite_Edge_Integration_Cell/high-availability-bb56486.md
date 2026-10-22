@@ -24,7 +24,9 @@ You can enable HA mode for an Edge Node, during onboarding, see [Add an Edge Nod
 
 ### Multiple Availability Zones \(Multi-AZ\)
 
-Cloud platforms offer multiple availability zones for Kubernetes deployments. For a high availability setup with at least three worker nodes, you need three availability zones to support Multi-AZ with Edge Integration Cell.
+An availability zone is an isolated failure domain within a data center infrastructure, typically with independent power, cooling, and networking. Cloud platforms provide multiple availability zones out of the box for Kubernetes deployments. You can enable multi-availability zone support on any Kubernetes deployment as long as the underlying infrastructure supports multiple availability zones.
+
+For a high availability setup with Edge Integration Cell, you need at least three worker nodes distributed across three availability zones.
 
 
 

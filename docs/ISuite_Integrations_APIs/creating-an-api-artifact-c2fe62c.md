@@ -32,7 +32,7 @@ When creating an API artifact, first select the runtime profile and then choose 
         -   You want to leverage system-level integration and automated discovery.
         -   You need governance, security, and lifecycle management aligned with business systems.
 
-    -   *Select a Destination*: Manually choose a destination from a list of SAP BTP destinations. See, [Create an API Artifact Using a Destination](create-an-api-artifact-using-a-destination-a0bdfd4.md).This method is useful when you have a pre-configured destinations on SAP BTP Cockpit.
+    -   *Select a Destination*: Manually choose a destination from a list of SAP BTP destinations. See, [Create an API Artifact Using a Destination](create-an-api-artifact-using-a-destination-a0bdfd4.md).This method is useful when you have a pre-configured destinations on SAP BTP cockpit.
 
 -   *Reusable API Artifact*: The reusable API artifact feature enables you to encapsulate a standardized set of API policies and mediation logic—such as authentication, transformation, and validation—into modular units that can be centrally defined and invoked across multiple API artifacts. For more information, see [Create a Reusable API Artifact](create-a-reusable-api-artifact-0112688.md).
 

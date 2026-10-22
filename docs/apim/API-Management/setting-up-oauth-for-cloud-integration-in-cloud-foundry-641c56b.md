@@ -21,7 +21,7 @@ Use OAuth2ClientCredentials for connecting requests to the server. This OAuth2Cl
 
 ## Procedure
 
-1.  In your web browser, open the *SAP BTP Cockpit* - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
+1.  In your web browser, open the - [https://cockpit.btp.cloud.sap](https://cockpit.btp.cloud.sap).
 
 2.  From your *Subaccount*, navigate to *Spaces* in your Cloud Foundry environment and choose *Services* \> *Service Marketplace.*
 

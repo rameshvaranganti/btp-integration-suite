@@ -6,6 +6,9 @@
 
 Run heap dump diagnostic tasks to diagnose issues related to memory consumption.
 
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
 
 
 <a name="loio5ce5ce5a3f4a458c9d0e1e3a1bc1f2a6__section_izb_rzb_m2c"/>
@@ -109,7 +112,7 @@ Information
 -   *Download*: Download a zip file containing two other zips, ‘Leak Suspect’ and ‘System Overview’ analysis results. This is the default action for head dumps in status *Completed*.
 -   *Details*: Access *Details* by selecting the three dots. This action opens a dialog box which displays information about the task, including the path to the raw heap dump. You can download the results file using your preferred Kubernetes tools. The corresponding command is the following:
 
-    `kubectl -n edge-icell cp <pod name>:<path> <destination path name>`
+    `kubectl -n <your-namespace> cp <pod name>:<path> <destination path name>`
 
 
 

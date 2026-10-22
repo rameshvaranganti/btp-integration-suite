@@ -2,28 +2,32 @@
 
 # Network and Communication Security for Edge Integration Cell
 
+Learn about the communication flows used by Edge Integration Cell and the security measures that protect data exchange between edge and cloud environments.
+
 Edge Integration Cell only uses encrypted communication. Internal communication is secured using mutual Transport Layer Security \(mTLS\), enabled via Istio, following a zero-trust paradigm. For more information, see [Security](https://istio.io/latest/docs/concepts/security/).
 
 For all communication flows listed in the table below, except for Content Deployment, `*.hana.ondemand.com` is used as the standard endpoint. For Content Deployment, which is used by the Edge Deploy Controller, specific domains are used depending on the deployment environment.
 
-BTP on Azure:
+SAP BTP on Azure:
 
 -   `*.blob.storage.azure.net`
 
--   `*.blob.core.windows.net` \(previously used as the BTP Object Store Service Endpoint URL\)
+-   `*.blob.core.windows.net` \(previously used as the SAP BTP Object Store Service Endpoint URL\)
 
 
-BTP on AWS:
+SAP BTP on AWS:
 
 -   `*.amazonaws.com`
 
-BTP on GCP:
+SAP BTP on GCP:
 
 -   `*.storage.googleapis.com`
 
-BTP on SAP Cloud Infrastructure:
+SAP BTP on SAP Cloud Infrastructure:
 
 -   `*.osaas.hana.ondemand.com`
+
+You can find the URLs of all SAP BTP cloud endpoints that are required for a functioning Edge Integration Cell on the Information Status card in the Operations cockpit. See: [Status Information](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/732f3005e69f4d309784ed7ad2e9ff2c.html "Get status information on your Edge Integration Cell components.") :arrow_upper_right:.
 
 The following table provides an overview of communication flows between a cloud and an edge environment.
 

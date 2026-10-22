@@ -34,7 +34,7 @@ In this section, we will guide you through the following:
 
 1.  Create a custom role collection.
 
-    1.  Open the SAP BTP cockpit and go to your *Subaccount*.
+    1.  Open the and go to your *Subaccount*.
 
     2.  In the left navigation pane, choose *Security* \> *Roles Collections* \> ** and choose *Create*.
 

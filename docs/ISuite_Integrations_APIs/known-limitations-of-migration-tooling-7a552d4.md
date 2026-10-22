@@ -236,7 +236,9 @@ Synchronous Use Case Support
 </td>
 <td valign="top">
 
-Synchronous use cases are supported only through the standard approach. If you intend to use the pipeline approach, see to the [Inbound Processing Synchronous Template](https://api.sap.com/integrationflow/com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync) provided in the Pipeline Standard package.
+Point-to-point synchronous use cases are supported only through the standard approach. If you intend to use the pipeline approach, see to the [Inbound Processing Synchronous Template](https://api.sap.com/integrationflow/com.sap.integration.cloud.pipeline.v2.template.step01.inbound.processing.sync) provided in the Pipeline Standard package.
+
+Synchronous Content-Based Routing use cases can also be supported through the pipeline approach.
 
 </td>
 </tr>
@@ -251,18 +253,6 @@ Extended Receiver Determination
 Extended Receiver Determination scenarios with multiple operations are migrated partially and the integration flow requires additional enhancement post migration.
 
 Extended Receiver determination with receiver wildcard and agreement are not supported by the migration tool.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Content Based Routing – Synchronous
-
-</td>
-<td valign="top">
-
-Content Based Routing with synchronous pattern is not supported by the Migration Tool. The interface can still be migrated as CBR-Async pattern and necessary adaptions could be done post migration.
 
 </td>
 </tr>
@@ -310,18 +300,6 @@ Migration of scenarios with Maintain Order at Runtime is partially supported in 
 Scenarios with multiple receivers are not supported and require additional enhancements.
 
 You can manually model a scenario with order at runtime requirement. See [Pipeline v2 Template Step07 - Outbound Processing Maintain Order At Runtime](https://hub.sap.com/integrationflow/com.sap.integration.cloud.pipeline.v2.template.step07.outbound.processing.moar)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Sender agreement with wildcard
-
-</td>
-<td valign="top">
-
-Sender agreements using wildcards are supported only through the standard approach and are not supported through the pipeline approach. If you plan to use the pipeline approach, see [Special Cases – Sender Wildcard Scenarios](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/special-cases#sender-wildcard-scenarios) section under the SAP help pipeline documentation.
 
 </td>
 </tr>

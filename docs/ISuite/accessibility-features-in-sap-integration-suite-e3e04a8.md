@@ -2,7 +2,7 @@
 
 # Accessibility Features in SAP Integration Suite
 
-To optimize your experience of SAP Business Technology Platform \(SAP BTP\), SAP Integration Suite provides features and settings that help you use the software efficiently.
+To optimize your experience of SAP Business Technology Platform, SAP Integration Suite provides features and settings that help you use the software efficiently.
 
 
 

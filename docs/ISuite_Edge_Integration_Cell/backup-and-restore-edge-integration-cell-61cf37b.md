@@ -9,6 +9,9 @@ Edge Integration Cell stores configuration in the cloud where the data are secur
 > ### Remember:  
 > You should have a defined backup and recovery procedure for your Kubernetes environment that follows the best practices of its underlying platform.
 
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
 
 
 <a name="loio61cf37b704b3466f990696472f6fdc27__section_gw1_wvh_yyb"/>
@@ -41,7 +44,7 @@ Runtime and monitoring data are stored in a PostgreSQL database and a Redis or V
     -   destination-configuration
     -   destination-db-management
 
-    Components can be stopped using: `kubectl scale deployment <name> --replicas=0 -n edge-icell`.
+    Components can be stopped using: `kubectl scale deployment <name> --replicas=0 -n <your-namespace>`.
 
 -   Restore Database.
 
@@ -59,7 +62,7 @@ Runtime and monitoring data are stored in a PostgreSQL database and a Redis or V
     -   destination-configuration
     -   destination-db-management
 
-    Components can be started using: `kubectl scale deployment <name> --replicas=<n> -n edge-icell`
+    Components can be started using: `kubectl scale deployment <name> --replicas=<n> -n <your-namespace>`
 
 
 > ### Caution:  
@@ -71,12 +74,12 @@ Runtime and monitoring data are stored in a PostgreSQL database and a Redis or V
 
 -   Stop Edge Integration Cell component `policyengine`.
 
-    `policyengine` can be stopped using : `kubectl scale deployment policyengine --replicas=0 -n edge-icell`.
+    `policyengine` can be stopped using : `kubectl scale deployment policyengine --replicas=0 -n <your-namespace>`.
 
 -   Restore Datastore.
 -   Start Edge Integration Cell component `policyengine`.
 
-    `policyengine` can be started using : `kubectl scale deployment policyengine --replicas=<n> -n edge-icell`.
+    `policyengine` can be started using : `kubectl scale deployment policyengine --replicas=<n> -n <your-namespace>`.
 
 
 > ### Caution:  

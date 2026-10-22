@@ -31,11 +31,11 @@ To obtain the credentials for invoking API artifact endpoint, perform the follow
 
 ## Procedure
 
-1.  In SAP BTP cockpit, choose *Instances and Subscription*.
+1.  In the SAP BTP cockpit, choose *Instances and Subscription*.
 
 2.  Create a *Process Integration Runtime* instance:
 
-    1.  In the SAP BTP Cockpit, go to the *Subaccount* section. From the left-hand menu, select *Instances and Subscriptions* under the *Service Marketplace*.
+    1.  In the SAP BTP cockpit, go to the *Subaccount* section. From the left-hand menu, select *Instances and Subscriptions* under the *Service Marketplace*.
 
     2.  Choose *Create*.
 

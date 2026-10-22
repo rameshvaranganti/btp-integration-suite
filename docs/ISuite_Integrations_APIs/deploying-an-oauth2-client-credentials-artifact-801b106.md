@@ -32,13 +32,11 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
 2.  Select the target runtime \(*Runtime* parameter\).
 
     > ### Note:  
-    > This information is only relevant for Edge Integration Cell runtime.
-    > 
     > For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/1783cf87caa2449e96082f0cf754449d.html "The manage security section allows you to manage various kinds of security-related artifacts according to the runtime deployment possibilities.") :arrow_upper_right:.
 
 3.  Click the *Security Material* tile in the *Manage Security* section.
 
-4.  Choose *Add*.
+4.  Choose *Create*.
 
 5.  As *Type*, select *OAuth2 Client Credentials*.
 
@@ -227,6 +225,8 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
 
 **Related Information**  
 
+
+[Where Used](where-used-0559942.md "This feature lets you identify all integration flows that reference a specific security material through externalized parameters.")
 
 [Managing Security Material](managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

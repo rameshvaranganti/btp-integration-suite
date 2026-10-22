@@ -10,7 +10,10 @@ Restrict write access to some artifacts in Integration Advisor by protecting the
 
 ## Prerequisites
 
-Your user in SAP BTP cockpit must have the role `Guidelines.EditProtectedContent` assigned.
+Your user in SAP BTP cockpit must have the following role assigned:
+
+-   `Guidelines.EditProtectedContent` for Neo **or** 
+-   `ExtendedContentDeveloper` for Cloud Foundry
 
 
 
@@ -18,7 +21,7 @@ Your user in SAP BTP cockpit must have the role `Guidelines.EditProtectedContent
 
 If you want to restrict write access to certain artifacts so they can't be edited by every user in your organization, you can add a layer of **protection** to them. Only users with the relevant rights can edit protected artifacts or revoke the protection.
 
-Users with the role `Guidelines.EditProtectedContent` can then protect and unprotect artifacts as well as edit protected artifacts. See also [Results](protecting-artifacts-990b84d.md#loio990b84d5a1ee48e7b66dc3da634e7a61__protect_results).
+Users with the role `Guidelines.EditProtectedContent/ExtendedContentDeveloper` can then protect and unprotect artifacts as well as edit protected artifacts. See also [Results](protecting-artifacts-990b84d.md#loio990b84d5a1ee48e7b66dc3da634e7a61__protect_results).
 
 You can protect the following artifacts in Integration Advisor:
 
@@ -61,7 +64,7 @@ You can protect the following artifacts in Integration Advisor:
 
 ### User Access
 
-Users **with** the role `Guidelines.EditProtectedContent` have the following rights:
+Users **with** the role `Guidelines.EditProtectedContent/ExtendedContentDeveloper` have the following rights:
 
 -   Protect and unprotect artifacts
 
@@ -70,7 +73,7 @@ Users **with** the role `Guidelines.EditProtectedContent` have the following rig
     Note that if you protect an artifact and then activate it, the activated artifact is protected as well.
 
 
-For users **without** the role `Guidelines.EditProtectedContent`, the following applies:
+For users **without** the role `Guidelines.EditProtectedContent/ExtendedContentDeveloper`, the following applies:
 
 -   Unprotected artifacts: Full write access
 

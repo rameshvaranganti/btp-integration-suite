@@ -10,7 +10,7 @@ Use artificial intelligence to analyze and resolve message processing errors eff
 
 
 
--   Enable the *AI-assisted Error Resolution* feature in your SAP Integration Suite tenant. For more information, see [Artificial Intelligence](https://help.sap.com/docs/integration-suite/sap-integration-suite/artificial-intelligence?locale=en-US&state=DRAFT&version=DEV).
+-   Enable the *AI-assisted Error Resolution* feature in your SAP Integration Suite tenant. For more information, see [Artificial Intelligence](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/artificial-intelligence?version=CLOUD).
 -   Ensure that you have the role PI\_Integration\_Developer or PI\_Administrator assigned.
 
 

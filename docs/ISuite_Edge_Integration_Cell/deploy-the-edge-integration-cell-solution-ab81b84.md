@@ -44,7 +44,20 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 
 5.  Select *Edge Integration Cell* as the solution name. The version of the solution is selected automatically. Dependent solutions like Edge Integration Cell Services are deployed as part of Edge Integration Cell.
 
-6.  Enter the following properties:
+6.  Choose a *Deployment Name* and define the *Namespaces* for the solution:
+
+    -   *Deployment Name*: The field is prefilled with `Edge Integration Cell`.
+
+        > ### Note:  
+        > You must enter a unique deployment name. The deployment name will be propagated as a runtime location to the SAP Integration Suite.
+
+    -   *Namespaces*: You have the option to choose custom namespaces for the solution. If you don't specify them, the following defaults are used:
+        -   *Edge Integration Cell*: `edge-icell`
+        -   *Edge Security Artifact Secrets*: `edge-icell-secrets`
+        -   *Edge Local Authorization*: `edge-icell-ela`
+
+
+7.  Enter the following properties:
 
 
     <table>
@@ -179,7 +192,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Enter the virtual host \(host:port\) used for the Operations APIs. This property is only relevant if you use an external Cloud Connector.
+    Enter the virtual host \(host:port\) used for the Operations APIs.
+
+    This property is required if you use an external Cloud Connector or if you deploy an additional instance to the same Edge Node.
+
+    The virtual host value must be unique for each instance on the same Edge Node.
     
     </td>
     </tr>
@@ -328,9 +345,16 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </tr>
     </table>
     
-7.  Choose *Next Step*.
+8.  Choose *Next Step*
 
-8.  Enter the following properties:
+9.  Choose a *Deployment Name* and define the *Namespace* for the solution:
+
+    -   *Deployment Name*: The field is prefilled with `Edge Integration Cell Services`.
+    -   *Namespace*: You have the option to choose a custom namespace for the solution. If you don't specify one, the following default is used:
+        -   *Edge Integration Cell Services*: `edge-icell-services`
+
+
+10. Enter the following properties:
 
     ****
 
@@ -736,7 +760,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Upload Trust CA certificate to connect to external Redis using TLS.CA certificate in PEM format \(Base64 ASCII\), should include only Root CAs required to connect \(size limit 5kB\).
+    Upload Trust CA certificate to connect to external Redis using TLS. CA certificate in PEM format \(Base64 ASCII\), should include only Root CAs required to connect \(size limit 5kB\).
     
     </td>
     </tr>
@@ -924,9 +948,28 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </tr>
     </table>
     
-9.  Choose *Next Step*.
+11. Choose *Next Step*.
 
-10. Enter the following properties:
+12. Choose a *Deployment Name* and define the *Namespaces* for the solution:
+
+    -   *Deployment Name*: The field is prefilled with *Istio Gateways* or *Istio*.
+
+        > ### Note:  
+        > This depends on your type of onboarding. Onboarding with the Restricted Access Option uses the solution *IstioGateways*; otherwise, *Istio* is used.
+
+    -   *Namespaces*: You have the option to choose custom namespaces for the solution. The defaults depend on the type of onboarding:
+
+        *For IstioGateways*:
+
+        -   *IstioGateways*: `istio-gateways`
+
+        *For Istio*:
+
+        -   *Istio*: `istio-operator`
+        -   *Istio Namespace*: `istio-system`
+
+
+13. Enter the following properties:
 
     ****
 
@@ -1020,7 +1063,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </td>
     <td valign="top">
     
-    Select this option if a client’s source IP is to be preserved. This option requires to have a network load balancer capable of forwarding the source IP. On cloud platforms, a network load balancer is used for this option.
+    Select this option if a client’s source IP is to be preserved. This option requires to have a network load balancer capable of forwarding the source IP. On cloud platforms, a network load balancer is used for this option. Refer to your cloud provider's documentation to check if additional load balancer annotations are required.
 
     This option is a prerequisite for using client IP filtering policies. For more information, see [https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/\#network](https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/#network).
     
@@ -1052,11 +1095,11 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     </tr>
     </table>
     
-11. Choose *Deploy*.
+14. Choose *Deploy*.
 
     The deployment of the solution starts with the deployment of dependent solutions like Edge Integration Cell Services. Once the deployment of independent solutions is complete, the deployment of Edge Integration Cell starts automatically. Edge Lifecycle Management deploys solutions based on helm charts.
 
-12. After the successful deployment of the solution, assign the new runtime to a new or existing keystore. For more information see, [Interact with Keystores from Edge Integration Cell](interact-with-keystores-from-edge-integration-cell-d4972b8.md).
+15. After the successful deployment of the solution, assign the new runtime to a new or existing keystore. For more information see, [Interact with Keystores from Edge Integration Cell](interact-with-keystores-from-edge-integration-cell-d4972b8.md).
 
     > ### Note:  
     > You can either create a new keystore and assign the runtime to it or you can assign the runtime to an existing keystore. Consider the following limitations:
@@ -1076,7 +1119,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     > ### Caution:  
     > Be aware that changing the assigned keystore of a specific runtime after its initial setup could lead to errors in message processing. This is because the keystore becomes temporarily unavailable during the changeover process. For this reason, an initial careful selection of the runtime to a keystore is crucial.
 
-13. To upload the key pair for the default virtual host into the keystore which you have assigned to the new runtime, choose the *Keystore* tile in the *Manage Security* section. Use the alias that you specified as the *Default Virtual Host Key Alias* during the deployment of the ELM solution as your alias. For instance "edge.integration.int.cloud.sap". For more information, see [Uploading a Key Pair](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/083911ea02864f02a17bd24318b25cf9.html "Upload a private/public key pair to the tenant keystore.") :arrow_upper_right:.
+16. To upload the key pair for the default virtual host into the keystore which you have assigned to the new runtime, choose the *Keystore* tile in the *Manage Security* section. Use the alias that you specified as the *Default Virtual Host Key Alias* during the deployment of the ELM solution as your alias. For instance "edge.integration.int.cloud.sap". For more information, see [Uploading a Key Pair](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/083911ea02864f02a17bd24318b25cf9.html "Upload a private/public key pair to the tenant keystore.") :arrow_upper_right:.
 
 
 
@@ -1085,7 +1128,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 
 ## Results
 
-TheEdge Integration Cell product profile is created, and is automatically enabled for consumption in design time.
+The Edge Integration Cell product profile is created, and is automatically enabled for consumption in design time.
 
 **Related Information**  
 

@@ -172,6 +172,9 @@ Indicates the current state of the extraction request.
 > ### Note:  
 > The extraction might take some time to appear, choose <span class="SAP-icons-V5"></span> to refresh the extraction status.
 
+-   *In-Queue*: Such scenarios are yet to be picked up for extraction. The time indicated is the estimated wait before processing begins.
+
+
 
 
 </td>

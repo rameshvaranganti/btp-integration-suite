@@ -20,7 +20,7 @@ A discoverable system is a backend system \(for example, SAP S/4HANA or Gateway 
 
 -   Assign the *PI\_Integration\_Developer* role collection to yourself.
 
--   If your discoverable system type is SAP Gateway \(Internet/ On-Premise\), your sub-account administrator first need to configure a destination in the subscribers' sub-account in SAP BTP Cockpit with the details of your SAP Gateway system.
+-   If your discoverable system type is SAP Gateway \(Internet/ On-Premise\), your sub-account administrator first need to configure a destination in the subscribers' sub-account in the SAP BTP cockpit with the details of your SAP Gateway system.
 
 
     <table>
@@ -437,9 +437,9 @@ This destination contains a full specification of the access information for a s
 
 [Connecting to SAP S/4HANA Business System for API Discovery](connecting-to-sap-s-4hana-business-system-for-api-discovery-309929d.md "Create a destination in SAP BTP cockpit to enable discovery of APIs from an SAP S/4HANA Cloud system.")
 
- <?sap-ot O2O class="- topic/link " href="876cea2f90ad4dd49a05c8efa496fd9c.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/bd5c1f4f18f54f1083835cdab1b224fc.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Connect to an SAP SuccessFactors Business System for API Discovery](connect-to-an-sap-successfactors-business-system-for-api-discovery-876cea2.md "To enable API discovery from SAP SuccessFactors, create the required destination in the SAP BTP cockpit using the SAP SuccessFactors Extensibility Service.")
 
-[Configure a BTP Destination for API Discovery from an SAP Gateway System \(Internet-Based\)](configure-a-btp-destination-for-api-discovery-from-an-sap-gateway-system-internet-based-9bb2c8a.md "To create an API artifact by discovering your SAP cloud backends through an internet-based SAP Gateway service, you must first configure your gateway system details as a BTP destination. This destination is then available under Discoverable Systems during the API provider creation flow.")
+[Configure a Destination for API Discovery from an SAP Gateway System \(Internet-Based\)](configure-a-destination-for-api-discovery-from-an-sap-gateway-system-internet-based-9bb2c8a.md "To create an API artifact by discovering your SAP cloud backends through an internet-based SAP Gateway service, you must first configure your gateway system details as a BTP destination. This destination is then available under Discoverable Systems during the API provider creation flow.")
 
 [Configure a BTP Destination for API Discovery from an SAP Gateway System \(On-Premise\)](configure-a-btp-destination-for-api-discovery-from-an-sap-gateway-system-on-premise-7e84b0e.md "After you have discovered the list of APIs via the Gateway service destination, configure a destination with the Proxy Type set to OnPremise to make the runtime calls for the created API artifact. You can also reuse the same destination that was used for API discovery.")
 

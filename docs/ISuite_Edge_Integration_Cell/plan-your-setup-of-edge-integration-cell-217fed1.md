@@ -87,5 +87,5 @@ It's possible to deploy the required PostgreSQL database and a Redis or Valkey d
 
 ## Can one Kubernetes cluster host multiple Edge Integration Cell deployments ?
 
-The Edge Integration Cell deployment uses a fixed K8s namespace \(`edge-icell`\). Therefore, multiple deployments in the same cluster aren't possible.
+Multiple Edge Integration Cell instances can be deployed in the same cluster if the onboarding method *Restricted Access to Kubernetes Cluster* is used. Otherwise, only a single Edge Integration Cell can be deployed.
 

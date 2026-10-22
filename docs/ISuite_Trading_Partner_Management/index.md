@@ -2,6 +2,7 @@
 
 -   [Trading Partner Management](trading-partner-management-28fe3dc.md)
     -   [Understanding the Basic Concepts](understanding-the-basic-concepts-74c068d.md)
+    -   [Strorage and Sizing of B2B Data](strorage-and-sizing-of-b2b-data-5bc1bd2.md)
 -   [What's New in Trading Partner Management](what-s-new-in-trading-partner-management-07e135a.md)
 -   [Design B2B Scenarios](design-b2b-scenarios-c55eb4d.md)
     -   [Creating a Company Profile and a Subsidiary](creating-a-company-profile-and-a-subsidiary-909d928.md)

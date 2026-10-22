@@ -159,3 +159,5 @@ An integration flow with the following shapes is created:
 
 [Configure Integration Flow Components](configure-integration-flow-components-3171795.md)
 
+[Where Used](where-used-0559942.md)
+

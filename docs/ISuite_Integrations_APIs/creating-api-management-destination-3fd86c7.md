@@ -31,7 +31,7 @@ Create destination **APIManagement** in your source subaccount to make API calls
 
 ## Procedure
 
-1.  In your web browser, log on to SAP BTP Cockpit and navigate to your source subaccount.
+1.  In your web browser, log on to SAP BTP cockpit and navigate to your source subaccount.
 
 2.  Choose the *Connectivity* \> *Destinations* tab in the left-hand pane.
 

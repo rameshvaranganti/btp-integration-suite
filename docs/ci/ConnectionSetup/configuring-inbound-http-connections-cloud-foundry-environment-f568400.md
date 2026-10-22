@@ -24,7 +24,7 @@ Set up secure HTTP connections to enable:
 
 [Configuration Checklist for Inbound Authentication](configuration-checklist-for-inbound-authentication-4a428fd.md "")
 
-[Creating Service Instance and Service Key for Inbound Authentication](creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md "With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Cloud Integration, a service instance is the definition of an OAuth client.")
+[Creating Service Instance and Service Key for Inbound Authentication](creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md "With a service instance, you define how to access a certain service. In the context of SAP Cloud Integration, a service instance is the definition of an OAuth client.")
 
 [Setting Up Inbound HTTP Connections \(Integration Flow Processing\)](setting-up-inbound-http-connections-integration-flow-processing-0f92842.md "Enable a sender system to send messages to Cloud Integration over the HTTP protocol.")
 

@@ -10,6 +10,9 @@ Execute integration flows that include manual proxy configuration.
 
 Some integration flow adapters allow the configuration of a *Proxy Type* to connect to the target system. When using *Proxy Type*: `Manual Proxy`, a dedicated proxy can be configured that is used within your environment to direct traffic through it. Edge Integration Cell uses Istio as a traffic management framework. Therefore, external proxies have to be configured specifically for Istio to route traffic accordingly.
 
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
 
 
 ## Procedure
@@ -24,7 +27,7 @@ Some integration flow adapters allow the configuration of a *Proxy Type* to conn
     > kind: ServiceEntry
     > metadata:
     > name: <proxy-name>
-    > namespace: edge-icell
+    > namespace: <your-namespace>
     > spec:
     > hosts:
     > - <proxy-host>

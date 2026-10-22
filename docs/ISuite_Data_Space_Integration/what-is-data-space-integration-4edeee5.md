@@ -10,7 +10,7 @@ The Data Space Integration capability within SAP Integration Suite allows data s
 
 ## Dataspace Protocol
 
-Data exchange in Data Space Integration is based on the Dataspace Protocol. The Dataspace Protocol enables secure, interoperable, and decentralized data sharing between organizations, their data space components, and other participants.
+Data exchange in Data Space Integration is based on the **Dataspace Protocol 2025-1**. The Dataspace Protocol enables secure, interoperable, and decentralized data sharing between organizations, their data space components, and other participants.
 
 
 
@@ -23,7 +23,7 @@ The International Data Spaces \(IDS\) initiative aims to establish a uniform sta
 > ### Restriction:  
 > Currently, Data Space Integration supports connections to the following data spaces:
 > 
-> -   [Catena-X](https://catena-x.net)
+> -   [Catena-X](https://catena-x.net), releases **CX-Saturn** and **CX-Neptune**.
 > 
 >     See also the [Release Notes](https://catenax-ev.github.io/release-notes) of Catena-X.
 

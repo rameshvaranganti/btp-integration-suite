@@ -4,7 +4,7 @@
 
 # Creating Service Instance and Service Key for Inbound Authentication
 
-With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Cloud Integration, a service instance is the definition of an OAuth client.
+With a service instance, you define how to access a certain service. In the context of SAP Cloud Integration, a service instance is the definition of an OAuth client.
 
 > ### Note:  
 > This information is relevant only when you use SAP Cloud Integration in the Cloud Foundry environment.
@@ -35,7 +35,7 @@ Create a service instance to implement inbound communication. A service instance
 
 ## Creating Service Instance
 
-1.  Go to SAP BTP cockpit.
+1.  Go to .
 
 2.  Select the subaccount that hosts your SAP Cloud Integration application.
 
@@ -126,7 +126,7 @@ Create a service instance to implement inbound communication. A service instance
     Enter a meaningful short name.
 
     > ### Note:  
-    > We recommend you use a CLI-friendly name to enable the managing of your instances with the SAP BTP command line interface as well.
+    > We recommend you use a CLI-friendly name to enable the managing of your instances with the command line interface as well.
     > 
     > CLI-friendly name is a short string \(up to 32 characters\) that only contains alphanumeric characters \(A-Z, a-z, 0–9\), periods, underscores, and hyphens.
     > 
@@ -273,7 +273,7 @@ Create a service instance to implement inbound communication. A service instance
 
 With this step, you create a service key for the instance.
 
-1.  Using SAP BTP cockpit, enter your subaccount and go to *Instances and Subscriptions*.
+1.  Using , enter your subaccount and go to *Instances and Subscriptions*.
 
     You can see your instances in a table.
 
@@ -317,13 +317,13 @@ With this step, you create a service key for the instance.
 
     -   *Certificate*: Provides a x509 certificate issued by SAP.
 
-        Select this option to have SAP BTP generate a client certificate for you.
+        Select this option to have generate a client certificate for you.
 
         Client credentials grant is required to be able to use this key type.
 
     -   *External Certificate*: Allows to map an existing x509 certificate to a service key.
 
-        Select this option to use a client certificate generated with another application than SAP BTP.
+        Select this option to use a client certificate generated with another application than .
 
         Client credentials grant is required to be able to use this key type.
 
@@ -572,7 +572,7 @@ With this step, you create a service key for the instance.
         URL to address service.
 
 
-    A service key with this *Key Pair* doesn't contain a private key because the corresponding key pair has been generated with another application than SAP BTP.
+    A service key with this *Key Pair* doesn't contain a private key because the corresponding key pair has been generated with another application than .
     
     </td>
     </tr>

@@ -57,6 +57,9 @@ Each selected RFC function module is exposed as an MCP tool that AI agents can i
 > 
 > Only selected RFCs are exposed as tools, helping you control access to backend functionality.
 
+> ### Note:  
+> The maximum number of tools allowed for RFC is 50.
+
 
 
 ### Prompts

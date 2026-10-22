@@ -80,7 +80,7 @@ AMQP - TCP
 </td>
 <td valign="top">
 
-[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
+[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -101,7 +101,7 @@ AMQP - WebSocket
 </td>
 <td valign="top">
 
-[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
+[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -909,7 +909,7 @@ AMQP - TCP
 </td>
 <td valign="top">
 
-[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
+[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -930,7 +930,7 @@ AMQP - WebSocket
 </td>
 <td valign="top">
 
-[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
+[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
 
 </td>
 </tr>

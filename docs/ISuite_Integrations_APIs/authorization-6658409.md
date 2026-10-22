@@ -144,7 +144,7 @@ Please make sure that the user attempting to invoke the API endpoint is assigned
 
 For example, if you’ve configured a role called `APIArtifactUser` in *User Roles*, you must enter the role exactly as it is \(including case sensitivity\) in the scope field or vice versa.
 
-Once the `APIArtifactUser` role is configured in *User Roles*, it is automatically added to the *Roles* in SAP BTP Cockpit.
+Once the `APIArtifactUser` role is configured in *User Roles*, it is automatically added to the *Roles* in SAP BTP cockpit.
 
 To execute an API with the Authorization policy successfully on the runtime node, the `APIArtifactUser` role should be associated to the *Process Integration Runtime* instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API Artifact by Obtaining Credentials through Process Integration Runtime](invoke-an-api-artifact-by-obtaining-credentials-through-process-integration-runtime-b63baa2.md).
 

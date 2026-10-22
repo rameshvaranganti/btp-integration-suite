@@ -32,3 +32,8 @@ Due to the difference in the user and permission management, also the configurat
 -   Neo: [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md)
 
 
+**Related Information**  
+
+
+[Identity and Access Management](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/identity-and-access-management?version=Cloud)
+

@@ -2,7 +2,7 @@
 
 # Creating the Custom Mapping
 
-It is a prerequisite for the custom mapping that you upload the WSDL files defining the source and target message structures to the *Resources* tab of the integration flow \(as shown for the standard mapping in [Defining the Standard Message Mapping](defining-the-standard-message-mapping-c0e0f6d.md)\). As you can see, three message structures, A, B, and C, are involved in the mapping, and the corresponding resource files \(WSDLs\) have to be made available to the integration flow.
+It is a prerequisite for the custom mapping that you upload the WSDL files defining the source and target message structures to the *Resources* tab of the integration flow \(as shown for the standard mapping in [Defining the Message Mapping](defining-the-message-mapping-c0e0f6d.md)\). As you can see, three message structures, A, B, and C, are involved in the mapping, and the corresponding resource files \(WSDLs\) have to be made available to the integration flow.
 
 To make it easy for you to define the mapping step, we provide the content of the WSDL files below.
 
@@ -12,11 +12,11 @@ For the source message, import two WSDL files:
 
 -   The WSDL file describing the original **message A** \(as contained in the standard integration content\)
 
-    Use file `A.wsdl` from [Defining the Standard Message Mapping](defining-the-standard-message-mapping-c0e0f6d.md).
+    Use file `A.wsdl` from [Defining the Message Mapping](defining-the-message-mapping-c0e0f6d.md).
 
 -   The WSDL file describing the message structure after the standard mapping \(message B\)
 
-    Use file `B.wsdl` from [Defining the Standard Message Mapping](defining-the-standard-message-mapping-c0e0f6d.md).
+    Use file `B.wsdl` from [Defining the Message Mapping](defining-the-message-mapping-c0e0f6d.md).
 
     However, note one important detail: In this WSDL file, you need the original namespace prefix `p1`. Otherwise, message processing results in a namespace conflict and the mapping step cannot be executed without an error.
 

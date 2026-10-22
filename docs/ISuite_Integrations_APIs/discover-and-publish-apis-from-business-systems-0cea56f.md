@@ -10,7 +10,7 @@ As a content administrator, you can make your APIs available on Developer Hub ca
 
 ## How to discover APIs from business systems in Developer Hub?
 
-To discover the APIs and events from various business systems in Developer Hub, you first need to ask the *Global Account Administrator* to register these systems in the SAP BTP Cockpit.
+To discover the APIs and events from various business systems in Developer Hub, you first need to ask the *Global Account Administrator* to register these systems in the SAP BTP cockpit.
 
 The Global Account Administrator organizes SAP systems into groups so that they can be extended in a business scenario at one go. To accomplish this, the administrator creates a formation containing one or more different systems assigned to a common subaccount. For the Integration Suite to recognize these systems, they need to be part of the group. See [Enabling System Landscape for SAP Integration Suite](https://help.sap.com/docs/btp/sap-business-technology-platform/enabling-system-landscape-for-sap-integration-suite) topic for step-by-step instructions on how to register and connect the SAP Integration Suite business system with your global account.
 

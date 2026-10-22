@@ -12,6 +12,9 @@ Configure an external Prometheus instance to scrape metrics from Edge Integratio
 
 Edge Integration Cell automatically merges its metrics with Istio metrics. Consequently, Istio Metrics Merging must be enabled on your cluster, making the data available in plain text. For configuration details, see [Istio Prometheus Integration: Metrics Merging](https://istio.io/latest/docs/ops/integrations/prometheus/#option-1-metrics-merging).
 
+> ### Note:  
+> The commands and examples in this section use the placeholder `<your-namespace>`. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, or `istio-gateways`.
+
 
 
 ## Context
@@ -36,7 +39,7 @@ By default, Edge Integration Cell relies on the built-in logging and monitoring 
         > kind: NetworkPolicy
         > metadata:
         >   name: allow-monitoring-namespaces
-        >   namespace: edge-icell
+        >   namespace: <your-edge-icell-namespace>
         > spec:
         >   podSelector: {}
         >   ingress:
@@ -55,11 +58,11 @@ By default, Edge Integration Cell relies on the built-in logging and monitoring 
 
     1.  Disable Istio Metrics Merging.
 
-        Manually edit the `ssb-operator-default-config` ConfigMap in the `edge-icell-services` namespace and set `PROMETHEUS_MERGE=false`. You can execute this directly via:
+        Manually edit the `ssb-operator-default-config` ConfigMap in the `<your-edge-icell-services-namespace>` namespace and set `PROMETHEUS_MERGE=false`. You can execute this directly via:
 
         > ### Sample Code:  
         > ```
-        > kubectl edit configmap ssb-operator-default-config -n edge-icell-services
+        > kubectl edit configmap ssb-operator-default-config -n <your-edge-icell-services-namespace>
         > ```
 
     2.  Propagate the Configuration.
@@ -84,11 +87,11 @@ By default, Edge Integration Cell relies on the built-in logging and monitoring 
 
     2.  Disable Istio Metrics Merging.
 
-        Manually edit the `ssb-operator-default-config` ConfigMap in the `edge-icell-services` namespace and set `PROMETHEUS_MERGE=false`:
+        Manually edit the `ssb-operator-default-config` ConfigMap in the `<your-edge-icell-services-namespace>` namespace and set `PROMETHEUS_MERGE=false`:
 
         > ### Sample Code:  
         > ```
-        > kubectl edit configmap ssb-operator-default-config -n edge-icell-services
+        > kubectl edit configmap ssb-operator-default-config -n <your-edge-icell-services-namespace>
         > ```
 
     3.  Propagate the Configuration.
@@ -97,7 +100,7 @@ By default, Edge Integration Cell relies on the built-in logging and monitoring 
 
     4.  Create a Network Policy.
 
-        Apply a network policy to allow traffic from your Prometheus namespace to the `edge-icell` namespace. Replace `<prometheus-namespace>` with your actual Prometheus namespace.
+        Apply a network policy to allow traffic from your Prometheus namespace to the `<your-edge-icell-namespace>` namespace. Replace `<prometheus-namespace>` with your actual Prometheus namespace.
 
         > ### Sample Code:  
         > ```
@@ -106,7 +109,7 @@ By default, Edge Integration Cell relies on the built-in logging and monitoring 
         > kind: NetworkPolicy
         > metadata:
         >   name: allow-monitoring-namespaces
-        >   namespace: edge-icell
+        >   namespace: <your-edge-icell-namespace>
         > spec:
         >   podSelector: {}
         >   ingress:
@@ -128,7 +131,7 @@ By default, Edge Integration Cell relies on the built-in logging and monitoring 
         > kind: AuthorizationPolicy
         > metadata:
         >   name: <component>-monitoring-auth-policy
-        >   namespace: edge-icell
+        >   namespace: <your-edge-icell-namespace>
         > spec:
         >   selector:
         >     matchLabels:

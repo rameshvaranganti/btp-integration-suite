@@ -196,18 +196,7 @@ You can select one of the following authentication methods:
 -   *None*
 -   *Principal Propagation*
 
-    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
-
-    > ### Remember:  
-    > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
-
-    > ### Note:  
-    > This authentication method can only be used with the following sender adapters: HTTP, SOAP, IDoc, AS2.
-
-    > ### Note:  
-    > Note that the token for principal propagation expires after 30 minutes.
-    > 
-    > If it takes longer than 30 minutes to process the data between the sender and receiver channel, the token for principal propagation expires, which leads to errors in message processing.
+    Principal Propagation is supported only when the *Proxy Type* is *On-Premise*.
 
 
 > ### Note:  
@@ -267,6 +256,25 @@ Be aware that in some cases this feature can have a negative impact on performan
 Specifies the time \(in milliseconds\) that the client will wait for a response before the connection is being interrupted.
 
 The default value is 60000 milliseconds \(1 minute\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Keep-Alive*
+
+</td>
+<td valign="top">
+
+Select this option to signal to the server that you want to keep the connection open after the initial request and response sequence. Once established, the connection remains open for reuse across multiple requests until either the server or the client closes it.
+
+If you don't select *Keep-Alive*, the connection closes automatically after each request and response sequence.
+
+> ### Note:  
+> When you use a dynamic cloud connector location, do not select*Keep-Alive*: the connection is reused based only on the \(virtual\) hostname and port, so a request with a different location ID may be sent over a connection meant for a different server, which causes the cloud connector to return an error.
+
+
 
 </td>
 </tr>

@@ -4,7 +4,7 @@
 
 Functions are used to specify a data transformation between source and target nodes.
 
-You can use functions to transform or compute data within the Mapping Guidelines \(MAG\) editor. The three types of data transformation available are — Functions, Date time mapping, and String processing. For more information on Date time mapping and String processing, see [Value Transformations](value-transformations-19f8374.md).
+You can use functions to transform or compute data within the mapping guidelines \(MAG\) editor. The three types of data transformation available are — Functions, Date time mapping, and String processing. For more information on Date time mapping and String processing, see [Value Transformations](value-transformations-19f8374.md).
 
 The *Function* tab on the mapping pane is available only when leaf nodes are mapped or when a function is assigned to a target leaf node with no corresponding source node. You can create and assign a function to a target leaf node that isn't mapped to any source node.
 
@@ -15,7 +15,7 @@ You can use parameters to pass values to functions. For instance, you can define
 > ### Note:  
 > -   All XSLT 3.0 and XPath 3.1 functions are supported.
 > 
-> -   For more information, refer to XSLT or XPath specification published by W3C.
+> -   For more information, refer to the XSLT or XPath specification published by W3C.
 
 
 
@@ -44,6 +44,25 @@ The following are a few examples of XSLT processing tasks:
     > <xsl:sequence select="concat($PARAM,$nodes_in)"/>
     > ```
 
+
+
+
+## Cloud Integration Headers and Properties
+
+The **cpi namespace** with the `setHeader` and `setProperty` extension functions is available for mapping guidelines in Integration Advisor. When working with mapping guidelines, you can create exchange headers and properties and assign mapping-node data to their values, calling the functions directly from the XSLT code. Both functions take the exchange, a name, and a value as parameters.
+
+> ### Note:  
+> During a simulation in the mapping guidelines editor, newly created headers and properties are currently not displayed in the UI.
+
+
+
+### Example
+
+> ### Sample Code:  
+> ```
+> <xsl:sequence select="$nodes_in/*"/>
+> <xsl:value-of select="cpi:setHeader($exchange, 'SAP_EDI_Message_Number', $nodes_in/messageID)"/>
+> ```
 
 **Related Information**  
 

@@ -47,7 +47,7 @@ Endpoint Configuration
 </td>
 <td valign="top">
 
-Configure the URL path for the endpoint. The address must start with `/` and must be unique per tenant. The full path is: `/RNIF/RNIF/{url}`
+Configure the URL path for the endpoint. The address must start with `/` and must be unique per tenant. The full path is: `/RNIF20/RNIF20/{url}`
 
 </td>
 </tr>
@@ -68,6 +68,9 @@ Select the authorization type for incoming requests:
 
 -   *User Role*: Authorization is performed against a configured user role.
 -   *Client Certificate*: Authorization is performed using the client certificate presented by the sender.
+
+> ### Note:  
+> *Client Certificate* authorization for the sender channel is supported for Cloud runtime only. Select *User Role* authorization for Edge Integration Cell.
 
 
 
@@ -139,6 +142,23 @@ Enter the allowed client certificate Issuer DN entries, separated by commas. The
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Maximum Request Body Size \(in MB\)*
+
+</td>
+<td valign="top">
+
+Request Limits
+
+</td>
+<td valign="top">
+
+Enter the maximum size allowed for incoming request bodies, in MB. The accepted range is 1–500 MB. The default is 40 MB.
+
+</td>
+</tr>
 </table>
 
 
@@ -182,7 +202,7 @@ Partner Interface Process \(PIP\) Details
 Choose the source for the processing configuration:
 
 -   *Dynamic*: The incoming message. The system reads all PIP and security parameters from the Partner Directory at runtime. For more details, see [Dynamic Configuration via Partner Directory](dynamic-configuration-via-partner-directory-a9cc79d.md).
--   *Static*: The channel configuration.
+-   *Static from Channel*: The channel configuration.
 
 
 
@@ -226,8 +246,8 @@ Partner Interface Process Configuration
 
 Select the PIP action type:
 
--   **Single-Action Synchronous Request**
--   **Two-Action Synchronous Request**
+-   **Single-Action Request**
+-   **Two-Action Request**
 
 
 
@@ -304,6 +324,28 @@ Enter the requesting action of the PIP.
 <tr>
 <td valign="top">
 
+*Responding Action* 
+
+> ### Note:  
+> Only visible when *Action Type* is set to *Two-Action Request*.
+
+
+
+</td>
+<td valign="top">
+
+Partner Interface Process \(PIP\) Configuration
+
+</td>
+<td valign="top">
+
+Specifies the business action used for the response side of a two-action PIP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Current Role*
 
 </td>
@@ -366,6 +408,181 @@ Partner Interface Process Configuration
 <td valign="top">
 
 Enter the partner business service code.
+
+</td>
+</tr>
+</table>
+
+
+
+## Exchange Pattern
+
+
+<table>
+<tr>
+<th valign="top">
+
+**Parameter**
+
+</th>
+<th valign="top">
+
+**Section**
+
+</th>
+<th valign="top">
+
+**Description**
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Exchange Type*
+
+</td>
+<td valign="top">
+
+Exchange Pattern
+
+</td>
+<td valign="top">
+
+Selects the exchange pattern for the RNIF action and signal messages in the configured PIP.
+
+-   *Asynchronous*. Use when the RNIF conversation requires asynchronous action and signal message handling.
+-   *Synchronous*. Use when the RNIF conversation is handled in a synchronous exchange pattern.
+-   *Dynamic*. Resolves the exchange type at runtime from an exchange property or message header.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Callback URL*
+
+</td>
+<td valign="top">
+
+Exchange Pattern
+
+</td>
+<td valign="top">
+
+Enter the URL to which the trading partner delivers the asynchronous response message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Callback URL Credential Name*
+
+> ### Note:  
+> Only visible when *Exchange Type* is set to *Asynchronous*.
+
+
+
+</td>
+<td valign="top">
+
+Exchange Pattern
+
+</td>
+<td valign="top">
+
+Enter the name of the security credential used to authenticate inbound requests received at the callback URL.</p\>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Time to Acknowledge \(in ms\)*
+
+> ### Note:  
+> Only visible when *Exchange Type* is set to *Asynchronous*.
+
+
+
+</td>
+<td valign="top">
+
+Exchange Pattern
+
+</td>
+<td valign="top">
+
+Enter the maximum time in milliseconds within which the trading partner must send an acknowledgment after receiving the message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Time to Perform \(in ms\)*
+
+> ### Note:  
+> Only visible when *Exchange Type* is set to *Asynchronous*.
+
+
+
+</td>
+<td valign="top">
+
+Exchange Pattern
+
+</td>
+<td valign="top">
+
+Enter the maximum time in milliseconds within which the trading partner must complete the business transaction.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Asynchronous Retry Count*
+
+> ### Note:  
+> Only visible when *Exchange Type* is set to *Asynchronous*.
+
+
+
+</td>
+<td valign="top">
+
+Exchange Pattern
+
+</td>
+<td valign="top">
+
+Enter the number of times the adapter retries sending the message if no acknowledgment is received within the acknowledgment timeout period.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Asynchronous Retry Interval \(in ms\)*
+
+> ### Note:  
+> Only visible when *Exchange Type* is set to *Asynchronous*.
+
+
+
+</td>
+<td valign="top">
+
+Exchange Pattern
+
+</td>
+<td valign="top">
+
+Enter the time in milliseconds to wait between retry attempts.
 
 </td>
 </tr>

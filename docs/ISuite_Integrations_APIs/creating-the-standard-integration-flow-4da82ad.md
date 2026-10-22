@@ -70,7 +70,7 @@ The integration flow does not have a receiver component. The result of the mappi
 
 [Defining the Content Modifier](defining-the-content-modifier-a51751f.md "")
 
-[Defining the Standard Message Mapping](defining-the-standard-message-mapping-c0e0f6d.md "")
+[Defining the Message Mapping](defining-the-message-mapping-c0e0f6d.md "")
 
 [Defining the Local Integration Process](defining-the-local-integration-process-88faa5c.md "")
 

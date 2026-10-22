@@ -34,6 +34,8 @@ You need to have the*AuthGroup.Content.Admin* role collection assigned to you. A
 
 -   To create a product, start by selecting the *Advanced Event Mesh* business system from the *Business Systems* page. Choose the application domain that contain the events. Optionally, you can select the *Show shared events from other domains* checkbox to view shared events from other application domains. Then, choose the event and add it to your product.
 
+    Once the Event Product is created, there are additional steps to be done to ensure that the products can be subscribed to. For more information, see [Providing Event API Products to Developers](https://help.pubsub.em.services.cloud.sap/Cloud/Event-Portal/event-portal-designer-event-api-products.htm#making_available).
+
     > ### Note:  
     > Each application domain contains a list of events. Events that are **marked** as shared are accessible from all other domains. Events that are **not marked** as shared are accessible only within their own domain.
     > 

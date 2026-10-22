@@ -18,7 +18,7 @@ Once these runtime artifacts are generated, they can be leveraged within your in
 
 To know more, see:
 
-1.  [Consuming Artifacts in Integration Flows](consuming-artifacts-in-integration-flows-a33a6c6.md)
+1.  [Consuming Integration Advisor Artifacts in Integration Flows](consuming-integration-advisor-artifacts-in-integration-flows-a33a6c6.md)
 
 2.  [Exporting Runtime Artifacts](exporting-runtime-artifacts-5ab4cfe.md)
 3.  [Inject Mapping Artifacts to SAP Cloud Integration](inject-mapping-artifacts-to-sap-cloud-integration-47ad97e.md)

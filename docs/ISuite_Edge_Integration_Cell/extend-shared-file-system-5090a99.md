@@ -19,6 +19,9 @@ During initial deployment, a shared file system can be enabled to preserve trace
 > ### Tip:  
 > To clean up data before extending the file system, configure a Cleanup Diagnostic Data job. For more information, see [Job Management](job-management-4146fa5.md).
 
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
 
 
 ## Procedure
@@ -31,7 +34,7 @@ During initial deployment, a shared file system can be enabled to preserve trace
     > kind: ConfigMap
     > metadata:
     >   name: shared-custom-config
-    >   namespace: edge-icell
+    >   namespace: <your-namespace>
     > data:
     >   STORAGE_SIZE: <value>
     > ```

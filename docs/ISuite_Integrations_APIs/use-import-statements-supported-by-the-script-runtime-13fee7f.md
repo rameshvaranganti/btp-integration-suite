@@ -6,7 +6,7 @@ This design guideline ensures that groovy scripts use import statements compatib
 
 The guideline identifies imports that are not supported by the target runtime and recommends the appropriate runtime-compatible alternatives.
 
-This guideline scans version 2 of the script only. See [Upgrading Script](upgrading-script-917e014.md)
+This guideline scans version 2 of the script only. See [Upgrading Scripts](upgrading-scripts-917e014.md)
 
 > ### Example:  
 > The import `import groovy.util.XmlSlurper`is incompatible with the Groovy 4 runtime. It should be replaced with `import groovy.xml.XmlSlurper`.

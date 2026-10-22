@@ -40,5 +40,7 @@ When you refresh the *Manage Security Material* page, the new artifact is displa
 **Related Information**  
 
 
+ <?sap-ot O2O class="- topic/link " href="05599423e42f4c1c86500edb5cac449c.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/46da32434a4e4bb8a86c5bf7e7de214d.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
 [Managing Security Material](managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

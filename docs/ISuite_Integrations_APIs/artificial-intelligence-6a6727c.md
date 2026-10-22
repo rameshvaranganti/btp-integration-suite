@@ -8,7 +8,7 @@ As a tenant administrator, you can activate and manage artificial intelligence f
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
 > ### Note:  
-> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion through September 2026 and will be commercialized later as AI features using AI Units. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620).
+> AI features are accessible only with the Premium and Enhanced Editions. These are provided as a free promotion until the January 2027 software release. For more information on availability of these AI features across SAP BTP regions, see [3463620](https://me.sap.com/notes/3463620) Information published on SAP site.
 
 You can activate the following features depending upon the capabilities you've activated in your SAP Integration Suite tenant. See [Activating and Managing Capabilities](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/2ffb343c163c48a4b3a90f9f3c487328.html "Activate capabilities for SAP Integration Suite.") :arrow_upper_right:.
 
@@ -226,6 +226,11 @@ API Management
 
 Upon activation, performs system-level checks in the background to identify deviations in API call patterns from expected behaviour.
 
+> ### Note:  
+> Intelligent Recommendations requires Anomaly Detection to be active.
+
+
+
 </td>
 <td valign="top">
 
@@ -234,7 +239,9 @@ Upon activation, performs system-level checks in the background to identify devi
 </td>
 <td valign="top">
 
-[APIPortal.Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD) 
+Classic API Management: [APIPortal.Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD)
+
+Integration Cell: [PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
 
 </td>
 </tr>
@@ -261,7 +268,36 @@ Upon activation, identifies API traffic trends and provides predictions for upco
 </td>
 <td valign="top">
 
-[APIPortal.Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD) 
+Classic API Management: [APIPortal.Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD)
+
+Integration Cell: [PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Conversational Analytics
+
+</td>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+Upon activation, enables you to analyze API usage and performance using natural language queries through the AI Assistant in the analytics dashboard.
+
+</td>
+<td valign="top">
+
+[Analyze APIs with AI Assistance](analyze-apis-with-ai-assistance-724666b.md) 
+
+</td>
+<td valign="top">
+
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
 
 </td>
 </tr>

@@ -14,16 +14,7 @@ Before you migrate an integration object, evaluate the migration possibility usi
 
 -   Migrate integration artifacts from your SAP Process Integration/SAP Process Orchestration and SAP Process Integration systems to SAP Integration Suite as Integration Flows.
 
--   Currently, migration of Integrated Configuration Objects \(ICO\) and Receiver Determination objects are supported.
-
--   Migration is currently supported for the following versions of the on-premises software:
-
-    -   7.31 SP28 and above
-
-    -   7.40 SP23 and above
-
-    -   7.50 SP06 and above
-
+-   Currently, migration of Integrated Configuration Objects \(ICO\) are supported.
 
 -   In Migration Assessment, the possible migration statuses are: *Evaluation required*, *Adjustment required*, and *Ready to migrate*. For details about each status, see [Concepts](https://help.sap.com/docs/integration-suite/isuite-migration-assessment/concepts?).
 

@@ -16,6 +16,9 @@ As a foundational step, ensure you have Kubernetes backups available to facilita
 > ### Caution:  
 > An emergency recovery cannot recover Message Service data as the Message Service does not support persistent volume recovery. Messages stored in JMS queues or temporarily stored MPL events will be lost.
 
+> ### Note:  
+> The commands and examples in this document use the placeholder *<your-namespace\>*. Replace this with the actual namespace you defined during the deployment. If you kept the default settings, your namespaces are `edge-icell`, `edge-icell-services`, `edge-icell-ela`, or `istio-gateways`.
+
 
 
 ## Procedure
@@ -28,21 +31,21 @@ As a foundational step, ensure you have Kubernetes backups available to facilita
 
 4.  As the Message Service does not support restore and recovery of persistent volumes, you need to recreate the Message Service. To do so, perform the following steps:
 
-    -   To delete StatefulSet, execute the following command: `kubectl -n edge-icell-services delete sts ssb-solace`.
+    -   To delete StatefulSet, execute the following command: `kubectl -n <your-namespace> delete sts ssb-solace`.
 
 
     -   To delete Persistent Volume Claims \(data-ssb-solace-1, data-ssb-solace-2 exist only for an HA setup\), execute the following commands:
-        -   `kubectl -n edge-icell-services delete pvc data-ssb-solace-0`
-        -   `kubectl -n edge-icell-services delete pvc data-ssb-solace-1`
-        -   `kubectl -n edge-icell-services delete pvc data-ssb-solace-2`
+        -   `kubectl -n <your-namespace> delete pvc data-ssb-solace-0`
+        -   `kubectl -n <your-namespace> delete pvc data-ssb-solace-1`
+        -   `kubectl -n <your-namespace> delete pvc data-ssb-solace-2`
 
 
-    -   To edit custom resource, perform the following command: `kubectl -n edge-icell-services edit solacesoftwarebroker solace`. This opens an editor showing the custom resource definition in the section spec. In the spec section, look for the field `statusRevisionCount`. If the `statusRevisionCount` field exists, increase its value; otherwise set it to 1. Save the changes and exit the editor.
+    -   To edit custom resource, perform the following command: `kubectl -n <your-namespace> edit solacesoftwarebroker solace`. This opens an editor showing the custom resource definition in the section spec. In the spec section, look for the field `statusRevisionCount`. If the `statusRevisionCount` field exists, increase its value; otherwise set it to 1. Save the changes and exit the editor.
 
     -   To restart the deployment, execute the following commands:
-        -   `kubectl -n edge-icell rollout restart deploy message service operations`
-        -   `kubectl -n edge-icell rollout restart deploy mdc`
-        -   `kubectl -n edge-icell rollout restart deploy worker`
+        -   `kubectl -n <your-namespace> rollout restart deploy message service operations`
+        -   `kubectl -n <your-namespace> rollout restart deploy mdc`
+        -   `kubectl -n <your-namespace> rollout restart deploy worker`
 
 
 5.  To cleanup the artifact cache, connect to the PostgreSQL database and execute the following SQL statements:
@@ -52,6 +55,6 @@ As a foundational step, ensure you have Kubernetes backups available to facilita
 
     After recreating the Message Service, all queues for Integration Flows using JMS must be recreated. Therefore, the local artifact cache should be cleaned up. This enforces artifact synchronization from the Cloud, recreates the artifact cache and JMS queues, and ensures a consistent state.
 
-6.  To restart the Edge Dploy Controller, execute the following command: `kubectl -n edge-icell rollout restart deploy edc`.
+6.  To restart the Edge Dploy Controller, execute the following command: `kubectl -n <your-namespace> rollout restart deploy edc`.
 
 

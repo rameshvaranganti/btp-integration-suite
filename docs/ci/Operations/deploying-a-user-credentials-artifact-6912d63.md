@@ -21,7 +21,7 @@ To set up a connection using basic authentication or username token authenticati
 
 2.  Select the *Security Material* tile in the *Manage Security* section.
 
-3.  Choose *Add*.
+3.  Choose *Create*.
 
 4.  As *Type*, select *User Credentials*.
 
@@ -138,6 +138,8 @@ When you refresh the *Manage Security Material* page, the new artifact is displa
 
 **Related Information**  
 
+
+ <?sap-ot O2O class="- topic/link " href="05599423e42f4c1c86500edb5cac449c.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/6912d63bbbc64aee8bbd4ff10314c60c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Managing Security Material](managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

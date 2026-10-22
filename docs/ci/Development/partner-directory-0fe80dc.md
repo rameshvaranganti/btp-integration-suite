@@ -7,6 +7,11 @@ The Partner Directory contains information on partners that are connected to a t
 You can access the OData API and learn about its basic operations at:
 
 -   [https://api.sap.com/api/PartnerDirectory/](https://api.sap.com/api/PartnerDirectory/) for Cloud Integration.
+-   [Overview | Partner Directory | SAP Business Accelerator Hub](https://api.sap.com/api/sap-int-eic-partner-directory-v1/overview) for Edge Integration Cell.
+
+    > ### Note:  
+    > Read-only access.
+
 
 This documentation provides additional information.
 
@@ -147,6 +152,11 @@ See: [Partner Directory Entity Types](../Operations/partner-directory-entity-typ
 <td valign="top">
 
 User Credential Parameters
+
+> ### Note:  
+> Not supported in.
+
+
 
 </td>
 <td valign="top">

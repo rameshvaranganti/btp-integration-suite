@@ -63,8 +63,6 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
 2.  Select the target runtime \(*Runtime* parameter\).
 
     > ### Note:  
-    > This information is only relevant for Edge Integration Cell runtime.
-    > 
     > For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/1783cf87caa2449e96082f0cf754449d.html "The manage security section allows you to manage various kinds of security-related artifacts according to the runtime deployment possibilities.") :arrow_upper_right:.
 
 3.  Click the *Security Material* tile in the *Manage Security* section.
@@ -177,7 +175,7 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
     </td>
     <td valign="top">
     
-    Displays the URL you need, when creating the OAuth Clients/App im OAuth Authorization Server/Token Server. For more information, see [OAuth2.0 Authorization Code Grant](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/oauth-2-0#loio508a70db7eac4addbb6ac69a06d46e79) 
+    Displays the URL you need, when creating the OAuth Clients/App im OAuth Authorization Server/Token Server. For more information, see [OAuth 2.0 Authorization Code Grant](40-RemoteSystems/oauth-2-0-3823134.md#loio508a70db7eac4addbb6ac69a06d46e79).
     
     </td>
     </tr>
@@ -265,6 +263,8 @@ SAP Integration Suite supports these kinds of OAuth clients. You can just specif
 
 **Related Information**  
 
+
+[Where Used](where-used-0559942.md "This feature lets you identify all integration flows that reference a specific security material through externalized parameters.")
 
 [Managing Security Material](managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

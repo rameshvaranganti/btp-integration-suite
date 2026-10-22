@@ -54,7 +54,7 @@ To maintain privacy and security, you can grant access to**Authorized Users** wh
 
     Select the appropriate permission from the following list:
 
-    -   *Authorised Users*: These are the users who are registered as application developers or have the privilege of the application developer assigned through the SAP BTP cockpit. They can search, discover, and consume the contents of this Developer Hub application.
+    -   *Authorised Users*: These are the users who are registered as application developers or have the privilege of the application developer assigned through the . They can search, discover, and consume the contents of this Developer Hub application.
 
         > ### Note:  
         > By default, the option for *Authorised Users* is selected. However, you have the flexibility to change it to either *All Visitors* or *Authenticated Users*, depending on your specific requirements.

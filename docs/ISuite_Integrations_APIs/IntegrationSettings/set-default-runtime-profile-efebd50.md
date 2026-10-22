@@ -8,6 +8,9 @@ The tenant administrator can view and configure a runtime profile, to mark one o
 
 ## Prerequisites
 
+-   For Cloud Integration runtime, the Cloud Integration capability should be active. See [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD&ai=true)
+-   For Integration Cell and Edge Integration Cell runtimes, the runtimes should be explicitly activated See [Activate Integration Cell](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/activate-integration-cell?version=CLOUD&ai=true) and [Activate Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/activate-edge-integration-cell?version=CLOUD&ai=true)
+
 
 
 ## Context

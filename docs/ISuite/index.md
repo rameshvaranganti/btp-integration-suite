@@ -4,7 +4,6 @@
     -   [How Different Capabilities in SAP Integration Suite Interact](how-different-capabilities-in-sap-integration-suite-interact-b550bbd.md)
     -   [Deployment Options and Runtimes](deployment-options-and-runtimes-066f441.md)
         -   [Standard Deployment in the Cloud](standard-deployment-in-the-cloud-ca5b233.md)
--   [What's New in Edge Integration Cell](what-s-new-in-edge-integration-cell-c3ced79.md)
 -   [What's New for SAP Integration Suite](what-s-new-for-sap-integration-suite-79cd682.md)
 -   [Getting Started with SAP Integration Suite](10-InitialSetup/getting-started-with-sap-integration-suite-3dcf507.md)
     -   [Production Account](10-InitialSetup/production-account-24ef511.md)

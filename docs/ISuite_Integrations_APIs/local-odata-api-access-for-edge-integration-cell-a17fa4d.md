@@ -10,6 +10,7 @@ The available APIs cover the following:
 
 -   [Message Processing Logs](message-processing-logs-827a2d7.md)
 -   [Message Stores](message-stores-1aab5e9.md)
+-   [Partner Directory](partner-directory-0fe80dc.md)
 -   [Operations Cockpit API](operations-cockpit-api-da1abc0.md)
 
 These APIs are published as a package on the SAP Business Accelerator Hub at [Overview | SAP Edge Integration Cell | SAP Business Accelerator Hub](https://api.sap.com/package/sap-int-eic-eic-operations/overview).

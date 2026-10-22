@@ -153,3 +153,5 @@ An integration flow with the following shapes is created:
 
 [Configure Integration Flow Components](configure-integration-flow-components-3171795.md)
 
+ <?sap-ot O2O class="- topic/xref " href="05599423e42f4c1c86500edb5cac449c.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/da53d93cd8fb47ff9ea55b6b278cd85e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+

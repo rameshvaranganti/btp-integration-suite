@@ -10,6 +10,8 @@ Edge Integration Cell can propagate an authenticated user's identity to on-premi
 
 When a user triggers an integration that calls an on-premise SAP system \(such as SAP ERP or S/4HANA\), the backend needs to know who that specific user is. Edge Integration Cell achieves this by generating a short-lived X.509 client certificate is valid for 120 seconds. It contains the user's email address, and sends it to the backend over a secure mutual TLS \(mTLS\) connection.
 
+This configuration supports integration flow and API artifacts using the HTTP receiver adapter. It is also supported in the offline mode given that the certificates are synced at least once. For more information, see [Offline Mode Overview](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/offline-mode-overview?version=CLOUD&ai=true)
+
 
 
 ## How It Works

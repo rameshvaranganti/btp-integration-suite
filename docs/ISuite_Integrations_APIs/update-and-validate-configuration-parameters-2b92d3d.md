@@ -4,6 +4,9 @@
 
 Update and validate configuration parameters of an integration flow.
 
+> ### Remember:  
+> When using the OData API to retrieve or update configuration, the response reflects the configurations for All option not those of a specific runtime profile. If you need to view or modify values at the runtime profile level, use the UI instead. See [Configure Externalized Parameters of an Integration Flow](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/configure-externalized-parameters-of-integration-flow?version=CLOUD&ai=true)
+
 1.  Update configuration parameters of the integration flow via an OData API, perform the below call:
 
     ****
