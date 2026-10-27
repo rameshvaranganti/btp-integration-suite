@@ -35,6 +35,7 @@ You can create an MCP server from the following source types:
 -   **APIs** — Create an MCP server from an API artifact deployed on Integration Cell.
 -   **HTTP Endpoint with OpenAPI Specification**— Create an MCP server from any HTTP endpoint by providing the endpoint URL and an OpenAPI specification.
 -   **RFCs** — Create an MCP server from an RFC-based backend by modeling and exposing RFC operations as MCP tools.
+-   **Remote MCP Servers** — Create an MCP server that uses an existing remote MCP server as its source, so that SAP Integration Suite acts as a managed proxy and governance layer for AI agents.
 
 
 
@@ -69,6 +70,7 @@ You can create an MCP server by choosing one of the following sources and provid
 -   API artifact deployed in Integration Suite. See, [Create an MCP Server from an API Artifact](create-an-mcp-server-from-an-api-artifact-9f18140.md)
 -   HTTP endpoint with an OpenAPI specification. See, [Create an MCP Server from an HTTP Endpoint](create-an-mcp-server-from-an-http-endpoint-b59f141.md)
 -   RFC-based backend \(for example, SAP S/4HANA or SAP ECC\). See, [Create an MCP Server by Referring to an RFC-Based Backend](create-an-mcp-server-by-referring-to-an-rfc-based-backend-cbb8b78.md)
+-   Remote MCP server. See, [Create an MCP Server Using Remote MCP Server as the Source](create-an-mcp-server-using-remote-mcp-server-as-the-source-742216d.md)
 
 
 
@@ -84,6 +86,8 @@ You can create an MCP server by choosing one of the following sources and provid
 
 After creating the MCP server, you can edit it to manage its configuration, including *Source*, *Tools*, *Resources*, *Prompts* and *Policies*.
 
+To make tool definitions easier for AI agents to use, you can also refine and simplify them without modifying the source artifact. See, [MCP Server Tool Simplification](mcp-server-tool-simplification-cff5f03.md).
+
 </td>
 </tr>
 <tr>
@@ -94,7 +98,7 @@ After creating the MCP server, you can edit it to manage its configuration, incl
 </td>
 <td valign="top">
 
-After configuring your MCP server, deploy it on Integration Cell runtime to make it active. See, [Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md).
+After configuring your MCP server, deploy it on Integration Cell runtime to make it active. See, [Deploy an MCP Server](deploy-an-mcp-server-017ba42.md).
 
 </td>
 </tr>

@@ -22,7 +22,7 @@ Create an MCP server that uses a remote MCP server as its source, allowing SAP I
 -   Set up a destination in SAP BTP cockpit to connect an MCP server to the remote MCP server. See, [Configure a Destination to Connect an MCP Server to a Remote MCP Server](configure-a-destination-to-connect-an-mcp-server-to-a-remote-mcp-server-1c8b388.md).
 
     > ### Note:  
-    > Only destinations with the *Proxy Type* set to `Internet` is currently supported.
+    > Only destinations with the *Proxy Type* set to `Internet` are currently supported.
     > 
     > The following authentication mechanisms are supported:
     > 

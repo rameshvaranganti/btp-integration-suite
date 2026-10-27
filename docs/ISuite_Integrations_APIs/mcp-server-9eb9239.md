@@ -195,3 +195,5 @@ Each primitive serves a distinct purpose and is exposed through the MCP protocol
 
 [Create an MCP Server by Referring to an RFC-Based Backend](create-an-mcp-server-by-referring-to-an-rfc-based-backend-cbb8b78.md "Create an MCP server by connecting to an RFC-based backend system and exposing selected RFC operations as MCP tools.")
 
+[Create an MCP Server Using Remote MCP Server as the Source](create-an-mcp-server-using-remote-mcp-server-as-the-source-742216d.md "Create an MCP server that uses a remote MCP server as its source, allowing SAP Integration Suite MCP server to act as a managed proxy and governance layer for AI agents.")
+
